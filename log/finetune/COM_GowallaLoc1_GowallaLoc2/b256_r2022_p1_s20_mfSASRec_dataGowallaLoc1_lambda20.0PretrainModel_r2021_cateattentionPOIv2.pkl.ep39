@@ -1,0 +1,196 @@
+INFO:root:Namespace(adam_beta1=0.9, adam_beta2=0.999, adam_weight_decay=0.0, batch_size=256, corpus_lines=None, data_type='Common', dataset='GowallaLoc1', dropout=0.1, epochs=40, finetuned_model='SASRec', gpu='1', hidden=64, lambda2=0.0, log_freq=500, loss_type='Pairwise', lr=0.0001, ndatasets=['GowallaLoc1', 'GowallaLoc2'], num_workers=0, on_memory=False, path='./data/', pretrained_model_path='PretrainModel_r2021_cateattentionPOIv2.pkl.ep39', pretrained_model_type='OurMethod', seed=2022, sep='\t', seq_len=20, use_pretrain=1, with_cuda=True)
+INFO:root:Reading data from "./data/", dataset = "GowallaLoc1" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 8277, "# item": 21357, "# entry": 332640
+INFO:root:Appending history info...
+INFO:root:Total Parameters:3912320
+INFO:root:Training Start
+INFO:root:dev=(HR@10:0.2155,HR@5:0.1649,NDCG@10:0.1357,NDCG@5:0.1194) 
+INFO:root:test=(HR@10:0.2044,HR@5:0.1609,NDCG@10:0.1349,NDCG@5:0.1209) 
+INFO:root:{'epoch': 0, 'iter': '[0/1213]', 'Avg_Loss': 0.14056743681430817, 'Loss_POI': [0.14056743681430817, 0.0]}
+INFO:root:{'epoch': 0, 'iter': '[500/1213]', 'Avg_Loss': 0.09863975267864748, 'Loss_POI': [0.09483126550912857, 0.0]}
+INFO:root:{'epoch': 0, 'iter': '[1000/1213]', 'Avg_Loss': 0.09205778391955496, 'Loss_POI': [0.0733959823846817, 0.0]}
+INFO:root:EP0_train, avg_loss=0.089836
+INFO:root:dev=(HR@10:0.1714,HR@5:0.1250,NDCG@10:0.1033,NDCG@5:0.0882) 
+INFO:root:test=(HR@10:0.1847,HR@5:0.1373,NDCG@10:0.1162,NDCG@5:0.1009) 
+INFO:root:{'epoch': 1, 'iter': '[0/1213]', 'Avg_Loss': 0.07850370556116104, 'Loss_POI': [0.07850370556116104, 0.0]}
+INFO:root:{'epoch': 1, 'iter': '[500/1213]', 'Avg_Loss': 0.07263334733461906, 'Loss_POI': [0.06467725336551666, 0.0]}
+INFO:root:{'epoch': 1, 'iter': '[1000/1213]', 'Avg_Loss': 0.07017473937137858, 'Loss_POI': [0.06279243528842926, 0.0]}
+INFO:root:EP1_train, avg_loss=0.069071
+INFO:root:dev=(HR@10:0.1851,HR@5:0.1329,NDCG@10:0.1130,NDCG@5:0.0963) 
+INFO:root:test=(HR@10:0.1890,HR@5:0.1414,NDCG@10:0.1197,NDCG@5:0.1043) 
+INFO:root:{'epoch': 2, 'iter': '[0/1213]', 'Avg_Loss': 0.040336836129426956, 'Loss_POI': [0.040336836129426956, 0.0]}
+INFO:root:{'epoch': 2, 'iter': '[500/1213]', 'Avg_Loss': 0.059399762382347905, 'Loss_POI': [0.05721722170710564, 0.0]}
+INFO:root:{'epoch': 2, 'iter': '[1000/1213]', 'Avg_Loss': 0.057437945890438546, 'Loss_POI': [0.05483947694301605, 0.0]}
+INFO:root:EP2_train, avg_loss=0.056729
+INFO:root:dev=(HR@10:0.1930,HR@5:0.1405,NDCG@10:0.1178,NDCG@5:0.1009) 
+INFO:root:test=(HR@10:0.1953,HR@5:0.1466,NDCG@10:0.1244,NDCG@5:0.1087) 
+INFO:root:{'epoch': 3, 'iter': '[0/1213]', 'Avg_Loss': 0.060116320848464966, 'Loss_POI': [0.060116320848464966, 0.0]}
+INFO:root:{'epoch': 3, 'iter': '[500/1213]', 'Avg_Loss': 0.049259959554630604, 'Loss_POI': [0.05436192452907562, 0.0]}
+INFO:root:{'epoch': 3, 'iter': '[1000/1213]', 'Avg_Loss': 0.04846726803222558, 'Loss_POI': [0.05233730375766754, 0.0]}
+INFO:root:EP3_train, avg_loss=0.048063
+INFO:root:dev=(HR@10:0.2007,HR@5:0.1470,NDCG@10:0.1224,NDCG@5:0.1052) 
+INFO:root:test=(HR@10:0.1981,HR@5:0.1498,NDCG@10:0.1265,NDCG@5:0.1109) 
+INFO:root:{'epoch': 4, 'iter': '[0/1213]', 'Avg_Loss': 0.04771292954683304, 'Loss_POI': [0.04771292954683304, 0.0]}
+INFO:root:{'epoch': 4, 'iter': '[500/1213]', 'Avg_Loss': 0.04258419634279852, 'Loss_POI': [0.046808578073978424, 0.0]}
+INFO:root:{'epoch': 4, 'iter': '[1000/1213]', 'Avg_Loss': 0.042180491892339946, 'Loss_POI': [0.03541334718465805, 0.0]}
+INFO:root:EP4_train, avg_loss=0.041831
+INFO:root:dev=(HR@10:0.2037,HR@5:0.1499,NDCG@10:0.1242,NDCG@5:0.1069) 
+INFO:root:test=(HR@10:0.1980,HR@5:0.1483,NDCG@10:0.1257,NDCG@5:0.1096) 
+INFO:root:{'epoch': 5, 'iter': '[0/1213]', 'Avg_Loss': 0.03470325469970703, 'Loss_POI': [0.03470325469970703, 0.0]}
+INFO:root:{'epoch': 5, 'iter': '[500/1213]', 'Avg_Loss': 0.03851630238671146, 'Loss_POI': [0.04090065509080887, 0.0]}
+INFO:root:{'epoch': 5, 'iter': '[1000/1213]', 'Avg_Loss': 0.03751718091939415, 'Loss_POI': [0.04578492417931557, 0.0]}
+INFO:root:EP5_train, avg_loss=0.037258
+INFO:root:dev=(HR@10:0.2091,HR@5:0.1577,NDCG@10:0.1288,NDCG@5:0.1123) 
+INFO:root:test=(HR@10:0.2014,HR@5:0.1522,NDCG@10:0.1280,NDCG@5:0.1122) 
+INFO:root:{'epoch': 6, 'iter': '[0/1213]', 'Avg_Loss': 0.02449985407292843, 'Loss_POI': [0.02449985407292843, 0.0]}
+INFO:root:{'epoch': 6, 'iter': '[500/1213]', 'Avg_Loss': 0.03401857828293851, 'Loss_POI': [0.035258397459983826, 0.0]}
+INFO:root:{'epoch': 6, 'iter': '[1000/1213]', 'Avg_Loss': 0.033606789501888175, 'Loss_POI': [0.03694508969783783, 0.0]}
+INFO:root:EP6_train, avg_loss=0.033157
+INFO:root:dev=(HR@10:0.2101,HR@5:0.1572,NDCG@10:0.1290,NDCG@5:0.1119) 
+INFO:root:test=(HR@10:0.2046,HR@5:0.1559,NDCG@10:0.1312,NDCG@5:0.1155) 
+INFO:root:{'epoch': 7, 'iter': '[0/1213]', 'Avg_Loss': 0.031810175627470016, 'Loss_POI': [0.031810175627470016, 0.0]}
+INFO:root:{'epoch': 7, 'iter': '[500/1213]', 'Avg_Loss': 0.03020615809729059, 'Loss_POI': [0.04795951023697853, 0.0]}
+INFO:root:{'epoch': 7, 'iter': '[1000/1213]', 'Avg_Loss': 0.030333498435152637, 'Loss_POI': [0.034171298146247864, 0.0]}
+INFO:root:EP7_train, avg_loss=0.030252
+INFO:root:dev=(HR@10:0.2111,HR@5:0.1583,NDCG@10:0.1299,NDCG@5:0.1129) 
+INFO:root:test=(HR@10:0.2047,HR@5:0.1548,NDCG@10:0.1306,NDCG@5:0.1145) 
+INFO:root:{'epoch': 8, 'iter': '[0/1213]', 'Avg_Loss': 0.02649385668337345, 'Loss_POI': [0.02649385668337345, 0.0]}
+INFO:root:{'epoch': 8, 'iter': '[500/1213]', 'Avg_Loss': 0.02800369101526316, 'Loss_POI': [0.03688522428274155, 0.0]}
+INFO:root:{'epoch': 8, 'iter': '[1000/1213]', 'Avg_Loss': 0.02761865487521315, 'Loss_POI': [0.017193879932165146, 0.0]}
+INFO:root:EP8_train, avg_loss=0.027558
+INFO:root:dev=(HR@10:0.2140,HR@5:0.1642,NDCG@10:0.1323,NDCG@5:0.1163) 
+INFO:root:test=(HR@10:0.2083,HR@5:0.1561,NDCG@10:0.1332,NDCG@5:0.1165) 
+INFO:root:{'epoch': 9, 'iter': '[0/1213]', 'Avg_Loss': 0.02769903466105461, 'Loss_POI': [0.02769903466105461, 0.0]}
+INFO:root:{'epoch': 9, 'iter': '[500/1213]', 'Avg_Loss': 0.025935030622247925, 'Loss_POI': [0.025127284228801727, 0.0]}
+INFO:root:{'epoch': 9, 'iter': '[1000/1213]', 'Avg_Loss': 0.02585686778707372, 'Loss_POI': [0.04506029933691025, 0.0]}
+INFO:root:EP9_train, avg_loss=0.025849
+INFO:root:dev=(HR@10:0.2153,HR@5:0.1611,NDCG@10:0.1323,NDCG@5:0.1147) 
+INFO:root:test=(HR@10:0.2073,HR@5:0.1563,NDCG@10:0.1326,NDCG@5:0.1161) 
+INFO:root:{'epoch': 10, 'iter': '[0/1213]', 'Avg_Loss': 0.01606617495417595, 'Loss_POI': [0.01606617495417595, 0.0]}
+INFO:root:{'epoch': 10, 'iter': '[500/1213]', 'Avg_Loss': 0.02393799110087092, 'Loss_POI': [0.026510709896683693, 0.0]}
+INFO:root:{'epoch': 10, 'iter': '[1000/1213]', 'Avg_Loss': 0.023758709220425948, 'Loss_POI': [0.03368716686964035, 0.0]}
+INFO:root:EP10_train, avg_loss=0.023790
+INFO:root:dev=(HR@10:0.2198,HR@5:0.1649,NDCG@10:0.1351,NDCG@5:0.1174) 
+INFO:root:test=(HR@10:0.2091,HR@5:0.1596,NDCG@10:0.1339,NDCG@5:0.1179) 
+INFO:root:{'epoch': 11, 'iter': '[0/1213]', 'Avg_Loss': 0.02429298684000969, 'Loss_POI': [0.02429298684000969, 0.0]}
+INFO:root:{'epoch': 11, 'iter': '[500/1213]', 'Avg_Loss': 0.022471280036096327, 'Loss_POI': [0.03074672259390354, 0.0]}
+INFO:root:{'epoch': 11, 'iter': '[1000/1213]', 'Avg_Loss': 0.022603853887131254, 'Loss_POI': [0.012342359870672226, 0.0]}
+INFO:root:EP11_train, avg_loss=0.022513
+INFO:root:dev=(HR@10:0.2222,HR@5:0.1648,NDCG@10:0.1362,NDCG@5:0.1177) 
+INFO:root:test=(HR@10:0.2147,HR@5:0.1595,NDCG@10:0.1370,NDCG@5:0.1192) 
+INFO:root:{'epoch': 12, 'iter': '[0/1213]', 'Avg_Loss': 0.015679845586419106, 'Loss_POI': [0.015679845586419106, 0.0]}
+INFO:root:{'epoch': 12, 'iter': '[500/1213]', 'Avg_Loss': 0.02104040239928309, 'Loss_POI': [0.019162669777870178, 0.0]}
+INFO:root:{'epoch': 12, 'iter': '[1000/1213]', 'Avg_Loss': 0.02118596237582656, 'Loss_POI': [0.03033420816063881, 0.0]}
+INFO:root:EP12_train, avg_loss=0.021235
+INFO:root:dev=(HR@10:0.2188,HR@5:0.1637,NDCG@10:0.1331,NDCG@5:0.1153) 
+INFO:root:test=(HR@10:0.2101,HR@5:0.1570,NDCG@10:0.1335,NDCG@5:0.1165) 
+INFO:root:{'epoch': 13, 'iter': '[0/1213]', 'Avg_Loss': 0.04306267946958542, 'Loss_POI': [0.04306267946958542, 0.0]}
+INFO:root:{'epoch': 13, 'iter': '[500/1213]', 'Avg_Loss': 0.019900756731941673, 'Loss_POI': [0.011554897762835026, 0.0]}
+INFO:root:{'epoch': 13, 'iter': '[1000/1213]', 'Avg_Loss': 0.019968419940537448, 'Loss_POI': [0.027435699477791786, 0.0]}
+INFO:root:EP13_train, avg_loss=0.019930
+INFO:root:dev=(HR@10:0.2222,HR@5:0.1684,NDCG@10:0.1373,NDCG@5:0.1199) 
+INFO:root:test=(HR@10:0.2112,HR@5:0.1614,NDCG@10:0.1361,NDCG@5:0.1200) 
+INFO:root:{'epoch': 14, 'iter': '[0/1213]', 'Avg_Loss': 0.014877102337777615, 'Loss_POI': [0.014877102337777615, 0.0]}
+INFO:root:{'epoch': 14, 'iter': '[500/1213]', 'Avg_Loss': 0.019678500663124755, 'Loss_POI': [0.03450235724449158, 0.0]}
+INFO:root:{'epoch': 14, 'iter': '[1000/1213]', 'Avg_Loss': 0.019234697979695344, 'Loss_POI': [0.007016351446509361, 0.0]}
+INFO:root:EP14_train, avg_loss=0.019237
+INFO:root:dev=(HR@10:0.2248,HR@5:0.1667,NDCG@10:0.1382,NDCG@5:0.1194) 
+INFO:root:test=(HR@10:0.2102,HR@5:0.1613,NDCG@10:0.1362,NDCG@5:0.1204) 
+INFO:root:{'epoch': 15, 'iter': '[0/1213]', 'Avg_Loss': 0.01803680509328842, 'Loss_POI': [0.01803680509328842, 0.0]}
+INFO:root:{'epoch': 15, 'iter': '[500/1213]', 'Avg_Loss': 0.018971674687074808, 'Loss_POI': [0.025254355743527412, 0.0]}
+INFO:root:{'epoch': 15, 'iter': '[1000/1213]', 'Avg_Loss': 0.018309369623720588, 'Loss_POI': [0.02776476740837097, 0.0]}
+INFO:root:EP15_train, avg_loss=0.018368
+INFO:root:dev=(HR@10:0.2257,HR@5:0.1667,NDCG@10:0.1375,NDCG@5:0.1184) 
+INFO:root:test=(HR@10:0.2157,HR@5:0.1659,NDCG@10:0.1393,NDCG@5:0.1232) 
+INFO:root:{'epoch': 16, 'iter': '[0/1213]', 'Avg_Loss': 0.017809364944696426, 'Loss_POI': [0.017809364944696426, 0.0]}
+INFO:root:{'epoch': 16, 'iter': '[500/1213]', 'Avg_Loss': 0.01736107755623416, 'Loss_POI': [0.038176029920578, 0.0]}
+INFO:root:{'epoch': 16, 'iter': '[1000/1213]', 'Avg_Loss': 0.017767017308090414, 'Loss_POI': [0.010444541461765766, 0.0]}
+INFO:root:EP16_train, avg_loss=0.017743
+INFO:root:dev=(HR@10:0.2283,HR@5:0.1687,NDCG@10:0.1389,NDCG@5:0.1196) 
+INFO:root:test=(HR@10:0.2135,HR@5:0.1639,NDCG@10:0.1374,NDCG@5:0.1213) 
+INFO:root:{'epoch': 17, 'iter': '[0/1213]', 'Avg_Loss': 0.026846349239349365, 'Loss_POI': [0.026846349239349365, 0.0]}
+INFO:root:{'epoch': 17, 'iter': '[500/1213]', 'Avg_Loss': 0.016864705854049044, 'Loss_POI': [0.0161115862429142, 0.0]}
+INFO:root:{'epoch': 17, 'iter': '[1000/1213]', 'Avg_Loss': 0.01713861252453837, 'Loss_POI': [0.014911535196006298, 0.0]}
+INFO:root:EP17_train, avg_loss=0.017139
+INFO:root:dev=(HR@10:0.2275,HR@5:0.1711,NDCG@10:0.1393,NDCG@5:0.1211) 
+INFO:root:test=(HR@10:0.2143,HR@5:0.1653,NDCG@10:0.1391,NDCG@5:0.1233) 
+INFO:root:{'epoch': 18, 'iter': '[0/1213]', 'Avg_Loss': 0.008340105414390564, 'Loss_POI': [0.008340105414390564, 0.0]}
+INFO:root:{'epoch': 18, 'iter': '[500/1213]', 'Avg_Loss': 0.016434855442196725, 'Loss_POI': [0.014082079753279686, 0.0]}
+INFO:root:{'epoch': 18, 'iter': '[1000/1213]', 'Avg_Loss': 0.016149078550693634, 'Loss_POI': [0.021076444536447525, 0.0]}
+INFO:root:EP18_train, avg_loss=0.016116
+INFO:root:dev=(HR@10:0.2284,HR@5:0.1690,NDCG@10:0.1399,NDCG@5:0.1208) 
+INFO:root:test=(HR@10:0.2139,HR@5:0.1618,NDCG@10:0.1375,NDCG@5:0.1207) 
+INFO:root:{'epoch': 19, 'iter': '[0/1213]', 'Avg_Loss': 0.02334398403763771, 'Loss_POI': [0.02334398403763771, 0.0]}
+INFO:root:{'epoch': 19, 'iter': '[500/1213]', 'Avg_Loss': 0.01656445363971466, 'Loss_POI': [0.010438041761517525, 0.0]}
+INFO:root:{'epoch': 19, 'iter': '[1000/1213]', 'Avg_Loss': 0.0159866884308909, 'Loss_POI': [0.006752807646989822, 0.0]}
+INFO:root:EP19_train, avg_loss=0.016134
+INFO:root:dev=(HR@10:0.2239,HR@5:0.1675,NDCG@10:0.1376,NDCG@5:0.1193) 
+INFO:root:test=(HR@10:0.2136,HR@5:0.1643,NDCG@10:0.1380,NDCG@5:0.1221) 
+INFO:root:{'epoch': 20, 'iter': '[0/1213]', 'Avg_Loss': 0.015856508165597916, 'Loss_POI': [0.015856508165597916, 0.0]}
+INFO:root:{'epoch': 20, 'iter': '[500/1213]', 'Avg_Loss': 0.015378409678752194, 'Loss_POI': [0.010228842496871948, 0.0]}
+INFO:root:{'epoch': 20, 'iter': '[1000/1213]', 'Avg_Loss': 0.01514929759927414, 'Loss_POI': [0.010236367583274841, 0.0]}
+INFO:root:EP20_train, avg_loss=0.015215
+INFO:root:dev=(HR@10:0.2252,HR@5:0.1696,NDCG@10:0.1372,NDCG@5:0.1193) 
+INFO:root:test=(HR@10:0.2135,HR@5:0.1622,NDCG@10:0.1377,NDCG@5:0.1212) 
+INFO:root:{'epoch': 21, 'iter': '[0/1213]', 'Avg_Loss': 0.013888114131987095, 'Loss_POI': [0.013888114131987095, 0.0]}
+INFO:root:{'epoch': 21, 'iter': '[500/1213]', 'Avg_Loss': 0.015408211446250092, 'Loss_POI': [0.013535309582948685, 0.0]}
+INFO:root:{'epoch': 21, 'iter': '[1000/1213]', 'Avg_Loss': 0.015151177343868694, 'Loss_POI': [0.01901969313621521, 0.0]}
+INFO:root:EP21_train, avg_loss=0.015173
+INFO:root:dev=(HR@10:0.2246,HR@5:0.1679,NDCG@10:0.1381,NDCG@5:0.1197) 
+INFO:root:test=(HR@10:0.2090,HR@5:0.1644,NDCG@10:0.1362,NDCG@5:0.1218) 
+INFO:root:{'epoch': 22, 'iter': '[0/1213]', 'Avg_Loss': 0.029812714084982872, 'Loss_POI': [0.029812714084982872, 0.0]}
+INFO:root:{'epoch': 22, 'iter': '[500/1213]', 'Avg_Loss': 0.015357059514440016, 'Loss_POI': [0.005035210866481066, 0.0]}
+INFO:root:{'epoch': 22, 'iter': '[1000/1213]', 'Avg_Loss': 0.014882423615615283, 'Loss_POI': [0.011492373421788216, 0.0]}
+INFO:root:EP22_train, avg_loss=0.014931
+INFO:root:dev=(HR@10:0.2278,HR@5:0.1703,NDCG@10:0.1396,NDCG@5:0.1210) 
+INFO:root:test=(HR@10:0.2198,HR@5:0.1699,NDCG@10:0.1414,NDCG@5:0.1253) 
+INFO:root:{'epoch': 23, 'iter': '[0/1213]', 'Avg_Loss': 0.017246298491954803, 'Loss_POI': [0.017246298491954803, 0.0]}
+INFO:root:{'epoch': 23, 'iter': '[500/1213]', 'Avg_Loss': 0.013727988012343229, 'Loss_POI': [0.009301533922553062, 0.0]}
+INFO:root:{'epoch': 23, 'iter': '[1000/1213]', 'Avg_Loss': 0.01388051425321744, 'Loss_POI': [0.016871897503733635, 0.0]}
+INFO:root:EP23_train, avg_loss=0.013920
+INFO:root:dev=(HR@10:0.2311,HR@5:0.1702,NDCG@10:0.1407,NDCG@5:0.1212) 
+INFO:root:test=(HR@10:0.2216,HR@5:0.1690,NDCG@10:0.1432,NDCG@5:0.1262) 
+INFO:root:{'epoch': 24, 'iter': '[0/1213]', 'Avg_Loss': 0.012722281739115715, 'Loss_POI': [0.012722281739115715, 0.0]}
+INFO:root:{'epoch': 24, 'iter': '[500/1213]', 'Avg_Loss': 0.014398271895985968, 'Loss_POI': [0.007779100444167852, 0.0]}
+INFO:root:{'epoch': 24, 'iter': '[1000/1213]', 'Avg_Loss': 0.01406591185661671, 'Loss_POI': [0.007017511874437332, 0.0]}
+INFO:root:EP24_train, avg_loss=0.013969
+INFO:root:dev=(HR@10:0.2248,HR@5:0.1724,NDCG@10:0.1377,NDCG@5:0.1209) 
+INFO:root:test=(HR@10:0.2146,HR@5:0.1642,NDCG@10:0.1385,NDCG@5:0.1222) 
+INFO:root:{'epoch': 25, 'iter': '[0/1213]', 'Avg_Loss': 0.007044432684779167, 'Loss_POI': [0.007044432684779167, 0.0]}
+INFO:root:{'epoch': 25, 'iter': '[500/1213]', 'Avg_Loss': 0.013879884589285015, 'Loss_POI': [0.010684735141694546, 0.0]}
+INFO:root:{'epoch': 25, 'iter': '[1000/1213]', 'Avg_Loss': 0.013764842860419284, 'Loss_POI': [0.008438125252723694, 0.0]}
+INFO:root:EP25_train, avg_loss=0.013842
+INFO:root:dev=(HR@10:0.2266,HR@5:0.1708,NDCG@10:0.1384,NDCG@5:0.1204) 
+INFO:root:test=(HR@10:0.2183,HR@5:0.1643,NDCG@10:0.1395,NDCG@5:0.1221) 
+INFO:root:{'epoch': 26, 'iter': '[0/1213]', 'Avg_Loss': 0.009769771248102188, 'Loss_POI': [0.009769771248102188, 0.0]}
+INFO:root:{'epoch': 26, 'iter': '[500/1213]', 'Avg_Loss': 0.01339366637214929, 'Loss_POI': [0.008100918494164944, 0.0]}
+INFO:root:{'epoch': 26, 'iter': '[1000/1213]', 'Avg_Loss': 0.013389595252992985, 'Loss_POI': [0.01451190561056137, 0.0]}
+INFO:root:EP26_train, avg_loss=0.013412
+INFO:root:dev=(HR@10:0.2287,HR@5:0.1702,NDCG@10:0.1381,NDCG@5:0.1192) 
+INFO:root:test=(HR@10:0.2159,HR@5:0.1626,NDCG@10:0.1370,NDCG@5:0.1197) 
+INFO:root:{'epoch': 27, 'iter': '[0/1213]', 'Avg_Loss': 0.012260302901268005, 'Loss_POI': [0.012260302901268005, 0.0]}
+INFO:root:{'epoch': 27, 'iter': '[500/1213]', 'Avg_Loss': 0.012664062799160887, 'Loss_POI': [0.011293725110590458, 0.0]}
+INFO:root:{'epoch': 27, 'iter': '[1000/1213]', 'Avg_Loss': 0.012883699425569661, 'Loss_POI': [0.007485748268663883, 0.0]}
+INFO:root:EP27_train, avg_loss=0.012842
+INFO:root:dev=(HR@10:0.2260,HR@5:0.1694,NDCG@10:0.1371,NDCG@5:0.1190) 
+INFO:root:test=(HR@10:0.2142,HR@5:0.1636,NDCG@10:0.1371,NDCG@5:0.1208) 
+INFO:root:{'epoch': 28, 'iter': '[0/1213]', 'Avg_Loss': 0.014876727014780045, 'Loss_POI': [0.014876727014780045, 0.0]}
+INFO:root:{'epoch': 28, 'iter': '[500/1213]', 'Avg_Loss': 0.013526207126097051, 'Loss_POI': [0.02035757154226303, 0.0]}
+INFO:root:{'epoch': 28, 'iter': '[1000/1213]', 'Avg_Loss': 0.013282599447590004, 'Loss_POI': [0.0038344794884324074, 0.0]}
+INFO:root:EP28_train, avg_loss=0.013274
+INFO:root:dev=(HR@10:0.2263,HR@5:0.1709,NDCG@10:0.1373,NDCG@5:0.1194) 
+INFO:root:test=(HR@10:0.2132,HR@5:0.1607,NDCG@10:0.1357,NDCG@5:0.1188) 
+INFO:root:{'epoch': 29, 'iter': '[0/1213]', 'Avg_Loss': 0.0037448517978191376, 'Loss_POI': [0.0037448517978191376, 0.0]}
+INFO:root:{'epoch': 29, 'iter': '[500/1213]', 'Avg_Loss': 0.013521825134412139, 'Loss_POI': [0.011117875576019287, 0.0]}
+INFO:root:{'epoch': 29, 'iter': '[1000/1213]', 'Avg_Loss': 0.013156178387135014, 'Loss_POI': [0.012945713475346565, 0.0]}
+INFO:root:EP29_train, avg_loss=0.013048
+INFO:root:dev=(HR@10:0.2268,HR@5:0.1690,NDCG@10:0.1375,NDCG@5:0.1188) 
+INFO:root:test=(HR@10:0.2073,HR@5:0.1587,NDCG@10:0.1328,NDCG@5:0.1171) 
+INFO:root:{'epoch': 30, 'iter': '[0/1213]', 'Avg_Loss': 0.01349107176065445, 'Loss_POI': [0.01349107176065445, 0.0]}
+INFO:root:{'epoch': 30, 'iter': '[500/1213]', 'Avg_Loss': 0.012542775384115126, 'Loss_POI': [0.010681756772100925, 0.0]}
+INFO:root:{'epoch': 30, 'iter': '[1000/1213]', 'Avg_Loss': 0.012974993503009612, 'Loss_POI': [0.01572548598051071, 0.0]}
+INFO:root:EP30_train, avg_loss=0.012971
+INFO:root:dev=(HR@10:0.2260,HR@5:0.1703,NDCG@10:0.1376,NDCG@5:0.1196) 
+INFO:root:test=(HR@10:0.2151,HR@5:0.1637,NDCG@10:0.1368,NDCG@5:0.1203) 
+INFO:root:{'epoch': 31, 'iter': '[0/1213]', 'Avg_Loss': 0.006188182160258293, 'Loss_POI': [0.006188182160258293, 0.0]}

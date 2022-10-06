@@ -1,0 +1,1 @@
+python pretrain.py -c GowallaLoc1_GowallaLoc2 --cuda_devices 0 -lt Pairwise --lambda1 0.5 --seed 2020 -b 256 -n PretrainModel_r2020_cateattentionPOIv2.pkl

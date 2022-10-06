@@ -1,0 +1,1386 @@
+INFO:root:Namespace(Drop=0, adam_beta1=0.9, adam_beta2=0.999, adam_weight_decay=0.0, batch_size=256, corpus_lines=None, cuda_devices='0', datasets='GowallaLoc1_GowallaLoc2', dropout=0.1, epochs=50, hidden=64, lambda1=0.5, log_freq=500, loss_type='Pairwise', lr=0.0001, model_name='PretrainModel_r2021_cateattentionPOIv2.pkl', num_workers=0, on_memory=False, output_path='output/COM_GowallaLoc1_GowallaLoc2/', seed=2021, seq_len=20, test_dataset='data/COM_GowallaLoc1_GowallaLoc2/test_corpus.COM_GowallaLoc1_GowallaLoc2', train_dataset='data/COM_GowallaLoc1_GowallaLoc2/corpus.COM_GowallaLoc1_GowallaLoc2', vocab_path='data/COM_GowallaLoc1_GowallaLoc2/vocab.COM_GowallaLoc1_GowallaLoc2', with_cuda=True)
+INFO:root:Vocab Size: 56360
+INFO:root:Total Parameters:3870208
+INFO:root:test=(HR@10:0.1822,HR@5:0.1243,NDCG@10:0.1113,NDCG@5:0.0927) 
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.677245020866394, 'Loss_CAT': 0.677245020866394}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.4591801731053465, 'Loss_CAT': 0.3381249010562897}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.3913783128564055, 'Loss_CAT': 0.3029446005821228}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.3613923017399697, 'Loss_CAT': 0.2754225730895996}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.3444086232225875, 'Loss_CAT': 0.24723263084888458}
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.7266792058944702, 'Loss_POI1': 0.7264269590377808, 'Loss_POI2': 0.7269314527511597}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.6662265481111295, 'Loss_POI1': 0.6113505363464355, 'Loss_POI2': 0.6129685640335083}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.6324047278929186, 'Loss_POI1': 0.5875177383422852, 'Loss_POI2': 0.5876774191856384}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.6080085556559528, 'Loss_POI1': 0.5922281742095947, 'Loss_POI2': 0.5960325002670288}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.5903655543945718, 'Loss_POI1': 0.4768677353858948, 'Loss_POI2': 0.47848719358444214}
+INFO:root:EP0_train, avg_loss=0.580462
+INFO:root:EP:0 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep0
+INFO:root:test=(HR@10:0.6846,HR@5:0.5708,NDCG@10:0.4791,NDCG@5:0.4423) 
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.24509941041469574, 'Loss_CAT': 0.24509941041469574}
+INFO:root:{'epoch': 1, 'iter': '[500/2324]', 'Avg_Loss': 0.268003484356903, 'Loss_CAT': 0.2936268448829651}
+INFO:root:{'epoch': 1, 'iter': '[1000/2324]', 'Avg_Loss': 0.2633521329243105, 'Loss_CAT': 0.22077804803848267}
+INFO:root:{'epoch': 1, 'iter': '[1500/2324]', 'Avg_Loss': 0.2599167902317943, 'Loss_CAT': 0.23720631003379822}
+INFO:root:{'epoch': 1, 'iter': '[2000/2324]', 'Avg_Loss': 0.25637986956686454, 'Loss_CAT': 0.25015944242477417}
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.4854978919029236, 'Loss_POI1': 0.48290717601776123, 'Loss_POI2': 0.48808857798576355}
+INFO:root:{'epoch': 1, 'iter': '[500/2324]', 'Avg_Loss': 0.47233793692674464, 'Loss_POI1': 0.4417499303817749, 'Loss_POI2': 0.4458087384700775}
+INFO:root:{'epoch': 1, 'iter': '[1000/2324]', 'Avg_Loss': 0.46630125856780624, 'Loss_POI1': 0.4585818946361542, 'Loss_POI2': 0.4705541729927063}
+INFO:root:{'epoch': 1, 'iter': '[1500/2324]', 'Avg_Loss': 0.45911320190204136, 'Loss_POI1': 0.439405620098114, 'Loss_POI2': 0.45088422298431396}
+INFO:root:{'epoch': 1, 'iter': '[2000/2324]', 'Avg_Loss': 0.45373208483477223, 'Loss_POI1': 0.40954285860061646, 'Loss_POI2': 0.4218430519104004}
+INFO:root:EP1_train, avg_loss=0.450015
+INFO:root:EP:1 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep1
+INFO:root:test=(HR@10:0.7338,HR@5:0.6222,NDCG@10:0.5244,NDCG@5:0.4881) 
+INFO:root:{'epoch': 2, 'iter': '[0/2324]', 'Avg_Loss': 0.261654257774353, 'Loss_CAT': 0.261654257774353}
+INFO:root:{'epoch': 2, 'iter': '[500/2324]', 'Avg_Loss': 0.23709500653896026, 'Loss_CAT': 0.23723463714122772}
+INFO:root:{'epoch': 2, 'iter': '[1000/2324]', 'Avg_Loss': 0.23429316504077835, 'Loss_CAT': 0.2394951432943344}
+INFO:root:{'epoch': 2, 'iter': '[1500/2324]', 'Avg_Loss': 0.23279173966052927, 'Loss_CAT': 0.258415162563324}
+INFO:root:{'epoch': 2, 'iter': '[2000/2324]', 'Avg_Loss': 0.23127849138658801, 'Loss_CAT': 0.20357488095760345}
+INFO:root:{'epoch': 2, 'iter': '[0/2324]', 'Avg_Loss': 0.39177024364471436, 'Loss_POI1': 0.38150885701179504, 'Loss_POI2': 0.40203163027763367}
+INFO:root:{'epoch': 2, 'iter': '[500/2324]', 'Avg_Loss': 0.3797228140031506, 'Loss_POI1': 0.3946826159954071, 'Loss_POI2': 0.4073227047920227}
+INFO:root:{'epoch': 2, 'iter': '[1000/2324]', 'Avg_Loss': 0.3732545246313383, 'Loss_POI1': 0.42677581310272217, 'Loss_POI2': 0.43597179651260376}
+INFO:root:{'epoch': 2, 'iter': '[1500/2324]', 'Avg_Loss': 0.3689830470172506, 'Loss_POI1': 0.3154178261756897, 'Loss_POI2': 0.32552802562713623}
+INFO:root:{'epoch': 2, 'iter': '[2000/2324]', 'Avg_Loss': 0.3641982494980499, 'Loss_POI1': 0.2925921678543091, 'Loss_POI2': 0.3145575523376465}
+INFO:root:EP2_train, avg_loss=0.361064
+INFO:root:EP:2 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep2
+INFO:root:test=(HR@10:0.7716,HR@5:0.6659,NDCG@10:0.5630,NDCG@5:0.5287) 
+INFO:root:{'epoch': 3, 'iter': '[0/2324]', 'Avg_Loss': 0.2804720401763916, 'Loss_CAT': 0.2804720401763916}
+INFO:root:{'epoch': 3, 'iter': '[500/2324]', 'Avg_Loss': 0.2222552467546539, 'Loss_CAT': 0.17638400197029114}
+INFO:root:{'epoch': 3, 'iter': '[1000/2324]', 'Avg_Loss': 0.21963762528412825, 'Loss_CAT': 0.2051619440317154}
+INFO:root:{'epoch': 3, 'iter': '[1500/2324]', 'Avg_Loss': 0.21838307149365774, 'Loss_CAT': 0.16125334799289703}
+INFO:root:{'epoch': 3, 'iter': '[2000/2324]', 'Avg_Loss': 0.2174575521700505, 'Loss_CAT': 0.23475784063339233}
+INFO:root:{'epoch': 3, 'iter': '[0/2324]', 'Avg_Loss': 0.29993337392807007, 'Loss_POI1': 0.2904239892959595, 'Loss_POI2': 0.3094427287578583}
+INFO:root:{'epoch': 3, 'iter': '[500/2324]', 'Avg_Loss': 0.3045922307792062, 'Loss_POI1': 0.3551778793334961, 'Loss_POI2': 0.3783085346221924}
+INFO:root:{'epoch': 3, 'iter': '[1000/2324]', 'Avg_Loss': 0.29982310816362784, 'Loss_POI1': 0.31894344091415405, 'Loss_POI2': 0.34682145714759827}
+INFO:root:{'epoch': 3, 'iter': '[1500/2324]', 'Avg_Loss': 0.29537672393128206, 'Loss_POI1': 0.25938138365745544, 'Loss_POI2': 0.26995348930358887}
+INFO:root:{'epoch': 3, 'iter': '[2000/2324]', 'Avg_Loss': 0.29255120193344664, 'Loss_POI1': 0.2576588988304138, 'Loss_POI2': 0.27456361055374146}
+INFO:root:EP3_train, avg_loss=0.290303
+INFO:root:EP:3 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep3
+INFO:root:test=(HR@10:0.7883,HR@5:0.6938,NDCG@10:0.5889,NDCG@5:0.5581) 
+INFO:root:{'epoch': 4, 'iter': '[0/2324]', 'Avg_Loss': 0.2184046506881714, 'Loss_CAT': 0.2184046506881714}
+INFO:root:{'epoch': 4, 'iter': '[500/2324]', 'Avg_Loss': 0.21036089632563487, 'Loss_CAT': 0.21782372891902924}
+INFO:root:{'epoch': 4, 'iter': '[1000/2324]', 'Avg_Loss': 0.20992705133649614, 'Loss_CAT': 0.19736476242542267}
+INFO:root:{'epoch': 4, 'iter': '[1500/2324]', 'Avg_Loss': 0.20945089705025333, 'Loss_CAT': 0.1906050592660904}
+INFO:root:{'epoch': 4, 'iter': '[2000/2324]', 'Avg_Loss': 0.20923605167317663, 'Loss_CAT': 0.20578399300575256}
+INFO:root:{'epoch': 4, 'iter': '[0/2324]', 'Avg_Loss': 0.2678254246711731, 'Loss_POI1': 0.2582145929336548, 'Loss_POI2': 0.277436226606369}
+INFO:root:{'epoch': 4, 'iter': '[500/2324]', 'Avg_Loss': 0.24495379397731104, 'Loss_POI1': 0.2942640483379364, 'Loss_POI2': 0.3157253861427307}
+INFO:root:{'epoch': 4, 'iter': '[1000/2324]', 'Avg_Loss': 0.2431761570178069, 'Loss_POI1': 0.21186016499996185, 'Loss_POI2': 0.24579936265945435}
+INFO:root:{'epoch': 4, 'iter': '[1500/2324]', 'Avg_Loss': 0.24037585147891657, 'Loss_POI1': 0.22473083436489105, 'Loss_POI2': 0.2612428367137909}
+INFO:root:{'epoch': 4, 'iter': '[2000/2324]', 'Avg_Loss': 0.2382179387788782, 'Loss_POI1': 0.19583138823509216, 'Loss_POI2': 0.21364083886146545}
+INFO:root:EP4_train, avg_loss=0.236683
+INFO:root:EP:4 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep4
+INFO:root:test=(HR@10:0.8024,HR@5:0.7125,NDCG@10:0.6100,NDCG@5:0.5808) 
+INFO:root:{'epoch': 5, 'iter': '[0/2324]', 'Avg_Loss': 0.17260032892227173, 'Loss_CAT': 0.17260032892227173}
+INFO:root:{'epoch': 5, 'iter': '[500/2324]', 'Avg_Loss': 0.204491723886507, 'Loss_CAT': 0.17671391367912292}
+INFO:root:{'epoch': 5, 'iter': '[1000/2324]', 'Avg_Loss': 0.20493652392457892, 'Loss_CAT': 0.20045700669288635}
+INFO:root:{'epoch': 5, 'iter': '[1500/2324]', 'Avg_Loss': 0.20504286538792166, 'Loss_CAT': 0.22435490787029266}
+INFO:root:{'epoch': 5, 'iter': '[2000/2324]', 'Avg_Loss': 0.20457754446112592, 'Loss_CAT': 0.19770142436027527}
+INFO:root:{'epoch': 5, 'iter': '[0/2324]', 'Avg_Loss': 0.2177066206932068, 'Loss_POI1': 0.20253363251686096, 'Loss_POI2': 0.2328796088695526}
+INFO:root:{'epoch': 5, 'iter': '[500/2324]', 'Avg_Loss': 0.20133264826800296, 'Loss_POI1': 0.17118889093399048, 'Loss_POI2': 0.19922882318496704}
+INFO:root:{'epoch': 5, 'iter': '[1000/2324]', 'Avg_Loss': 0.19931495247723222, 'Loss_POI1': 0.16065412759780884, 'Loss_POI2': 0.18933168053627014}
+INFO:root:{'epoch': 5, 'iter': '[1500/2324]', 'Avg_Loss': 0.19755764247019397, 'Loss_POI1': 0.2048071026802063, 'Loss_POI2': 0.22641116380691528}
+INFO:root:{'epoch': 5, 'iter': '[2000/2324]', 'Avg_Loss': 0.19623180565939494, 'Loss_POI1': 0.1507517695426941, 'Loss_POI2': 0.17627519369125366}
+INFO:root:EP5_train, avg_loss=0.194941
+INFO:root:EP:5 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep5
+INFO:root:test=(HR@10:0.8095,HR@5:0.7233,NDCG@10:0.6243,NDCG@5:0.5963) 
+INFO:root:{'epoch': 6, 'iter': '[0/2324]', 'Avg_Loss': 0.23261815309524536, 'Loss_CAT': 0.23261815309524536}
+INFO:root:{'epoch': 6, 'iter': '[500/2324]', 'Avg_Loss': 0.20438979893268464, 'Loss_CAT': 0.19698773324489594}
+INFO:root:{'epoch': 6, 'iter': '[1000/2324]', 'Avg_Loss': 0.20320869712801007, 'Loss_CAT': 0.2038532942533493}
+INFO:root:{'epoch': 6, 'iter': '[1500/2324]', 'Avg_Loss': 0.20272700329231153, 'Loss_CAT': 0.17931967973709106}
+INFO:root:{'epoch': 6, 'iter': '[2000/2324]', 'Avg_Loss': 0.20218963803782097, 'Loss_CAT': 0.17710065841674805}
+INFO:root:{'epoch': 6, 'iter': '[0/2324]', 'Avg_Loss': 0.16243675351142883, 'Loss_POI1': 0.14879664778709412, 'Loss_POI2': 0.17607685923576355}
+INFO:root:{'epoch': 6, 'iter': '[500/2324]', 'Avg_Loss': 0.16820834440266538, 'Loss_POI1': 0.157514750957489, 'Loss_POI2': 0.18820534646511078}
+INFO:root:{'epoch': 6, 'iter': '[1000/2324]', 'Avg_Loss': 0.16710919373995298, 'Loss_POI1': 0.19217649102210999, 'Loss_POI2': 0.20346485078334808}
+INFO:root:{'epoch': 6, 'iter': '[1500/2324]', 'Avg_Loss': 0.1657326100350697, 'Loss_POI1': 0.11329400539398193, 'Loss_POI2': 0.14746882021427155}
+INFO:root:{'epoch': 6, 'iter': '[2000/2324]', 'Avg_Loss': 0.16449511261924035, 'Loss_POI1': 0.15947288274765015, 'Loss_POI2': 0.18654629588127136}
+INFO:root:EP6_train, avg_loss=0.164189
+INFO:root:EP:6 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep6
+INFO:root:test=(HR@10:0.8156,HR@5:0.7292,NDCG@10:0.6293,NDCG@5:0.6012) 
+INFO:root:{'epoch': 7, 'iter': '[0/2324]', 'Avg_Loss': 0.2017728090286255, 'Loss_CAT': 0.2017728090286255}
+INFO:root:{'epoch': 7, 'iter': '[500/2324]', 'Avg_Loss': 0.19865697916753278, 'Loss_CAT': 0.16149865090847015}
+INFO:root:{'epoch': 7, 'iter': '[1000/2324]', 'Avg_Loss': 0.1989495409624679, 'Loss_CAT': 0.18640156090259552}
+INFO:root:{'epoch': 7, 'iter': '[1500/2324]', 'Avg_Loss': 0.1990885124414623, 'Loss_CAT': 0.19600793719291687}
+INFO:root:{'epoch': 7, 'iter': '[2000/2324]', 'Avg_Loss': 0.19912795435408245, 'Loss_CAT': 0.21576139330863953}
+INFO:root:{'epoch': 7, 'iter': '[0/2324]', 'Avg_Loss': 0.20476308465003967, 'Loss_POI1': 0.18353046476840973, 'Loss_POI2': 0.2259957194328308}
+INFO:root:{'epoch': 7, 'iter': '[500/2324]', 'Avg_Loss': 0.14320842773019674, 'Loss_POI1': 0.1381392776966095, 'Loss_POI2': 0.15452545881271362}
+INFO:root:{'epoch': 7, 'iter': '[1000/2324]', 'Avg_Loss': 0.14193828508897977, 'Loss_POI1': 0.14349821209907532, 'Loss_POI2': 0.17319661378860474}
+INFO:root:{'epoch': 7, 'iter': '[1500/2324]', 'Avg_Loss': 0.14111761848562007, 'Loss_POI1': 0.1463237702846527, 'Loss_POI2': 0.15789833664894104}
+INFO:root:{'epoch': 7, 'iter': '[2000/2324]', 'Avg_Loss': 0.14005188993189943, 'Loss_POI1': 0.10940811038017273, 'Loss_POI2': 0.1271059662103653}
+INFO:root:EP7_train, avg_loss=0.139853
+INFO:root:EP:7 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep7
+INFO:root:test=(HR@10:0.8230,HR@5:0.7405,NDCG@10:0.6385,NDCG@5:0.6118) 
+INFO:root:{'epoch': 8, 'iter': '[0/2324]', 'Avg_Loss': 0.19872763752937317, 'Loss_CAT': 0.19872763752937317}
+INFO:root:{'epoch': 8, 'iter': '[500/2324]', 'Avg_Loss': 0.1959767422216857, 'Loss_CAT': 0.16849589347839355}
+INFO:root:{'epoch': 8, 'iter': '[1000/2324]', 'Avg_Loss': 0.19665447729718794, 'Loss_CAT': 0.1553211212158203}
+INFO:root:{'epoch': 8, 'iter': '[1500/2324]', 'Avg_Loss': 0.19662881642580032, 'Loss_CAT': 0.1501656174659729}
+INFO:root:{'epoch': 8, 'iter': '[2000/2324]', 'Avg_Loss': 0.19667415763961263, 'Loss_CAT': 0.2153858244419098}
+INFO:root:{'epoch': 8, 'iter': '[0/2324]', 'Avg_Loss': 0.14226412773132324, 'Loss_POI1': 0.12450014054775238, 'Loss_POI2': 0.1600281298160553}
+INFO:root:{'epoch': 8, 'iter': '[500/2324]', 'Avg_Loss': 0.1226730020549483, 'Loss_POI1': 0.10202040523290634, 'Loss_POI2': 0.11828258633613586}
+INFO:root:{'epoch': 8, 'iter': '[1000/2324]', 'Avg_Loss': 0.12202990486041887, 'Loss_POI1': 0.13381168246269226, 'Loss_POI2': 0.16049721837043762}
+INFO:root:{'epoch': 8, 'iter': '[1500/2324]', 'Avg_Loss': 0.1211947960447741, 'Loss_POI1': 0.08867807686328888, 'Loss_POI2': 0.11548534035682678}
+INFO:root:{'epoch': 8, 'iter': '[2000/2324]', 'Avg_Loss': 0.12074468453144324, 'Loss_POI1': 0.10307218879461288, 'Loss_POI2': 0.13703051209449768}
+INFO:root:EP8_train, avg_loss=0.120441
+INFO:root:EP:8 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep8
+INFO:root:test=(HR@10:0.8215,HR@5:0.7428,NDCG@10:0.6401,NDCG@5:0.6145) 
+INFO:root:{'epoch': 9, 'iter': '[0/2324]', 'Avg_Loss': 0.16714486479759216, 'Loss_CAT': 0.16714486479759216}
+INFO:root:{'epoch': 9, 'iter': '[500/2324]', 'Avg_Loss': 0.19380637713356647, 'Loss_CAT': 0.17136386036872864}
+INFO:root:{'epoch': 9, 'iter': '[1000/2324]', 'Avg_Loss': 0.19454056486770227, 'Loss_CAT': 0.270418643951416}
+INFO:root:{'epoch': 9, 'iter': '[1500/2324]', 'Avg_Loss': 0.19475579552158842, 'Loss_CAT': 0.16293266415596008}
+INFO:root:{'epoch': 9, 'iter': '[2000/2324]', 'Avg_Loss': 0.19494481356828466, 'Loss_CAT': 0.1728554517030716}
+INFO:root:{'epoch': 9, 'iter': '[0/2324]', 'Avg_Loss': 0.09449799358844757, 'Loss_POI1': 0.08286308497190475, 'Loss_POI2': 0.10613290965557098}
+INFO:root:{'epoch': 9, 'iter': '[500/2324]', 'Avg_Loss': 0.10845850332233006, 'Loss_POI1': 0.08477222919464111, 'Loss_POI2': 0.11538831889629364}
+INFO:root:{'epoch': 9, 'iter': '[1000/2324]', 'Avg_Loss': 0.10719210124173603, 'Loss_POI1': 0.07610686123371124, 'Loss_POI2': 0.0997123122215271}
+INFO:root:{'epoch': 9, 'iter': '[1500/2324]', 'Avg_Loss': 0.10664935342763997, 'Loss_POI1': 0.05139151215553284, 'Loss_POI2': 0.07014055550098419}
+INFO:root:{'epoch': 9, 'iter': '[2000/2324]', 'Avg_Loss': 0.10664552417413882, 'Loss_POI1': 0.0633729100227356, 'Loss_POI2': 0.09111689031124115}
+INFO:root:EP9_train, avg_loss=0.106716
+INFO:root:EP:9 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep9
+INFO:root:test=(HR@10:0.8223,HR@5:0.7395,NDCG@10:0.6437,NDCG@5:0.6167) 
+INFO:root:{'epoch': 10, 'iter': '[0/2324]', 'Avg_Loss': 0.1899082511663437, 'Loss_CAT': 0.1899082511663437}
+INFO:root:{'epoch': 10, 'iter': '[500/2324]', 'Avg_Loss': 0.19385547974628364, 'Loss_CAT': 0.20649214088916779}
+INFO:root:{'epoch': 10, 'iter': '[1000/2324]', 'Avg_Loss': 0.19414993483465273, 'Loss_CAT': 0.19443434476852417}
+INFO:root:{'epoch': 10, 'iter': '[1500/2324]', 'Avg_Loss': 0.19425132030808553, 'Loss_CAT': 0.20397967100143433}
+INFO:root:{'epoch': 10, 'iter': '[2000/2324]', 'Avg_Loss': 0.19465595173618305, 'Loss_CAT': 0.1868819147348404}
+INFO:root:{'epoch': 10, 'iter': '[0/2324]', 'Avg_Loss': 0.09902128577232361, 'Loss_POI1': 0.09001291543245316, 'Loss_POI2': 0.10802966356277466}
+INFO:root:{'epoch': 10, 'iter': '[500/2324]', 'Avg_Loss': 0.09465797198657504, 'Loss_POI1': 0.07074040174484253, 'Loss_POI2': 0.09257186949253082}
+INFO:root:{'epoch': 10, 'iter': '[1000/2324]', 'Avg_Loss': 0.09473089407850337, 'Loss_POI1': 0.07965068519115448, 'Loss_POI2': 0.09055891633033752}
+INFO:root:{'epoch': 10, 'iter': '[1500/2324]', 'Avg_Loss': 0.09468487364740709, 'Loss_POI1': 0.062015727162361145, 'Loss_POI2': 0.07710263133049011}
+INFO:root:{'epoch': 10, 'iter': '[2000/2324]', 'Avg_Loss': 0.09481761092389898, 'Loss_POI1': 0.10275745391845703, 'Loss_POI2': 0.13146817684173584}
+INFO:root:EP10_train, avg_loss=0.094764
+INFO:root:EP:10 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep10
+INFO:root:test=(HR@10:0.8243,HR@5:0.7417,NDCG@10:0.6465,NDCG@5:0.6197) 
+INFO:root:{'epoch': 11, 'iter': '[0/2324]', 'Avg_Loss': 0.14305050671100616, 'Loss_CAT': 0.14305050671100616}
+INFO:root:{'epoch': 11, 'iter': '[500/2324]', 'Avg_Loss': 0.1930802641603761, 'Loss_CAT': 0.18050357699394226}
+INFO:root:{'epoch': 11, 'iter': '[1000/2324]', 'Avg_Loss': 0.1935540887487161, 'Loss_CAT': 0.21715757250785828}
+INFO:root:{'epoch': 11, 'iter': '[1500/2324]', 'Avg_Loss': 0.19356970762031067, 'Loss_CAT': 0.20280113816261292}
+INFO:root:{'epoch': 11, 'iter': '[2000/2324]', 'Avg_Loss': 0.19359156061177965, 'Loss_CAT': 0.21373465657234192}
+INFO:root:{'epoch': 11, 'iter': '[0/2324]', 'Avg_Loss': 0.09249378740787506, 'Loss_POI1': 0.07154437154531479, 'Loss_POI2': 0.11344319581985474}
+INFO:root:{'epoch': 11, 'iter': '[500/2324]', 'Avg_Loss': 0.08635607007110191, 'Loss_POI1': 0.06945644319057465, 'Loss_POI2': 0.09888909012079239}
+INFO:root:{'epoch': 11, 'iter': '[1000/2324]', 'Avg_Loss': 0.08575020128717789, 'Loss_POI1': 0.0894773006439209, 'Loss_POI2': 0.1030263900756836}
+INFO:root:{'epoch': 11, 'iter': '[1500/2324]', 'Avg_Loss': 0.08555770422431884, 'Loss_POI1': 0.0780409574508667, 'Loss_POI2': 0.09468810260295868}
+INFO:root:{'epoch': 11, 'iter': '[2000/2324]', 'Avg_Loss': 0.08528301198554897, 'Loss_POI1': 0.0665103867650032, 'Loss_POI2': 0.09108266979455948}
+INFO:root:EP11_train, avg_loss=0.085101
+INFO:root:EP:11 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep11
+INFO:root:test=(HR@10:0.8267,HR@5:0.7417,NDCG@10:0.6461,NDCG@5:0.6185) 
+INFO:root:{'epoch': 12, 'iter': '[0/2324]', 'Avg_Loss': 0.2073516845703125, 'Loss_CAT': 0.2073516845703125}
+INFO:root:{'epoch': 12, 'iter': '[500/2324]', 'Avg_Loss': 0.19135712328071366, 'Loss_CAT': 0.23436090350151062}
+INFO:root:{'epoch': 12, 'iter': '[1000/2324]', 'Avg_Loss': 0.1932285886023428, 'Loss_CAT': 0.1772535741329193}
+INFO:root:{'epoch': 12, 'iter': '[1500/2324]', 'Avg_Loss': 0.19243277057876276, 'Loss_CAT': 0.19254031777381897}
+INFO:root:{'epoch': 12, 'iter': '[2000/2324]', 'Avg_Loss': 0.19193069441341745, 'Loss_CAT': 0.19717192649841309}
+INFO:root:{'epoch': 12, 'iter': '[0/2324]', 'Avg_Loss': 0.08732673525810242, 'Loss_POI1': 0.07755214720964432, 'Loss_POI2': 0.09710133075714111}
+INFO:root:{'epoch': 12, 'iter': '[500/2324]', 'Avg_Loss': 0.07844879881231609, 'Loss_POI1': 0.04975832998752594, 'Loss_POI2': 0.0663643330335617}
+INFO:root:{'epoch': 12, 'iter': '[1000/2324]', 'Avg_Loss': 0.07795481288528347, 'Loss_POI1': 0.03571946918964386, 'Loss_POI2': 0.06841679662466049}
+INFO:root:{'epoch': 12, 'iter': '[1500/2324]', 'Avg_Loss': 0.07775268194418919, 'Loss_POI1': 0.060001980513334274, 'Loss_POI2': 0.07695141434669495}
+INFO:root:{'epoch': 12, 'iter': '[2000/2324]', 'Avg_Loss': 0.07771061018839114, 'Loss_POI1': 0.08192344009876251, 'Loss_POI2': 0.12699171900749207}
+INFO:root:EP12_train, avg_loss=0.078009
+INFO:root:EP:12 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep12
+INFO:root:test=(HR@10:0.8284,HR@5:0.7443,NDCG@10:0.6501,NDCG@5:0.6226) 
+INFO:root:{'epoch': 13, 'iter': '[0/2324]', 'Avg_Loss': 0.1931469738483429, 'Loss_CAT': 0.1931469738483429}
+INFO:root:{'epoch': 13, 'iter': '[500/2324]', 'Avg_Loss': 0.19274654874425687, 'Loss_CAT': 0.24724355340003967}
+INFO:root:{'epoch': 13, 'iter': '[1000/2324]', 'Avg_Loss': 0.19259225434207775, 'Loss_CAT': 0.1846027970314026}
+INFO:root:{'epoch': 13, 'iter': '[1500/2324]', 'Avg_Loss': 0.19166474102398778, 'Loss_CAT': 0.15563303232192993}
+INFO:root:{'epoch': 13, 'iter': '[2000/2324]', 'Avg_Loss': 0.19131569476469584, 'Loss_CAT': 0.22837242484092712}
+INFO:root:{'epoch': 13, 'iter': '[0/2324]', 'Avg_Loss': 0.06835494935512543, 'Loss_POI1': 0.053295157849788666, 'Loss_POI2': 0.08341474831104279}
+INFO:root:{'epoch': 13, 'iter': '[500/2324]', 'Avg_Loss': 0.07207573042390589, 'Loss_POI1': 0.07806095480918884, 'Loss_POI2': 0.0993439108133316}
+INFO:root:{'epoch': 13, 'iter': '[1000/2324]', 'Avg_Loss': 0.07138411753943988, 'Loss_POI1': 0.11869905889034271, 'Loss_POI2': 0.13263070583343506}
+INFO:root:{'epoch': 13, 'iter': '[1500/2324]', 'Avg_Loss': 0.07130624861428533, 'Loss_POI1': 0.047813791781663895, 'Loss_POI2': 0.05699911713600159}
+INFO:root:{'epoch': 13, 'iter': '[2000/2324]', 'Avg_Loss': 0.07179985786306448, 'Loss_POI1': 0.06939978897571564, 'Loss_POI2': 0.09151776134967804}
+INFO:root:EP13_train, avg_loss=0.071473
+INFO:root:EP:13 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep13
+INFO:root:test=(HR@10:0.8297,HR@5:0.7464,NDCG@10:0.6525,NDCG@5:0.6253) 
+INFO:root:{'epoch': 14, 'iter': '[0/2324]', 'Avg_Loss': 0.21480107307434082, 'Loss_CAT': 0.21480107307434082}
+INFO:root:{'epoch': 14, 'iter': '[500/2324]', 'Avg_Loss': 0.18988476400663276, 'Loss_CAT': 0.1339627206325531}
+INFO:root:{'epoch': 14, 'iter': '[1000/2324]', 'Avg_Loss': 0.18970522187746963, 'Loss_CAT': 0.22346949577331543}
+INFO:root:{'epoch': 14, 'iter': '[1500/2324]', 'Avg_Loss': 0.18981925932706634, 'Loss_CAT': 0.13971242308616638}
+INFO:root:{'epoch': 14, 'iter': '[2000/2324]', 'Avg_Loss': 0.18995294983180863, 'Loss_CAT': 0.17304497957229614}
+INFO:root:{'epoch': 14, 'iter': '[0/2324]', 'Avg_Loss': 0.07055330276489258, 'Loss_POI1': 0.059264734387397766, 'Loss_POI2': 0.08184187114238739}
+INFO:root:{'epoch': 14, 'iter': '[500/2324]', 'Avg_Loss': 0.06683691284301395, 'Loss_POI1': 0.06204094737768173, 'Loss_POI2': 0.08485312759876251}
+INFO:root:{'epoch': 14, 'iter': '[1000/2324]', 'Avg_Loss': 0.06702694941970792, 'Loss_POI1': 0.04011828452348709, 'Loss_POI2': 0.046583227813243866}
+INFO:root:{'epoch': 14, 'iter': '[1500/2324]', 'Avg_Loss': 0.06742156909246352, 'Loss_POI1': 0.032202474772930145, 'Loss_POI2': 0.05084647983312607}
+INFO:root:{'epoch': 14, 'iter': '[2000/2324]', 'Avg_Loss': 0.0672891336236743, 'Loss_POI1': 0.07791319489479065, 'Loss_POI2': 0.09253934025764465}
+INFO:root:EP14_train, avg_loss=0.067174
+INFO:root:EP:14 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep14
+INFO:root:test=(HR@10:0.8276,HR@5:0.7424,NDCG@10:0.6489,NDCG@5:0.6211) 
+INFO:root:{'epoch': 15, 'iter': '[0/2324]', 'Avg_Loss': 0.20463848114013672, 'Loss_CAT': 0.20463848114013672}
+INFO:root:{'epoch': 15, 'iter': '[500/2324]', 'Avg_Loss': 0.1891597781531111, 'Loss_CAT': 0.1805163472890854}
+INFO:root:{'epoch': 15, 'iter': '[1000/2324]', 'Avg_Loss': 0.19010927922629214, 'Loss_CAT': 0.21353061497211456}
+INFO:root:{'epoch': 15, 'iter': '[1500/2324]', 'Avg_Loss': 0.19085926881220086, 'Loss_CAT': 0.19190634787082672}
+INFO:root:{'epoch': 15, 'iter': '[2000/2324]', 'Avg_Loss': 0.1905513730073261, 'Loss_CAT': 0.1501295417547226}
+INFO:root:{'epoch': 15, 'iter': '[0/2324]', 'Avg_Loss': 0.06733757257461548, 'Loss_POI1': 0.05984342098236084, 'Loss_POI2': 0.07483172416687012}
+INFO:root:{'epoch': 15, 'iter': '[500/2324]', 'Avg_Loss': 0.062319469212474464, 'Loss_POI1': 0.054984889924526215, 'Loss_POI2': 0.07714974135160446}
+INFO:root:{'epoch': 15, 'iter': '[1000/2324]', 'Avg_Loss': 0.06174226853806715, 'Loss_POI1': 0.08202987164258957, 'Loss_POI2': 0.12416986376047134}
+INFO:root:{'epoch': 15, 'iter': '[1500/2324]', 'Avg_Loss': 0.06183890561926254, 'Loss_POI1': 0.06886693835258484, 'Loss_POI2': 0.08916755020618439}
+INFO:root:{'epoch': 15, 'iter': '[2000/2324]', 'Avg_Loss': 0.06234297844051183, 'Loss_POI1': 0.08209434896707535, 'Loss_POI2': 0.10437484085559845}
+INFO:root:EP15_train, avg_loss=0.062390
+INFO:root:EP:15 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep15
+INFO:root:test=(HR@10:0.8297,HR@5:0.7438,NDCG@10:0.6495,NDCG@5:0.6216) 
+INFO:root:{'epoch': 16, 'iter': '[0/2324]', 'Avg_Loss': 0.16625571250915527, 'Loss_CAT': 0.16625571250915527}
+INFO:root:{'epoch': 16, 'iter': '[500/2324]', 'Avg_Loss': 0.18988602519213796, 'Loss_CAT': 0.22280851006507874}
+INFO:root:{'epoch': 16, 'iter': '[1000/2324]', 'Avg_Loss': 0.19045551314756468, 'Loss_CAT': 0.17291417717933655}
+INFO:root:{'epoch': 16, 'iter': '[1500/2324]', 'Avg_Loss': 0.19027946577677324, 'Loss_CAT': 0.1939096748828888}
+INFO:root:{'epoch': 16, 'iter': '[2000/2324]', 'Avg_Loss': 0.19012601750305685, 'Loss_CAT': 0.26075834035873413}
+INFO:root:{'epoch': 16, 'iter': '[0/2324]', 'Avg_Loss': 0.09077382832765579, 'Loss_POI1': 0.08308596909046173, 'Loss_POI2': 0.09846168756484985}
+INFO:root:{'epoch': 16, 'iter': '[500/2324]', 'Avg_Loss': 0.05761129875665534, 'Loss_POI1': 0.07827620953321457, 'Loss_POI2': 0.09400920569896698}
+INFO:root:{'epoch': 16, 'iter': '[1000/2324]', 'Avg_Loss': 0.05796590586798591, 'Loss_POI1': 0.03336026519536972, 'Loss_POI2': 0.04831469804048538}
+INFO:root:{'epoch': 16, 'iter': '[1500/2324]', 'Avg_Loss': 0.0583365121949402, 'Loss_POI1': 0.055600184947252274, 'Loss_POI2': 0.08122660219669342}
+INFO:root:{'epoch': 16, 'iter': '[2000/2324]', 'Avg_Loss': 0.05839265545533187, 'Loss_POI1': 0.04388900101184845, 'Loss_POI2': 0.06134490296244621}
+INFO:root:EP16_train, avg_loss=0.058605
+INFO:root:EP:16 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep16
+INFO:root:test=(HR@10:0.8264,HR@5:0.7439,NDCG@10:0.6487,NDCG@5:0.6217) 
+INFO:root:{'epoch': 17, 'iter': '[0/2324]', 'Avg_Loss': 0.22701501846313477, 'Loss_CAT': 0.22701501846313477}
+INFO:root:{'epoch': 17, 'iter': '[500/2324]', 'Avg_Loss': 0.1902584342839951, 'Loss_CAT': 0.2318679243326187}
+INFO:root:{'epoch': 17, 'iter': '[1000/2324]', 'Avg_Loss': 0.18861942191968312, 'Loss_CAT': 0.18597355484962463}
+INFO:root:{'epoch': 17, 'iter': '[1500/2324]', 'Avg_Loss': 0.1889093896593752, 'Loss_CAT': 0.19960710406303406}
+INFO:root:{'epoch': 17, 'iter': '[2000/2324]', 'Avg_Loss': 0.1886696090762583, 'Loss_CAT': 0.22996939718723297}
+INFO:root:{'epoch': 17, 'iter': '[0/2324]', 'Avg_Loss': 0.0655020922422409, 'Loss_POI1': 0.0448538139462471, 'Loss_POI2': 0.08615036308765411}
+INFO:root:{'epoch': 17, 'iter': '[500/2324]', 'Avg_Loss': 0.05603900617973771, 'Loss_POI1': 0.051589105278253555, 'Loss_POI2': 0.061599306762218475}
+INFO:root:{'epoch': 17, 'iter': '[1000/2324]', 'Avg_Loss': 0.05555388776885046, 'Loss_POI1': 0.01956969127058983, 'Loss_POI2': 0.028995638713240623}
+INFO:root:{'epoch': 17, 'iter': '[1500/2324]', 'Avg_Loss': 0.055114310997960804, 'Loss_POI1': 0.0669260323047638, 'Loss_POI2': 0.08530668169260025}
+INFO:root:{'epoch': 17, 'iter': '[2000/2324]', 'Avg_Loss': 0.054861133139969584, 'Loss_POI1': 0.033600252121686935, 'Loss_POI2': 0.03971902281045914}
+INFO:root:EP17_train, avg_loss=0.054779
+INFO:root:EP:17 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep17
+INFO:root:test=(HR@10:0.8271,HR@5:0.7476,NDCG@10:0.6512,NDCG@5:0.6254) 
+INFO:root:{'epoch': 18, 'iter': '[0/2324]', 'Avg_Loss': 0.25766488909721375, 'Loss_CAT': 0.25766488909721375}
+INFO:root:{'epoch': 18, 'iter': '[500/2324]', 'Avg_Loss': 0.1897612109691083, 'Loss_CAT': 0.1798827201128006}
+INFO:root:{'epoch': 18, 'iter': '[1000/2324]', 'Avg_Loss': 0.19076720758394286, 'Loss_CAT': 0.1484910249710083}
+INFO:root:{'epoch': 18, 'iter': '[1500/2324]', 'Avg_Loss': 0.19047048115118753, 'Loss_CAT': 0.1739719659090042}
+INFO:root:{'epoch': 18, 'iter': '[2000/2324]', 'Avg_Loss': 0.19043151387895482, 'Loss_CAT': 0.2002647966146469}
+INFO:root:{'epoch': 18, 'iter': '[0/2324]', 'Avg_Loss': 0.07823380827903748, 'Loss_POI1': 0.06937460601329803, 'Loss_POI2': 0.08709300309419632}
+INFO:root:{'epoch': 18, 'iter': '[500/2324]', 'Avg_Loss': 0.05199941248445216, 'Loss_POI1': 0.043355077505111694, 'Loss_POI2': 0.0479617714881897}
+INFO:root:{'epoch': 18, 'iter': '[1000/2324]', 'Avg_Loss': 0.05260239694859241, 'Loss_POI1': 0.051169537007808685, 'Loss_POI2': 0.05354375019669533}
+INFO:root:{'epoch': 18, 'iter': '[1500/2324]', 'Avg_Loss': 0.052640838269330435, 'Loss_POI1': 0.07596072554588318, 'Loss_POI2': 0.09978227317333221}
+INFO:root:{'epoch': 18, 'iter': '[2000/2324]', 'Avg_Loss': 0.05266809871961092, 'Loss_POI1': 0.022939670830965042, 'Loss_POI2': 0.03314643353223801}
+INFO:root:EP18_train, avg_loss=0.052789
+INFO:root:EP:18 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep18
+INFO:root:test=(HR@10:0.8228,HR@5:0.7414,NDCG@10:0.6439,NDCG@5:0.6173) 
+INFO:root:{'epoch': 19, 'iter': '[0/2324]', 'Avg_Loss': 0.17629796266555786, 'Loss_CAT': 0.17629796266555786}
+INFO:root:{'epoch': 19, 'iter': '[500/2324]', 'Avg_Loss': 0.18732866744497817, 'Loss_CAT': 0.14692836999893188}
+INFO:root:{'epoch': 19, 'iter': '[1000/2324]', 'Avg_Loss': 0.1902939459601125, 'Loss_CAT': 0.1929481029510498}
+INFO:root:{'epoch': 19, 'iter': '[1500/2324]', 'Avg_Loss': 0.18992891351752564, 'Loss_CAT': 0.22105289995670319}
+INFO:root:{'epoch': 19, 'iter': '[2000/2324]', 'Avg_Loss': 0.18987845295834457, 'Loss_CAT': 0.17251960933208466}
+INFO:root:{'epoch': 19, 'iter': '[0/2324]', 'Avg_Loss': 0.0876719281077385, 'Loss_POI1': 0.07161042094230652, 'Loss_POI2': 0.10373343527317047}
+INFO:root:{'epoch': 19, 'iter': '[500/2324]', 'Avg_Loss': 0.050182307380699585, 'Loss_POI1': 0.047418706119060516, 'Loss_POI2': 0.05269835144281387}
+INFO:root:{'epoch': 19, 'iter': '[1000/2324]', 'Avg_Loss': 0.05017236161318335, 'Loss_POI1': 0.058957621455192566, 'Loss_POI2': 0.06945665180683136}
+INFO:root:{'epoch': 19, 'iter': '[1500/2324]', 'Avg_Loss': 0.05036206872665946, 'Loss_POI1': 0.04130938649177551, 'Loss_POI2': 0.0434919148683548}
+INFO:root:{'epoch': 19, 'iter': '[2000/2324]', 'Avg_Loss': 0.050505003816020425, 'Loss_POI1': 0.04861724376678467, 'Loss_POI2': 0.058171048760414124}
+INFO:root:EP19_train, avg_loss=0.050387
+INFO:root:EP:19 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep19
+INFO:root:test=(HR@10:0.8294,HR@5:0.7472,NDCG@10:0.6513,NDCG@5:0.6245) 
+INFO:root:{'epoch': 20, 'iter': '[0/2324]', 'Avg_Loss': 0.15424807369709015, 'Loss_CAT': 0.15424807369709015}
+INFO:root:{'epoch': 20, 'iter': '[500/2324]', 'Avg_Loss': 0.18737698145612272, 'Loss_CAT': 0.18223707377910614}
+INFO:root:{'epoch': 20, 'iter': '[1000/2324]', 'Avg_Loss': 0.18840270473079368, 'Loss_CAT': 0.16401615738868713}
+INFO:root:{'epoch': 20, 'iter': '[1500/2324]', 'Avg_Loss': 0.188247369050106, 'Loss_CAT': 0.20251283049583435}
+INFO:root:{'epoch': 20, 'iter': '[2000/2324]', 'Avg_Loss': 0.18816083016945445, 'Loss_CAT': 0.1380462348461151}
+INFO:root:{'epoch': 20, 'iter': '[0/2324]', 'Avg_Loss': 0.05215753614902496, 'Loss_POI1': 0.04193767160177231, 'Loss_POI2': 0.06237740442156792}
+INFO:root:{'epoch': 20, 'iter': '[500/2324]', 'Avg_Loss': 0.04755564207051269, 'Loss_POI1': 0.050037164241075516, 'Loss_POI2': 0.05771655589342117}
+INFO:root:{'epoch': 20, 'iter': '[1000/2324]', 'Avg_Loss': 0.04799018639393828, 'Loss_POI1': 0.043759606778621674, 'Loss_POI2': 0.06339392066001892}
+INFO:root:{'epoch': 20, 'iter': '[1500/2324]', 'Avg_Loss': 0.04815871939919318, 'Loss_POI1': 0.017026880756020546, 'Loss_POI2': 0.027714122086763382}
+INFO:root:{'epoch': 20, 'iter': '[2000/2324]', 'Avg_Loss': 0.04815526890509326, 'Loss_POI1': 0.019967416301369667, 'Loss_POI2': 0.021300554275512695}
+INFO:root:EP20_train, avg_loss=0.048284
+INFO:root:EP:20 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep20
+INFO:root:test=(HR@10:0.8316,HR@5:0.7497,NDCG@10:0.6532,NDCG@5:0.6265) 
+INFO:root:{'epoch': 21, 'iter': '[0/2324]', 'Avg_Loss': 0.22770825028419495, 'Loss_CAT': 0.22770825028419495}
+INFO:root:{'epoch': 21, 'iter': '[500/2324]', 'Avg_Loss': 0.1892998855330511, 'Loss_CAT': 0.21994724869728088}
+INFO:root:{'epoch': 21, 'iter': '[1000/2324]', 'Avg_Loss': 0.18883641300858794, 'Loss_CAT': 0.1337263584136963}
+INFO:root:{'epoch': 21, 'iter': '[1500/2324]', 'Avg_Loss': 0.18809521987011718, 'Loss_CAT': 0.20515230298042297}
+INFO:root:{'epoch': 21, 'iter': '[2000/2324]', 'Avg_Loss': 0.18846943194064303, 'Loss_CAT': 0.17906272411346436}
+INFO:root:{'epoch': 21, 'iter': '[0/2324]', 'Avg_Loss': 0.06516812741756439, 'Loss_POI1': 0.051114171743392944, 'Loss_POI2': 0.07922207564115524}
+INFO:root:{'epoch': 21, 'iter': '[500/2324]', 'Avg_Loss': 0.04565454315684156, 'Loss_POI1': 0.03587276116013527, 'Loss_POI2': 0.047050558030605316}
+INFO:root:{'epoch': 21, 'iter': '[1000/2324]', 'Avg_Loss': 0.045681030909111214, 'Loss_POI1': 0.03940796107053757, 'Loss_POI2': 0.04482099786400795}
+INFO:root:{'epoch': 21, 'iter': '[1500/2324]', 'Avg_Loss': 0.04593598327011882, 'Loss_POI1': 0.039943866431713104, 'Loss_POI2': 0.06310999393463135}
+INFO:root:{'epoch': 21, 'iter': '[2000/2324]', 'Avg_Loss': 0.04595824625102923, 'Loss_POI1': 0.032825857400894165, 'Loss_POI2': 0.062360189855098724}
+INFO:root:EP21_train, avg_loss=0.046016
+INFO:root:EP:21 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep21
+INFO:root:test=(HR@10:0.8287,HR@5:0.7486,NDCG@10:0.6545,NDCG@5:0.6285) 
+INFO:root:{'epoch': 22, 'iter': '[0/2324]', 'Avg_Loss': 0.18696552515029907, 'Loss_CAT': 0.18696552515029907}
+INFO:root:{'epoch': 22, 'iter': '[500/2324]', 'Avg_Loss': 0.18546754753815675, 'Loss_CAT': 0.18479035794734955}
+INFO:root:{'epoch': 22, 'iter': '[1000/2324]', 'Avg_Loss': 0.1867573818305394, 'Loss_CAT': 0.1743546426296234}
+INFO:root:{'epoch': 22, 'iter': '[1500/2324]', 'Avg_Loss': 0.18691039865192455, 'Loss_CAT': 0.2160896509885788}
+INFO:root:{'epoch': 22, 'iter': '[2000/2324]', 'Avg_Loss': 0.18717479088838432, 'Loss_CAT': 0.19508083164691925}
+INFO:root:{'epoch': 22, 'iter': '[0/2324]', 'Avg_Loss': 0.03964898735284805, 'Loss_POI1': 0.039693016558885574, 'Loss_POI2': 0.03960496187210083}
+INFO:root:{'epoch': 22, 'iter': '[500/2324]', 'Avg_Loss': 0.045330349855987495, 'Loss_POI1': 0.04089875519275665, 'Loss_POI2': 0.06266875565052032}
+INFO:root:{'epoch': 22, 'iter': '[1000/2324]', 'Avg_Loss': 0.0449411314842361, 'Loss_POI1': 0.03698116913437843, 'Loss_POI2': 0.042924653738737106}
+INFO:root:{'epoch': 22, 'iter': '[1500/2324]', 'Avg_Loss': 0.04494244598415615, 'Loss_POI1': 0.022180337458848953, 'Loss_POI2': 0.030054742470383644}
+INFO:root:{'epoch': 22, 'iter': '[2000/2324]', 'Avg_Loss': 0.04499389267275701, 'Loss_POI1': 0.0452415868639946, 'Loss_POI2': 0.060267314314842224}
+INFO:root:EP22_train, avg_loss=0.045150
+INFO:root:EP:22 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep22
+INFO:root:test=(HR@10:0.8289,HR@5:0.7495,NDCG@10:0.6546,NDCG@5:0.6288) 
+INFO:root:{'epoch': 23, 'iter': '[0/2324]', 'Avg_Loss': 0.19449591636657715, 'Loss_CAT': 0.19449591636657715}
+INFO:root:{'epoch': 23, 'iter': '[500/2324]', 'Avg_Loss': 0.18497888990742956, 'Loss_CAT': 0.16343489289283752}
+INFO:root:{'epoch': 23, 'iter': '[1000/2324]', 'Avg_Loss': 0.18634881886777344, 'Loss_CAT': 0.21577496826648712}
+INFO:root:{'epoch': 23, 'iter': '[1500/2324]', 'Avg_Loss': 0.18635875239303157, 'Loss_CAT': 0.2396497130393982}
+INFO:root:{'epoch': 23, 'iter': '[2000/2324]', 'Avg_Loss': 0.18735703099137363, 'Loss_CAT': 0.22642767429351807}
+INFO:root:{'epoch': 23, 'iter': '[0/2324]', 'Avg_Loss': 0.04668945074081421, 'Loss_POI1': 0.04034570977091789, 'Loss_POI2': 0.05303318798542023}
+INFO:root:{'epoch': 23, 'iter': '[500/2324]', 'Avg_Loss': 0.042778421020481044, 'Loss_POI1': 0.053575389087200165, 'Loss_POI2': 0.07723747193813324}
+INFO:root:{'epoch': 23, 'iter': '[1000/2324]', 'Avg_Loss': 0.04292118787992519, 'Loss_POI1': 0.037812549620866776, 'Loss_POI2': 0.06110933795571327}
+INFO:root:{'epoch': 23, 'iter': '[1500/2324]', 'Avg_Loss': 0.04319294578247492, 'Loss_POI1': 0.1015758216381073, 'Loss_POI2': 0.09463091194629669}
+INFO:root:{'epoch': 23, 'iter': '[2000/2324]', 'Avg_Loss': 0.043371237550062995, 'Loss_POI1': 0.038863688707351685, 'Loss_POI2': 0.042240239679813385}
+INFO:root:EP23_train, avg_loss=0.043211
+INFO:root:EP:23 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep23
+INFO:root:test=(HR@10:0.8264,HR@5:0.7464,NDCG@10:0.6517,NDCG@5:0.6257) 
+INFO:root:{'epoch': 24, 'iter': '[0/2324]', 'Avg_Loss': 0.2263312041759491, 'Loss_CAT': 0.2263312041759491}
+INFO:root:{'epoch': 24, 'iter': '[500/2324]', 'Avg_Loss': 0.18528155447123293, 'Loss_CAT': 0.17967894673347473}
+INFO:root:{'epoch': 24, 'iter': '[1000/2324]', 'Avg_Loss': 0.18529984635579122, 'Loss_CAT': 0.16707713901996613}
+INFO:root:{'epoch': 24, 'iter': '[1500/2324]', 'Avg_Loss': 0.18621202855607338, 'Loss_CAT': 0.21416589617729187}
+INFO:root:{'epoch': 24, 'iter': '[2000/2324]', 'Avg_Loss': 0.18671730658163255, 'Loss_CAT': 0.13032858073711395}
+INFO:root:{'epoch': 24, 'iter': '[0/2324]', 'Avg_Loss': 0.043893054127693176, 'Loss_POI1': 0.03564188629388809, 'Loss_POI2': 0.05214422196149826}
+INFO:root:{'epoch': 24, 'iter': '[500/2324]', 'Avg_Loss': 0.04200045824861395, 'Loss_POI1': 0.05065177008509636, 'Loss_POI2': 0.06964556872844696}
+INFO:root:{'epoch': 24, 'iter': '[1000/2324]', 'Avg_Loss': 0.04174363978028476, 'Loss_POI1': 0.038362354040145874, 'Loss_POI2': 0.03933024778962135}
+INFO:root:{'epoch': 24, 'iter': '[1500/2324]', 'Avg_Loss': 0.04223065676886109, 'Loss_POI1': 0.0626099705696106, 'Loss_POI2': 0.08123645186424255}
+INFO:root:{'epoch': 24, 'iter': '[2000/2324]', 'Avg_Loss': 0.042508063865811574, 'Loss_POI1': 0.035053856670856476, 'Loss_POI2': 0.0597989559173584}
+INFO:root:EP24_train, avg_loss=0.042845
+INFO:root:EP:24 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep24
+INFO:root:test=(HR@10:0.8280,HR@5:0.7447,NDCG@10:0.6545,NDCG@5:0.6273) 
+INFO:root:{'epoch': 25, 'iter': '[0/2324]', 'Avg_Loss': 0.2059457004070282, 'Loss_CAT': 0.2059457004070282}
+INFO:root:{'epoch': 25, 'iter': '[500/2324]', 'Avg_Loss': 0.18657271598211067, 'Loss_CAT': 0.15024101734161377}
+INFO:root:{'epoch': 25, 'iter': '[1000/2324]', 'Avg_Loss': 0.1866657847499514, 'Loss_CAT': 0.19377969205379486}
+INFO:root:{'epoch': 25, 'iter': '[1500/2324]', 'Avg_Loss': 0.18697054590347367, 'Loss_CAT': 0.17526552081108093}
+INFO:root:{'epoch': 25, 'iter': '[2000/2324]', 'Avg_Loss': 0.18668486810904156, 'Loss_CAT': 0.22647251188755035}
+INFO:root:{'epoch': 25, 'iter': '[0/2324]', 'Avg_Loss': 0.03878432512283325, 'Loss_POI1': 0.026805097237229347, 'Loss_POI2': 0.050763554871082306}
+INFO:root:{'epoch': 25, 'iter': '[500/2324]', 'Avg_Loss': 0.040652605815569384, 'Loss_POI1': 0.03349287062883377, 'Loss_POI2': 0.04238371551036835}
+INFO:root:{'epoch': 25, 'iter': '[1000/2324]', 'Avg_Loss': 0.04068501015053271, 'Loss_POI1': 0.03533731400966644, 'Loss_POI2': 0.04773656278848648}
+INFO:root:{'epoch': 25, 'iter': '[1500/2324]', 'Avg_Loss': 0.04063237814150805, 'Loss_POI1': 0.02838936634361744, 'Loss_POI2': 0.042619917541742325}
+INFO:root:{'epoch': 25, 'iter': '[2000/2324]', 'Avg_Loss': 0.040703749801472074, 'Loss_POI1': 0.04455139487981796, 'Loss_POI2': 0.05056898668408394}
+INFO:root:EP25_train, avg_loss=0.040673
+INFO:root:EP:25 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep25
+INFO:root:test=(HR@10:0.8239,HR@5:0.7479,NDCG@10:0.6497,NDCG@5:0.6249) 
+INFO:root:{'epoch': 26, 'iter': '[0/2324]', 'Avg_Loss': 0.2533518671989441, 'Loss_CAT': 0.2533518671989441}
+INFO:root:{'epoch': 26, 'iter': '[500/2324]', 'Avg_Loss': 0.18583191180241085, 'Loss_CAT': 0.1818912774324417}
+INFO:root:{'epoch': 26, 'iter': '[1000/2324]', 'Avg_Loss': 0.18603275022604368, 'Loss_CAT': 0.1521889567375183}
+INFO:root:{'epoch': 26, 'iter': '[1500/2324]', 'Avg_Loss': 0.18649476903585654, 'Loss_CAT': 0.15836641192436218}
+INFO:root:{'epoch': 26, 'iter': '[2000/2324]', 'Avg_Loss': 0.186832497692269, 'Loss_CAT': 0.196669340133667}
+INFO:root:{'epoch': 26, 'iter': '[0/2324]', 'Avg_Loss': 0.03460374101996422, 'Loss_POI1': 0.029836826026439667, 'Loss_POI2': 0.03937065601348877}
+INFO:root:{'epoch': 26, 'iter': '[500/2324]', 'Avg_Loss': 0.039706813978280374, 'Loss_POI1': 0.020161211490631104, 'Loss_POI2': 0.03422600030899048}
+INFO:root:{'epoch': 26, 'iter': '[1000/2324]', 'Avg_Loss': 0.0395680053483371, 'Loss_POI1': 0.023280315101146698, 'Loss_POI2': 0.04889445751905441}
+INFO:root:{'epoch': 26, 'iter': '[1500/2324]', 'Avg_Loss': 0.03982204822159505, 'Loss_POI1': 0.027265867218375206, 'Loss_POI2': 0.038939133286476135}
+INFO:root:{'epoch': 26, 'iter': '[2000/2324]', 'Avg_Loss': 0.03970783779482315, 'Loss_POI1': 0.011859778314828873, 'Loss_POI2': 0.023463450372219086}
+INFO:root:EP26_train, avg_loss=0.039736
+INFO:root:EP:26 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep26
+INFO:root:test=(HR@10:0.8260,HR@5:0.7472,NDCG@10:0.6522,NDCG@5:0.6267) 
+INFO:root:{'epoch': 27, 'iter': '[0/2324]', 'Avg_Loss': 0.23032207787036896, 'Loss_CAT': 0.23032207787036896}
+INFO:root:{'epoch': 27, 'iter': '[500/2324]', 'Avg_Loss': 0.18412362500103172, 'Loss_CAT': 0.17100782692432404}
+INFO:root:{'epoch': 27, 'iter': '[1000/2324]', 'Avg_Loss': 0.18579726559775217, 'Loss_CAT': 0.21498018503189087}
+INFO:root:{'epoch': 27, 'iter': '[1500/2324]', 'Avg_Loss': 0.1856753806832391, 'Loss_CAT': 0.18104958534240723}
+INFO:root:{'epoch': 27, 'iter': '[2000/2324]', 'Avg_Loss': 0.18572307918323153, 'Loss_CAT': 0.17390984296798706}
+INFO:root:{'epoch': 27, 'iter': '[0/2324]', 'Avg_Loss': 0.03052935004234314, 'Loss_POI1': 0.0234347116202116, 'Loss_POI2': 0.03762399032711983}
+INFO:root:{'epoch': 27, 'iter': '[500/2324]', 'Avg_Loss': 0.03820615668526429, 'Loss_POI1': 0.012142963707447052, 'Loss_POI2': 0.026638073846697807}
+INFO:root:{'epoch': 27, 'iter': '[1000/2324]', 'Avg_Loss': 0.0385368159240843, 'Loss_POI1': 0.04241850972175598, 'Loss_POI2': 0.03846358880400658}
+INFO:root:{'epoch': 27, 'iter': '[1500/2324]', 'Avg_Loss': 0.03823978851501551, 'Loss_POI1': 0.0337224081158638, 'Loss_POI2': 0.04056365042924881}
+INFO:root:{'epoch': 27, 'iter': '[2000/2324]', 'Avg_Loss': 0.038433848240965234, 'Loss_POI1': 0.01171368733048439, 'Loss_POI2': 0.02748817764222622}
+INFO:root:EP27_train, avg_loss=0.038425
+INFO:root:EP:27 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep27
+INFO:root:test=(HR@10:0.8221,HR@5:0.7462,NDCG@10:0.6503,NDCG@5:0.6255) 
+INFO:root:{'epoch': 28, 'iter': '[0/2324]', 'Avg_Loss': 0.2011283040046692, 'Loss_CAT': 0.2011283040046692}
+INFO:root:{'epoch': 28, 'iter': '[500/2324]', 'Avg_Loss': 0.1886287742627119, 'Loss_CAT': 0.1841808557510376}
+INFO:root:{'epoch': 28, 'iter': '[1000/2324]', 'Avg_Loss': 0.18706037573047452, 'Loss_CAT': 0.16943049430847168}
+INFO:root:{'epoch': 28, 'iter': '[1500/2324]', 'Avg_Loss': 0.18667126632606404, 'Loss_CAT': 0.23900307714939117}
+INFO:root:{'epoch': 28, 'iter': '[2000/2324]', 'Avg_Loss': 0.1863193942018892, 'Loss_CAT': 0.2467922419309616}
+INFO:root:{'epoch': 28, 'iter': '[0/2324]', 'Avg_Loss': 0.038121774792671204, 'Loss_POI1': 0.029471654444932938, 'Loss_POI2': 0.04677189886569977}
+INFO:root:{'epoch': 28, 'iter': '[500/2324]', 'Avg_Loss': 0.03824018555025974, 'Loss_POI1': 0.04534098505973816, 'Loss_POI2': 0.0626944750547409}
+INFO:root:{'epoch': 28, 'iter': '[1000/2324]', 'Avg_Loss': 0.037669709619398896, 'Loss_POI1': 0.01738961786031723, 'Loss_POI2': 0.026893647387623787}
+INFO:root:{'epoch': 28, 'iter': '[1500/2324]', 'Avg_Loss': 0.037494903040688726, 'Loss_POI1': 0.03671858087182045, 'Loss_POI2': 0.06571365147829056}
+INFO:root:{'epoch': 28, 'iter': '[2000/2324]', 'Avg_Loss': 0.037746185592763395, 'Loss_POI1': 0.017910558730363846, 'Loss_POI2': 0.03977516293525696}
+INFO:root:EP28_train, avg_loss=0.037828
+INFO:root:EP:28 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep28
+INFO:root:test=(HR@10:0.8246,HR@5:0.7466,NDCG@10:0.6537,NDCG@5:0.6283) 
+INFO:root:{'epoch': 29, 'iter': '[0/2324]', 'Avg_Loss': 0.2038176953792572, 'Loss_CAT': 0.2038176953792572}
+INFO:root:{'epoch': 29, 'iter': '[500/2324]', 'Avg_Loss': 0.188385503124929, 'Loss_CAT': 0.2153606414794922}
+INFO:root:{'epoch': 29, 'iter': '[1000/2324]', 'Avg_Loss': 0.18614711931773595, 'Loss_CAT': 0.18688979744911194}
+INFO:root:{'epoch': 29, 'iter': '[1500/2324]', 'Avg_Loss': 0.18572604382717156, 'Loss_CAT': 0.1661733239889145}
+INFO:root:{'epoch': 29, 'iter': '[2000/2324]', 'Avg_Loss': 0.18608344159741094, 'Loss_CAT': 0.19487449526786804}
+INFO:root:{'epoch': 29, 'iter': '[0/2324]', 'Avg_Loss': 0.02830495312809944, 'Loss_POI1': 0.024409402161836624, 'Loss_POI2': 0.03220050409436226}
+INFO:root:{'epoch': 29, 'iter': '[500/2324]', 'Avg_Loss': 0.036900606259198006, 'Loss_POI1': 0.013901304453611374, 'Loss_POI2': 0.024559613317251205}
+INFO:root:{'epoch': 29, 'iter': '[1000/2324]', 'Avg_Loss': 0.03704675362277013, 'Loss_POI1': 0.04527642950415611, 'Loss_POI2': 0.07020093500614166}
+INFO:root:{'epoch': 29, 'iter': '[1500/2324]', 'Avg_Loss': 0.03728872653019976, 'Loss_POI1': 0.014054170809686184, 'Loss_POI2': 0.026146292686462402}
+INFO:root:{'epoch': 29, 'iter': '[2000/2324]', 'Avg_Loss': 0.03711012757100772, 'Loss_POI1': 0.05411994457244873, 'Loss_POI2': 0.05891675874590874}
+INFO:root:EP29_train, avg_loss=0.037147
+INFO:root:EP:29 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep29
+INFO:root:test=(HR@10:0.8272,HR@5:0.7451,NDCG@10:0.6547,NDCG@5:0.6280) 
+INFO:root:{'epoch': 30, 'iter': '[0/2324]', 'Avg_Loss': 0.22040164470672607, 'Loss_CAT': 0.22040164470672607}
+INFO:root:{'epoch': 30, 'iter': '[500/2324]', 'Avg_Loss': 0.18586706161915423, 'Loss_CAT': 0.2082987278699875}
+INFO:root:{'epoch': 30, 'iter': '[1000/2324]', 'Avg_Loss': 0.18624181860125624, 'Loss_CAT': 0.1540265679359436}
+INFO:root:{'epoch': 30, 'iter': '[1500/2324]', 'Avg_Loss': 0.18547233289416673, 'Loss_CAT': 0.24934586882591248}
+INFO:root:{'epoch': 30, 'iter': '[2000/2324]', 'Avg_Loss': 0.18539074049896745, 'Loss_CAT': 0.13141950964927673}
+INFO:root:{'epoch': 30, 'iter': '[0/2324]', 'Avg_Loss': 0.025474414229393005, 'Loss_POI1': 0.02127687633037567, 'Loss_POI2': 0.02967195212841034}
+INFO:root:{'epoch': 30, 'iter': '[500/2324]', 'Avg_Loss': 0.03749590399424116, 'Loss_POI1': 0.026779338717460632, 'Loss_POI2': 0.04225483536720276}
+INFO:root:{'epoch': 30, 'iter': '[1000/2324]', 'Avg_Loss': 0.03685845684848138, 'Loss_POI1': 0.03410713002085686, 'Loss_POI2': 0.04861997812986374}
+INFO:root:{'epoch': 30, 'iter': '[1500/2324]', 'Avg_Loss': 0.03658146787339264, 'Loss_POI1': 0.08164407312870026, 'Loss_POI2': 0.09956231713294983}
+INFO:root:{'epoch': 30, 'iter': '[2000/2324]', 'Avg_Loss': 0.036527818236416244, 'Loss_POI1': 0.02409553900361061, 'Loss_POI2': 0.03312494978308678}
+INFO:root:EP30_train, avg_loss=0.036591
+INFO:root:EP:30 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep30
+INFO:root:test=(HR@10:0.8283,HR@5:0.7445,NDCG@10:0.6550,NDCG@5:0.6278) 
+INFO:root:{'epoch': 31, 'iter': '[0/2324]', 'Avg_Loss': 0.19127678871154785, 'Loss_CAT': 0.19127678871154785}
+INFO:root:{'epoch': 31, 'iter': '[500/2324]', 'Avg_Loss': 0.18612832329170909, 'Loss_CAT': 0.17350450158119202}
+INFO:root:{'epoch': 31, 'iter': '[1000/2324]', 'Avg_Loss': 0.18524635877166237, 'Loss_CAT': 0.1797131896018982}
+INFO:root:{'epoch': 31, 'iter': '[1500/2324]', 'Avg_Loss': 0.18576462501331142, 'Loss_CAT': 0.17577029764652252}
+INFO:root:{'epoch': 31, 'iter': '[2000/2324]', 'Avg_Loss': 0.18512267846128214, 'Loss_CAT': 0.15257737040519714}
+INFO:root:{'epoch': 31, 'iter': '[0/2324]', 'Avg_Loss': 0.021196158602833748, 'Loss_POI1': 0.015846427530050278, 'Loss_POI2': 0.026545889675617218}
+INFO:root:{'epoch': 31, 'iter': '[500/2324]', 'Avg_Loss': 0.03622612958130782, 'Loss_POI1': 0.023351483047008514, 'Loss_POI2': 0.03957188129425049}
+INFO:root:{'epoch': 31, 'iter': '[1000/2324]', 'Avg_Loss': 0.03552343567031306, 'Loss_POI1': 0.03906312584877014, 'Loss_POI2': 0.06895710527896881}
+INFO:root:{'epoch': 31, 'iter': '[1500/2324]', 'Avg_Loss': 0.035082089091135533, 'Loss_POI1': 0.032139524817466736, 'Loss_POI2': 0.05588391050696373}
+INFO:root:{'epoch': 31, 'iter': '[2000/2324]', 'Avg_Loss': 0.03489573591731783, 'Loss_POI1': 0.025549687445163727, 'Loss_POI2': 0.03460187092423439}
+INFO:root:EP31_train, avg_loss=0.034793
+INFO:root:EP:31 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep31
+INFO:root:test=(HR@10:0.8253,HR@5:0.7447,NDCG@10:0.6537,NDCG@5:0.6277) 
+INFO:root:{'epoch': 32, 'iter': '[0/2324]', 'Avg_Loss': 0.25040310621261597, 'Loss_CAT': 0.25040310621261597}
+INFO:root:{'epoch': 32, 'iter': '[500/2324]', 'Avg_Loss': 0.18274809445390205, 'Loss_CAT': 0.18848258256912231}
+INFO:root:{'epoch': 32, 'iter': '[1000/2324]', 'Avg_Loss': 0.18285671872394782, 'Loss_CAT': 0.184310644865036}
+INFO:root:{'epoch': 32, 'iter': '[1500/2324]', 'Avg_Loss': 0.18408027371710575, 'Loss_CAT': 0.2104397714138031}
+INFO:root:{'epoch': 32, 'iter': '[2000/2324]', 'Avg_Loss': 0.1839740357619116, 'Loss_CAT': 0.13280245661735535}
+INFO:root:{'epoch': 32, 'iter': '[0/2324]', 'Avg_Loss': 0.02240750938653946, 'Loss_POI1': 0.018988866358995438, 'Loss_POI2': 0.02582615241408348}
+INFO:root:{'epoch': 32, 'iter': '[500/2324]', 'Avg_Loss': 0.03500777605303866, 'Loss_POI1': 0.022420501336455345, 'Loss_POI2': 0.054367732256650925}
+INFO:root:{'epoch': 32, 'iter': '[1000/2324]', 'Avg_Loss': 0.03515724684590926, 'Loss_POI1': 0.014584346674382687, 'Loss_POI2': 0.025183074176311493}
+INFO:root:{'epoch': 32, 'iter': '[1500/2324]', 'Avg_Loss': 0.03493106922260092, 'Loss_POI1': 0.040000028908252716, 'Loss_POI2': 0.07811528444290161}
+INFO:root:{'epoch': 32, 'iter': '[2000/2324]', 'Avg_Loss': 0.0347319038190145, 'Loss_POI1': 0.012745784595608711, 'Loss_POI2': 0.019901655614376068}
+INFO:root:EP32_train, avg_loss=0.034608
+INFO:root:EP:32 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep32
+INFO:root:test=(HR@10:0.8267,HR@5:0.7469,NDCG@10:0.6541,NDCG@5:0.6282) 
+INFO:root:{'epoch': 33, 'iter': '[0/2324]', 'Avg_Loss': 0.17514000833034515, 'Loss_CAT': 0.17514000833034515}
+INFO:root:{'epoch': 33, 'iter': '[500/2324]', 'Avg_Loss': 0.18312984058064616, 'Loss_CAT': 0.18596532940864563}
+INFO:root:{'epoch': 33, 'iter': '[1000/2324]', 'Avg_Loss': 0.1840621157438605, 'Loss_CAT': 0.18635766208171844}
+INFO:root:{'epoch': 33, 'iter': '[1500/2324]', 'Avg_Loss': 0.18375623728993096, 'Loss_CAT': 0.2065948247909546}
+INFO:root:{'epoch': 33, 'iter': '[2000/2324]', 'Avg_Loss': 0.18399063465387924, 'Loss_CAT': 0.14784982800483704}
+INFO:root:{'epoch': 33, 'iter': '[0/2324]', 'Avg_Loss': 0.03785135969519615, 'Loss_POI1': 0.025552863255143166, 'Loss_POI2': 0.05014985427260399}
+INFO:root:{'epoch': 33, 'iter': '[500/2324]', 'Avg_Loss': 0.03442656498647736, 'Loss_POI1': 0.017911959439516068, 'Loss_POI2': 0.029703006148338318}
+INFO:root:{'epoch': 33, 'iter': '[1000/2324]', 'Avg_Loss': 0.03373549282029792, 'Loss_POI1': 0.03067379631102085, 'Loss_POI2': 0.025253567844629288}
+INFO:root:{'epoch': 33, 'iter': '[1500/2324]', 'Avg_Loss': 0.0341218489611262, 'Loss_POI1': 0.02542773447930813, 'Loss_POI2': 0.022908750921487808}
+INFO:root:{'epoch': 33, 'iter': '[2000/2324]', 'Avg_Loss': 0.034083161199151696, 'Loss_POI1': 0.02645341493189335, 'Loss_POI2': 0.03039209172129631}
+INFO:root:EP33_train, avg_loss=0.034312
+INFO:root:EP:33 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep33
+INFO:root:test=(HR@10:0.8252,HR@5:0.7445,NDCG@10:0.6531,NDCG@5:0.6268) 
+INFO:root:{'epoch': 34, 'iter': '[0/2324]', 'Avg_Loss': 0.20883730053901672, 'Loss_CAT': 0.20883730053901672}
+INFO:root:{'epoch': 34, 'iter': '[500/2324]', 'Avg_Loss': 0.1832224884760118, 'Loss_CAT': 0.19403484463691711}
+INFO:root:{'epoch': 34, 'iter': '[1000/2324]', 'Avg_Loss': 0.18460814499265546, 'Loss_CAT': 0.21283629536628723}
+INFO:root:{'epoch': 34, 'iter': '[1500/2324]', 'Avg_Loss': 0.18506919023773816, 'Loss_CAT': 0.2230639010667801}
+INFO:root:{'epoch': 34, 'iter': '[2000/2324]', 'Avg_Loss': 0.18495826444019384, 'Loss_CAT': 0.1615852564573288}
+INFO:root:{'epoch': 34, 'iter': '[0/2324]', 'Avg_Loss': 0.030117472633719444, 'Loss_POI1': 0.019551556557416916, 'Loss_POI2': 0.04068338871002197}
+INFO:root:{'epoch': 34, 'iter': '[500/2324]', 'Avg_Loss': 0.03378947205960513, 'Loss_POI1': 0.04995238780975342, 'Loss_POI2': 0.06089954078197479}
+INFO:root:{'epoch': 34, 'iter': '[1000/2324]', 'Avg_Loss': 0.03450910501892899, 'Loss_POI1': 0.006294242572039366, 'Loss_POI2': 0.015262209810316563}
+INFO:root:{'epoch': 34, 'iter': '[1500/2324]', 'Avg_Loss': 0.034133030527608244, 'Loss_POI1': 0.026022478938102722, 'Loss_POI2': 0.04058583080768585}
+INFO:root:{'epoch': 34, 'iter': '[2000/2324]', 'Avg_Loss': 0.033809242189919084, 'Loss_POI1': 0.022293444722890854, 'Loss_POI2': 0.041927970945835114}
+INFO:root:EP34_train, avg_loss=0.033676
+INFO:root:EP:34 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep34
+INFO:root:test=(HR@10:0.8269,HR@5:0.7447,NDCG@10:0.6550,NDCG@5:0.6283) 
+INFO:root:{'epoch': 35, 'iter': '[0/2324]', 'Avg_Loss': 0.15407955646514893, 'Loss_CAT': 0.15407955646514893}
+INFO:root:{'epoch': 35, 'iter': '[500/2324]', 'Avg_Loss': 0.18416307203308074, 'Loss_CAT': 0.20194068551063538}
+INFO:root:{'epoch': 35, 'iter': '[1000/2324]', 'Avg_Loss': 0.18441328415265687, 'Loss_CAT': 0.22832882404327393}
+INFO:root:{'epoch': 35, 'iter': '[1500/2324]', 'Avg_Loss': 0.18443299143473996, 'Loss_CAT': 0.16640609502792358}
+INFO:root:{'epoch': 35, 'iter': '[2000/2324]', 'Avg_Loss': 0.18382823985183555, 'Loss_CAT': 0.2183573842048645}
+INFO:root:{'epoch': 35, 'iter': '[0/2324]', 'Avg_Loss': 0.028080258518457413, 'Loss_POI1': 0.01913001388311386, 'Loss_POI2': 0.037030503153800964}
+INFO:root:{'epoch': 35, 'iter': '[500/2324]', 'Avg_Loss': 0.03413037873689316, 'Loss_POI1': 0.031100988388061523, 'Loss_POI2': 0.05577261373400688}
+INFO:root:{'epoch': 35, 'iter': '[1000/2324]', 'Avg_Loss': 0.03350963710447202, 'Loss_POI1': 0.023754216730594635, 'Loss_POI2': 0.03056672215461731}
+INFO:root:{'epoch': 35, 'iter': '[1500/2324]', 'Avg_Loss': 0.03332584094520482, 'Loss_POI1': 0.02108057588338852, 'Loss_POI2': 0.03227505087852478}
+INFO:root:{'epoch': 35, 'iter': '[2000/2324]', 'Avg_Loss': 0.033065224202514544, 'Loss_POI1': 0.01440524309873581, 'Loss_POI2': 0.015696357935667038}
+INFO:root:EP35_train, avg_loss=0.032991
+INFO:root:EP:35 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep35
+INFO:root:test=(HR@10:0.8234,HR@5:0.7469,NDCG@10:0.6525,NDCG@5:0.6277) 
+INFO:root:{'epoch': 36, 'iter': '[0/2324]', 'Avg_Loss': 0.17950767278671265, 'Loss_CAT': 0.17950767278671265}
+INFO:root:{'epoch': 36, 'iter': '[500/2324]', 'Avg_Loss': 0.18436808815735306, 'Loss_CAT': 0.2016180157661438}
+INFO:root:{'epoch': 36, 'iter': '[1000/2324]', 'Avg_Loss': 0.1844275372696447, 'Loss_CAT': 0.2501559853553772}
+INFO:root:{'epoch': 36, 'iter': '[1500/2324]', 'Avg_Loss': 0.18483192703471352, 'Loss_CAT': 0.19438213109970093}
+INFO:root:{'epoch': 36, 'iter': '[2000/2324]', 'Avg_Loss': 0.18431392062952492, 'Loss_CAT': 0.19924208521842957}
+INFO:root:{'epoch': 36, 'iter': '[0/2324]', 'Avg_Loss': 0.025035886093974113, 'Loss_POI1': 0.013143535703420639, 'Loss_POI2': 0.03692823648452759}
+INFO:root:{'epoch': 36, 'iter': '[500/2324]', 'Avg_Loss': 0.03168459186709659, 'Loss_POI1': 0.01608196645975113, 'Loss_POI2': 0.018425755202770233}
+INFO:root:{'epoch': 36, 'iter': '[1000/2324]', 'Avg_Loss': 0.032116474419530784, 'Loss_POI1': 0.05899273231625557, 'Loss_POI2': 0.0863458439707756}
+INFO:root:{'epoch': 36, 'iter': '[1500/2324]', 'Avg_Loss': 0.03213277037102211, 'Loss_POI1': 0.015118320472538471, 'Loss_POI2': 0.030181875452399254}
+INFO:root:{'epoch': 36, 'iter': '[2000/2324]', 'Avg_Loss': 0.03222497066446598, 'Loss_POI1': 0.058552466332912445, 'Loss_POI2': 0.08621394634246826}
+INFO:root:EP36_train, avg_loss=0.032116
+INFO:root:EP:36 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep36
+INFO:root:test=(HR@10:0.8227,HR@5:0.7462,NDCG@10:0.6508,NDCG@5:0.6259) 
+INFO:root:{'epoch': 37, 'iter': '[0/2324]', 'Avg_Loss': 0.1671438068151474, 'Loss_CAT': 0.1671438068151474}
+INFO:root:{'epoch': 37, 'iter': '[500/2324]', 'Avg_Loss': 0.1839677481921371, 'Loss_CAT': 0.2044602334499359}
+INFO:root:{'epoch': 37, 'iter': '[1000/2324]', 'Avg_Loss': 0.18270918069692044, 'Loss_CAT': 0.17890149354934692}
+INFO:root:{'epoch': 37, 'iter': '[1500/2324]', 'Avg_Loss': 0.18227863919329912, 'Loss_CAT': 0.18999212980270386}
+INFO:root:{'epoch': 37, 'iter': '[2000/2324]', 'Avg_Loss': 0.18261070482838695, 'Loss_CAT': 0.18540087342262268}
+INFO:root:{'epoch': 37, 'iter': '[0/2324]', 'Avg_Loss': 0.05342106521129608, 'Loss_POI1': 0.023633044213056564, 'Loss_POI2': 0.0832090824842453}
+INFO:root:{'epoch': 37, 'iter': '[500/2324]', 'Avg_Loss': 0.03328026140837404, 'Loss_POI1': 0.01785523071885109, 'Loss_POI2': 0.03482064977288246}
+INFO:root:{'epoch': 37, 'iter': '[1000/2324]', 'Avg_Loss': 0.03267175692796975, 'Loss_POI1': 0.04304606467485428, 'Loss_POI2': 0.056106068193912506}
+INFO:root:{'epoch': 37, 'iter': '[1500/2324]', 'Avg_Loss': 0.03261767992089632, 'Loss_POI1': 0.028138170018792152, 'Loss_POI2': 0.03177856653928757}
+INFO:root:{'epoch': 37, 'iter': '[2000/2324]', 'Avg_Loss': 0.03248718571102154, 'Loss_POI1': 0.016055025160312653, 'Loss_POI2': 0.030424773693084717}
+INFO:root:EP37_train, avg_loss=0.032588
+INFO:root:EP:37 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep37
+INFO:root:test=(HR@10:0.8215,HR@5:0.7434,NDCG@10:0.6498,NDCG@5:0.6244) 
+INFO:root:{'epoch': 38, 'iter': '[0/2324]', 'Avg_Loss': 0.13111819326877594, 'Loss_CAT': 0.13111819326877594}
+INFO:root:{'epoch': 38, 'iter': '[500/2324]', 'Avg_Loss': 0.18292090844013495, 'Loss_CAT': 0.23739105463027954}
+INFO:root:{'epoch': 38, 'iter': '[1000/2324]', 'Avg_Loss': 0.1840152331626975, 'Loss_CAT': 0.17293007671833038}
+INFO:root:{'epoch': 38, 'iter': '[1500/2324]', 'Avg_Loss': 0.1835443624838204, 'Loss_CAT': 0.20551477372646332}
+INFO:root:{'epoch': 38, 'iter': '[2000/2324]', 'Avg_Loss': 0.1839405837869537, 'Loss_CAT': 0.17189788818359375}
+INFO:root:{'epoch': 38, 'iter': '[0/2324]', 'Avg_Loss': 0.019471583887934685, 'Loss_POI1': 0.010981591418385506, 'Loss_POI2': 0.027961576357483864}
+INFO:root:{'epoch': 38, 'iter': '[500/2324]', 'Avg_Loss': 0.03188544763400853, 'Loss_POI1': 0.013951393775641918, 'Loss_POI2': 0.0215175598859787}
+INFO:root:{'epoch': 38, 'iter': '[1000/2324]', 'Avg_Loss': 0.03159336705825159, 'Loss_POI1': 0.026274824514985085, 'Loss_POI2': 0.05394015833735466}
+INFO:root:{'epoch': 38, 'iter': '[1500/2324]', 'Avg_Loss': 0.03169607331009605, 'Loss_POI1': 0.0214313305914402, 'Loss_POI2': 0.04261692613363266}
+INFO:root:{'epoch': 38, 'iter': '[2000/2324]', 'Avg_Loss': 0.03186808073863402, 'Loss_POI1': 0.04356717690825462, 'Loss_POI2': 0.05924052372574806}
+INFO:root:EP38_train, avg_loss=0.032021
+INFO:root:EP:38 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep38
+INFO:root:test=(HR@10:0.8261,HR@5:0.7473,NDCG@10:0.6534,NDCG@5:0.6278) 
+INFO:root:{'epoch': 39, 'iter': '[0/2324]', 'Avg_Loss': 0.19909799098968506, 'Loss_CAT': 0.19909799098968506}
+INFO:root:{'epoch': 39, 'iter': '[500/2324]', 'Avg_Loss': 0.18067303482822317, 'Loss_CAT': 0.18264441192150116}
+INFO:root:{'epoch': 39, 'iter': '[1000/2324]', 'Avg_Loss': 0.18329004465521395, 'Loss_CAT': 0.1579388976097107}
+INFO:root:{'epoch': 39, 'iter': '[1500/2324]', 'Avg_Loss': 0.18308627742933958, 'Loss_CAT': 0.21328262984752655}
+INFO:root:{'epoch': 39, 'iter': '[2000/2324]', 'Avg_Loss': 0.18297447040788772, 'Loss_CAT': 0.23505684733390808}
+INFO:root:{'epoch': 39, 'iter': '[0/2324]', 'Avg_Loss': 0.06059039384126663, 'Loss_POI1': 0.04954063147306442, 'Loss_POI2': 0.07164015620946884}
+INFO:root:{'epoch': 39, 'iter': '[500/2324]', 'Avg_Loss': 0.03206528601666054, 'Loss_POI1': 0.0227460078895092, 'Loss_POI2': 0.034642305225133896}
+INFO:root:{'epoch': 39, 'iter': '[1000/2324]', 'Avg_Loss': 0.031698535539332655, 'Loss_POI1': 0.01722962036728859, 'Loss_POI2': 0.022086510434746742}
+INFO:root:{'epoch': 39, 'iter': '[1500/2324]', 'Avg_Loss': 0.03135104795674645, 'Loss_POI1': 0.017670100554823875, 'Loss_POI2': 0.04394936561584473}
+INFO:root:{'epoch': 39, 'iter': '[2000/2324]', 'Avg_Loss': 0.03138097266604689, 'Loss_POI1': 0.04192652553319931, 'Loss_POI2': 0.03047742322087288}
+INFO:root:EP39_train, avg_loss=0.031437
+INFO:root:EP:39 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep39
+INFO:root:test=(HR@10:0.8261,HR@5:0.7497,NDCG@10:0.6549,NDCG@5:0.6301) 
+INFO:root:{'epoch': 40, 'iter': '[0/2324]', 'Avg_Loss': 0.19498082995414734, 'Loss_CAT': 0.19498082995414734}
+INFO:root:{'epoch': 40, 'iter': '[500/2324]', 'Avg_Loss': 0.18358137123955937, 'Loss_CAT': 0.1807626187801361}
+INFO:root:{'epoch': 40, 'iter': '[1000/2324]', 'Avg_Loss': 0.18304127311849452, 'Loss_CAT': 0.18314868211746216}
+INFO:root:{'epoch': 40, 'iter': '[1500/2324]', 'Avg_Loss': 0.18338380883547722, 'Loss_CAT': 0.1898443102836609}
+INFO:root:{'epoch': 40, 'iter': '[2000/2324]', 'Avg_Loss': 0.183638297620861, 'Loss_CAT': 0.1629784107208252}
+INFO:root:{'epoch': 40, 'iter': '[0/2324]', 'Avg_Loss': 0.04234875738620758, 'Loss_POI1': 0.0331951268017292, 'Loss_POI2': 0.05150238424539566}
+INFO:root:{'epoch': 40, 'iter': '[500/2324]', 'Avg_Loss': 0.030766575558189145, 'Loss_POI1': 0.02158261463046074, 'Loss_POI2': 0.024622034281492233}
+INFO:root:{'epoch': 40, 'iter': '[1000/2324]', 'Avg_Loss': 0.030232222845682968, 'Loss_POI1': 0.020225942134857178, 'Loss_POI2': 0.04663850739598274}
+INFO:root:{'epoch': 40, 'iter': '[1500/2324]', 'Avg_Loss': 0.03030127805591295, 'Loss_POI1': 0.022573238238692284, 'Loss_POI2': 0.049693021923303604}
+INFO:root:{'epoch': 40, 'iter': '[2000/2324]', 'Avg_Loss': 0.03051828122001955, 'Loss_POI1': 0.010162444785237312, 'Loss_POI2': 0.028594184666872025}
+INFO:root:EP40_train, avg_loss=0.030579
+INFO:root:EP:40 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep40
+INFO:root:test=(HR@10:0.8201,HR@5:0.7442,NDCG@10:0.6493,NDCG@5:0.6245) 
+INFO:root:{'epoch': 41, 'iter': '[0/2324]', 'Avg_Loss': 0.17912961542606354, 'Loss_CAT': 0.17912961542606354}
+INFO:root:{'epoch': 41, 'iter': '[500/2324]', 'Avg_Loss': 0.18578341597330547, 'Loss_CAT': 0.2068014293909073}
+INFO:root:{'epoch': 41, 'iter': '[1000/2324]', 'Avg_Loss': 0.18445975430957326, 'Loss_CAT': 0.2077842354774475}
+INFO:root:{'epoch': 41, 'iter': '[1500/2324]', 'Avg_Loss': 0.184148700430066, 'Loss_CAT': 0.17913416028022766}
+INFO:root:{'epoch': 41, 'iter': '[2000/2324]', 'Avg_Loss': 0.18325519404638893, 'Loss_CAT': 0.17947933077812195}
+INFO:root:{'epoch': 41, 'iter': '[0/2324]', 'Avg_Loss': 0.05174711346626282, 'Loss_POI1': 0.040623556822538376, 'Loss_POI2': 0.06287067383527756}
+INFO:root:{'epoch': 41, 'iter': '[500/2324]', 'Avg_Loss': 0.03093144562311039, 'Loss_POI1': 0.026488713920116425, 'Loss_POI2': 0.06641071289777756}
+INFO:root:{'epoch': 41, 'iter': '[1000/2324]', 'Avg_Loss': 0.030048112811094575, 'Loss_POI1': 0.018772870302200317, 'Loss_POI2': 0.05425319820642471}
+INFO:root:{'epoch': 41, 'iter': '[1500/2324]', 'Avg_Loss': 0.029818167266709546, 'Loss_POI1': 0.018029287457466125, 'Loss_POI2': 0.064446821808815}
+INFO:root:{'epoch': 41, 'iter': '[2000/2324]', 'Avg_Loss': 0.029934624886616825, 'Loss_POI1': 0.019847992807626724, 'Loss_POI2': 0.03152893856167793}
+INFO:root:EP41_train, avg_loss=0.029898
+INFO:root:EP:41 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep41
+INFO:root:test=(HR@10:0.8139,HR@5:0.7391,NDCG@10:0.6451,NDCG@5:0.6207) 
+INFO:root:{'epoch': 42, 'iter': '[0/2324]', 'Avg_Loss': 0.23319105803966522, 'Loss_CAT': 0.23319105803966522}
+INFO:root:{'epoch': 42, 'iter': '[500/2324]', 'Avg_Loss': 0.18095305529302227, 'Loss_CAT': 0.15499761700630188}
+INFO:root:{'epoch': 42, 'iter': '[1000/2324]', 'Avg_Loss': 0.18110037976866597, 'Loss_CAT': 0.1631084382534027}
+INFO:root:{'epoch': 42, 'iter': '[1500/2324]', 'Avg_Loss': 0.18177659667129917, 'Loss_CAT': 0.18659746646881104}
+INFO:root:{'epoch': 42, 'iter': '[2000/2324]', 'Avg_Loss': 0.1821968927160315, 'Loss_CAT': 0.24549749493598938}
+INFO:root:{'epoch': 42, 'iter': '[0/2324]', 'Avg_Loss': 0.03952088952064514, 'Loss_POI1': 0.03283495455980301, 'Loss_POI2': 0.046206824481487274}
+INFO:root:{'epoch': 42, 'iter': '[500/2324]', 'Avg_Loss': 0.029752722253535917, 'Loss_POI1': 0.00604627002030611, 'Loss_POI2': 0.01771821267902851}
+INFO:root:{'epoch': 42, 'iter': '[1000/2324]', 'Avg_Loss': 0.02958310881655637, 'Loss_POI1': 0.019174549728631973, 'Loss_POI2': 0.030070895329117775}
+INFO:root:{'epoch': 42, 'iter': '[1500/2324]', 'Avg_Loss': 0.029954313266734475, 'Loss_POI1': 0.03306882083415985, 'Loss_POI2': 0.033565863966941833}
+INFO:root:{'epoch': 42, 'iter': '[2000/2324]', 'Avg_Loss': 0.030030048457670145, 'Loss_POI1': 0.01742282509803772, 'Loss_POI2': 0.04056207835674286}
+INFO:root:EP42_train, avg_loss=0.030105
+INFO:root:EP:42 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep42
+INFO:root:test=(HR@10:0.8216,HR@5:0.7483,NDCG@10:0.6515,NDCG@5:0.6278) 
+INFO:root:{'epoch': 43, 'iter': '[0/2324]', 'Avg_Loss': 0.20427468419075012, 'Loss_CAT': 0.20427468419075012}
+INFO:root:{'epoch': 43, 'iter': '[500/2324]', 'Avg_Loss': 0.1801636195379103, 'Loss_CAT': 0.159420907497406}
+INFO:root:{'epoch': 43, 'iter': '[1000/2324]', 'Avg_Loss': 0.18192610446806554, 'Loss_CAT': 0.19943884015083313}
+INFO:root:{'epoch': 43, 'iter': '[1500/2324]', 'Avg_Loss': 0.1819679324603891, 'Loss_CAT': 0.17085224390029907}
+INFO:root:{'epoch': 43, 'iter': '[2000/2324]', 'Avg_Loss': 0.1822994121353606, 'Loss_CAT': 0.16774533689022064}
+INFO:root:{'epoch': 43, 'iter': '[0/2324]', 'Avg_Loss': 0.047555580735206604, 'Loss_POI1': 0.034934453666210175, 'Loss_POI2': 0.06017671152949333}
+INFO:root:{'epoch': 43, 'iter': '[500/2324]', 'Avg_Loss': 0.030432881861776413, 'Loss_POI1': 0.006498093716800213, 'Loss_POI2': 0.02623813971877098}
+INFO:root:{'epoch': 43, 'iter': '[1000/2324]', 'Avg_Loss': 0.03043035295820766, 'Loss_POI1': 0.005574613809585571, 'Loss_POI2': 0.00765606015920639}
+INFO:root:{'epoch': 43, 'iter': '[1500/2324]', 'Avg_Loss': 0.030707059704514345, 'Loss_POI1': 0.021880842745304108, 'Loss_POI2': 0.025022268295288086}
+INFO:root:{'epoch': 43, 'iter': '[2000/2324]', 'Avg_Loss': 0.030271667018784084, 'Loss_POI1': 0.033670824021101, 'Loss_POI2': 0.03322054445743561}
+INFO:root:EP43_train, avg_loss=0.030083
+INFO:root:EP:43 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep43
+INFO:root:test=(HR@10:0.8198,HR@5:0.7417,NDCG@10:0.6477,NDCG@5:0.6223) 
+INFO:root:{'epoch': 44, 'iter': '[0/2324]', 'Avg_Loss': 0.15648576617240906, 'Loss_CAT': 0.15648576617240906}
+INFO:root:{'epoch': 44, 'iter': '[500/2324]', 'Avg_Loss': 0.18019981731376247, 'Loss_CAT': 0.1744915097951889}
+INFO:root:{'epoch': 44, 'iter': '[1000/2324]', 'Avg_Loss': 0.18103225058043276, 'Loss_CAT': 0.15063568949699402}
+INFO:root:{'epoch': 44, 'iter': '[1500/2324]', 'Avg_Loss': 0.1818879377456763, 'Loss_CAT': 0.19254231452941895}
+INFO:root:{'epoch': 44, 'iter': '[2000/2324]', 'Avg_Loss': 0.18237359948020646, 'Loss_CAT': 0.18873734772205353}
+INFO:root:{'epoch': 44, 'iter': '[0/2324]', 'Avg_Loss': 0.011277149431407452, 'Loss_POI1': 0.00668882392346859, 'Loss_POI2': 0.015865474939346313}
+INFO:root:{'epoch': 44, 'iter': '[500/2324]', 'Avg_Loss': 0.028997362228835415, 'Loss_POI1': 0.01602994278073311, 'Loss_POI2': 0.03225991874933243}
+INFO:root:{'epoch': 44, 'iter': '[1000/2324]', 'Avg_Loss': 0.02920515203688454, 'Loss_POI1': 0.015104342252016068, 'Loss_POI2': 0.032129764556884766}
+INFO:root:{'epoch': 44, 'iter': '[1500/2324]', 'Avg_Loss': 0.02934459010561026, 'Loss_POI1': 0.027775634080171585, 'Loss_POI2': 0.0370909720659256}
+INFO:root:{'epoch': 44, 'iter': '[2000/2324]', 'Avg_Loss': 0.029366226707199315, 'Loss_POI1': 0.0722733736038208, 'Loss_POI2': 0.09209457784891129}
+INFO:root:EP44_train, avg_loss=0.029409
+INFO:root:EP:44 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep44
+INFO:root:test=(HR@10:0.8194,HR@5:0.7414,NDCG@10:0.6458,NDCG@5:0.6206) 
+INFO:root:{'epoch': 45, 'iter': '[0/2324]', 'Avg_Loss': 0.2018086314201355, 'Loss_CAT': 0.2018086314201355}
+INFO:root:{'epoch': 45, 'iter': '[500/2324]', 'Avg_Loss': 0.17967647217407437, 'Loss_CAT': 0.1742919534444809}
+INFO:root:{'epoch': 45, 'iter': '[1000/2324]', 'Avg_Loss': 0.17960429672416037, 'Loss_CAT': 0.1925732046365738}
+INFO:root:{'epoch': 45, 'iter': '[1500/2324]', 'Avg_Loss': 0.18040348201255493, 'Loss_CAT': 0.23987653851509094}
+INFO:root:{'epoch': 45, 'iter': '[2000/2324]', 'Avg_Loss': 0.1812725415093073, 'Loss_CAT': 0.19674745202064514}
+INFO:root:{'epoch': 45, 'iter': '[0/2324]', 'Avg_Loss': 0.011377962306141853, 'Loss_POI1': 0.008263593539595604, 'Loss_POI2': 0.014492331072688103}
+INFO:root:{'epoch': 45, 'iter': '[500/2324]', 'Avg_Loss': 0.029091562825290417, 'Loss_POI1': 0.013583069667220116, 'Loss_POI2': 0.02768085151910782}
+INFO:root:{'epoch': 45, 'iter': '[1000/2324]', 'Avg_Loss': 0.028870931084311522, 'Loss_POI1': 0.015038733370602131, 'Loss_POI2': 0.03319251909852028}
+INFO:root:{'epoch': 45, 'iter': '[1500/2324]', 'Avg_Loss': 0.029082859281685046, 'Loss_POI1': 0.05723598226904869, 'Loss_POI2': 0.059706203639507294}
+INFO:root:{'epoch': 45, 'iter': '[2000/2324]', 'Avg_Loss': 0.028897687893077874, 'Loss_POI1': 0.028221165761351585, 'Loss_POI2': 0.03657703474164009}
+INFO:root:EP45_train, avg_loss=0.028881
+INFO:root:EP:45 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep45
+INFO:root:test=(HR@10:0.8209,HR@5:0.7453,NDCG@10:0.6484,NDCG@5:0.6238) 
+INFO:root:{'epoch': 46, 'iter': '[0/2324]', 'Avg_Loss': 0.16909703612327576, 'Loss_CAT': 0.16909703612327576}
+INFO:root:{'epoch': 46, 'iter': '[500/2324]', 'Avg_Loss': 0.18168646720295656, 'Loss_CAT': 0.16149115562438965}
+INFO:root:{'epoch': 46, 'iter': '[1000/2324]', 'Avg_Loss': 0.18098819380129252, 'Loss_CAT': 0.1703861802816391}
+INFO:root:{'epoch': 46, 'iter': '[1500/2324]', 'Avg_Loss': 0.18084808337259578, 'Loss_CAT': 0.14563241600990295}
+INFO:root:{'epoch': 46, 'iter': '[2000/2324]', 'Avg_Loss': 0.18113614813513543, 'Loss_CAT': 0.24867525696754456}
+INFO:root:{'epoch': 46, 'iter': '[0/2324]', 'Avg_Loss': 0.017179058864712715, 'Loss_POI1': 0.015306364744901657, 'Loss_POI2': 0.019051752984523773}
+INFO:root:{'epoch': 46, 'iter': '[500/2324]', 'Avg_Loss': 0.029033587003747623, 'Loss_POI1': 0.011848416179418564, 'Loss_POI2': 0.009888901375234127}
+INFO:root:{'epoch': 46, 'iter': '[1000/2324]', 'Avg_Loss': 0.02854456478445144, 'Loss_POI1': 0.038938604295253754, 'Loss_POI2': 0.037968456745147705}
+INFO:root:{'epoch': 46, 'iter': '[1500/2324]', 'Avg_Loss': 0.02860202579365064, 'Loss_POI1': 0.019499486312270164, 'Loss_POI2': 0.037117719650268555}
+INFO:root:{'epoch': 46, 'iter': '[2000/2324]', 'Avg_Loss': 0.028864110586233904, 'Loss_POI1': 0.016736555844545364, 'Loss_POI2': 0.022050021216273308}
+INFO:root:EP46_train, avg_loss=0.028678
+INFO:root:EP:46 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep46
+INFO:root:test=(HR@10:0.8230,HR@5:0.7417,NDCG@10:0.6492,NDCG@5:0.6227) 
+INFO:root:{'epoch': 47, 'iter': '[0/2324]', 'Avg_Loss': 0.201095312833786, 'Loss_CAT': 0.201095312833786}
+INFO:root:{'epoch': 47, 'iter': '[500/2324]', 'Avg_Loss': 0.18142410947712595, 'Loss_CAT': 0.21213485300540924}
+INFO:root:{'epoch': 47, 'iter': '[1000/2324]', 'Avg_Loss': 0.18069802332561571, 'Loss_CAT': 0.18818874657154083}
+INFO:root:{'epoch': 47, 'iter': '[1500/2324]', 'Avg_Loss': 0.18130224167327735, 'Loss_CAT': 0.15456709265708923}
+INFO:root:{'epoch': 47, 'iter': '[2000/2324]', 'Avg_Loss': 0.18143929600313508, 'Loss_CAT': 0.1538955271244049}
+INFO:root:{'epoch': 47, 'iter': '[0/2324]', 'Avg_Loss': 0.02954734116792679, 'Loss_POI1': 0.02278239093720913, 'Loss_POI2': 0.0363122895359993}
+INFO:root:{'epoch': 47, 'iter': '[500/2324]', 'Avg_Loss': 0.029345592187379234, 'Loss_POI1': 0.009152969345450401, 'Loss_POI2': 0.021856889128684998}
+INFO:root:{'epoch': 47, 'iter': '[1000/2324]', 'Avg_Loss': 0.029169185554606843, 'Loss_POI1': 0.013252931647002697, 'Loss_POI2': 0.01674678549170494}
+INFO:root:{'epoch': 47, 'iter': '[1500/2324]', 'Avg_Loss': 0.029035442228926015, 'Loss_POI1': 0.02871222235262394, 'Loss_POI2': 0.033607304096221924}
+INFO:root:{'epoch': 47, 'iter': '[2000/2324]', 'Avg_Loss': 0.02925084565097335, 'Loss_POI1': 0.06980663537979126, 'Loss_POI2': 0.095572330057621}
+INFO:root:EP47_train, avg_loss=0.029195
+INFO:root:EP:47 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep47
+INFO:root:test=(HR@10:0.8201,HR@5:0.7401,NDCG@10:0.6473,NDCG@5:0.6213) 
+INFO:root:{'epoch': 48, 'iter': '[0/2324]', 'Avg_Loss': 0.19342350959777832, 'Loss_CAT': 0.19342350959777832}
+INFO:root:{'epoch': 48, 'iter': '[500/2324]', 'Avg_Loss': 0.18112829623524537, 'Loss_CAT': 0.1761084496974945}
+INFO:root:{'epoch': 48, 'iter': '[1000/2324]', 'Avg_Loss': 0.1814058656235794, 'Loss_CAT': 0.16629630327224731}
+INFO:root:{'epoch': 48, 'iter': '[1500/2324]', 'Avg_Loss': 0.18188008552368762, 'Loss_CAT': 0.25191426277160645}
+INFO:root:{'epoch': 48, 'iter': '[2000/2324]', 'Avg_Loss': 0.1820603794958638, 'Loss_CAT': 0.20216774940490723}
+INFO:root:{'epoch': 48, 'iter': '[0/2324]', 'Avg_Loss': 0.023448675870895386, 'Loss_POI1': 0.014702098444104195, 'Loss_POI2': 0.03219525143504143}
+INFO:root:{'epoch': 48, 'iter': '[500/2324]', 'Avg_Loss': 0.029331842218033092, 'Loss_POI1': 0.009923400357365608, 'Loss_POI2': 0.020030776038765907}
+INFO:root:{'epoch': 48, 'iter': '[1000/2324]', 'Avg_Loss': 0.027981996320403896, 'Loss_POI1': 0.008495049551129341, 'Loss_POI2': 0.009646855294704437}
+INFO:root:{'epoch': 48, 'iter': '[1500/2324]', 'Avg_Loss': 0.02812850140211986, 'Loss_POI1': 0.008927920833230019, 'Loss_POI2': 0.011018608696758747}
+INFO:root:{'epoch': 48, 'iter': '[2000/2324]', 'Avg_Loss': 0.028112099518411156, 'Loss_POI1': 0.021004747599363327, 'Loss_POI2': 0.03859781473875046}
+INFO:root:EP48_train, avg_loss=0.027973
+INFO:root:EP:48 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep48
+INFO:root:test=(HR@10:0.8210,HR@5:0.7442,NDCG@10:0.6476,NDCG@5:0.6226) 
+INFO:root:{'epoch': 49, 'iter': '[0/2324]', 'Avg_Loss': 0.18340665102005005, 'Loss_CAT': 0.18340665102005005}
+INFO:root:{'epoch': 49, 'iter': '[500/2324]', 'Avg_Loss': 0.1809720418559101, 'Loss_CAT': 0.15818189084529877}
+INFO:root:{'epoch': 49, 'iter': '[1000/2324]', 'Avg_Loss': 0.18140705635438076, 'Loss_CAT': 0.12817972898483276}
+INFO:root:{'epoch': 49, 'iter': '[1500/2324]', 'Avg_Loss': 0.18130185738513663, 'Loss_CAT': 0.11652344465255737}
+INFO:root:{'epoch': 49, 'iter': '[2000/2324]', 'Avg_Loss': 0.1816156553937637, 'Loss_CAT': 0.18482521176338196}
+INFO:root:{'epoch': 49, 'iter': '[0/2324]', 'Avg_Loss': 0.03846724331378937, 'Loss_POI1': 0.026921097189188004, 'Loss_POI2': 0.05001339316368103}
+INFO:root:{'epoch': 49, 'iter': '[500/2324]', 'Avg_Loss': 0.028453669157585577, 'Loss_POI1': 0.009118383750319481, 'Loss_POI2': 0.012484850361943245}
+INFO:root:{'epoch': 49, 'iter': '[1000/2324]', 'Avg_Loss': 0.02794322681629083, 'Loss_POI1': 0.00820026732981205, 'Loss_POI2': 0.016600556671619415}
+INFO:root:{'epoch': 49, 'iter': '[1500/2324]', 'Avg_Loss': 0.027950172761311228, 'Loss_POI1': 0.03564843162894249, 'Loss_POI2': 0.07135836780071259}
+INFO:root:{'epoch': 49, 'iter': '[2000/2324]', 'Avg_Loss': 0.0279498268616968, 'Loss_POI1': 0.014328258112072945, 'Loss_POI2': 0.02152322791516781}
+INFO:root:EP49_train, avg_loss=0.027915
+INFO:root:EP:49 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep49
+INFO:root:test=(HR@10:0.8173,HR@5:0.7420,NDCG@10:0.6460,NDCG@5:0.6214) 
+INFO:root:Namespace(Drop=0, adam_beta1=0.9, adam_beta2=0.999, adam_weight_decay=0.0, batch_size=256, corpus_lines=None, cuda_devices='1', datasets='GowallaLoc1_GowallaLoc2', dropout=0.1, epochs=50, hidden=64, lambda1=0.5, log_freq=500, loss_type='Pairwise', lr=0.0001, model_name='PretrainModel_r2021_cateattentionPOIv2.pkl', num_workers=0, on_memory=False, output_path='output/COM_GowallaLoc1_GowallaLoc2/', seed=2021, seq_len=20, test_dataset='data/COM_GowallaLoc1_GowallaLoc2/test_corpus.COM_GowallaLoc1_GowallaLoc2', train_dataset='data/COM_GowallaLoc1_GowallaLoc2/corpus.COM_GowallaLoc1_GowallaLoc2', vocab_path='data/COM_GowallaLoc1_GowallaLoc2/vocab.COM_GowallaLoc1_GowallaLoc2', with_cuda=True)
+INFO:root:Vocab Size: 56360
+INFO:root:Total Parameters:3870208
+INFO:root:test=(HR@10:0.1822,HR@5:0.1243,NDCG@10:0.1113,NDCG@5:0.0927) 
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.677245020866394, 'Loss_CAT': 0.677245020866394}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.45918017221306134, 'Loss_CAT': 0.3381249010562897}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.39137831248424865, 'Loss_CAT': 0.3029446005821228}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.3613922925173323, 'Loss_CAT': 0.2754207253456116}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.34440848733233786, 'Loss_CAT': 0.24724261462688446}
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.7003174424171448, 'Loss_POI1': 0.6995834112167358, 'Loss_POI2': 0.7010514736175537, 'Loss_POI3': 0.696132242679596, 'Loss_POI4': 0.6975428462028503}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.6008179862342194, 'Loss_POI1': 0.503362238407135, 'Loss_POI2': 0.5043646693229675, 'Loss_POI3': 0.5033518671989441, 'Loss_POI4': 0.5043535232543945}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.5366890074370744, 'Loss_POI1': 0.45402824878692627, 'Loss_POI2': 0.45426100492477417, 'Loss_POI3': 0.4540213644504547, 'Loss_POI4': 0.45425477623939514}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.49561974382416396, 'Loss_POI1': 0.4547048509120941, 'Loss_POI2': 0.4555865228176117, 'Loss_POI3': 0.45469722151756287, 'Loss_POI4': 0.4555782079696655}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.46914221670316614, 'Loss_POI1': 0.3250018358230591, 'Loss_POI2': 0.3237568736076355, 'Loss_POI3': 0.3249813914299011, 'Loss_POI4': 0.3237212896347046}
+INFO:root:EP0_train, avg_loss=0.455231
+INFO:root:EP:0 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep0
+INFO:root:test=(HR@10:0.6725,HR@5:0.5597,NDCG@10:0.4701,NDCG@5:0.4335) 
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.24085506796836853, 'Loss_CAT': 0.24085506796836853}
+INFO:root:{'epoch': 1, 'iter': '[500/2324]', 'Avg_Loss': 0.26828460811735866, 'Loss_CAT': 0.29459652304649353}
+INFO:root:{'epoch': 1, 'iter': '[1000/2324]', 'Avg_Loss': 0.2630778491407722, 'Loss_CAT': 0.22094520926475525}
+INFO:root:{'epoch': 1, 'iter': '[1500/2324]', 'Avg_Loss': 0.2594655748310286, 'Loss_CAT': 0.23828110098838806}
+INFO:root:{'epoch': 1, 'iter': '[2000/2324]', 'Avg_Loss': 0.2558753087051745, 'Loss_CAT': 0.2539392113685608}
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.3586295545101166, 'Loss_POI1': 0.35654473304748535, 'Loss_POI2': 0.3607143759727478, 'Loss_POI3': 0.337538480758667, 'Loss_POI4': 0.33927449584007263}
+INFO:root:{'epoch': 1, 'iter': '[500/2324]', 'Avg_Loss': 0.3361023869105204, 'Loss_POI1': 0.3117828369140625, 'Loss_POI2': 0.31220781803131104, 'Loss_POI3': 0.31158679723739624, 'Loss_POI4': 0.31203800439834595}
+INFO:root:{'epoch': 1, 'iter': '[1000/2324]', 'Avg_Loss': 0.3336716615236722, 'Loss_POI1': 0.33851346373558044, 'Loss_POI2': 0.3442288041114807, 'Loss_POI3': 0.3384392261505127, 'Loss_POI4': 0.34414827823638916}
+INFO:root:{'epoch': 1, 'iter': '[1500/2324]', 'Avg_Loss': 0.3299204758967184, 'Loss_POI1': 0.3321095108985901, 'Loss_POI2': 0.33318763971328735, 'Loss_POI3': 0.3320491909980774, 'Loss_POI4': 0.3331170678138733}
+INFO:root:{'epoch': 1, 'iter': '[2000/2324]', 'Avg_Loss': 0.32770852313406285, 'Loss_POI1': 0.30718016624450684, 'Loss_POI2': 0.31071072816848755, 'Loss_POI3': 0.3071367144584656, 'Loss_POI4': 0.310668021440506}
+INFO:root:EP1_train, avg_loss=0.325785
+INFO:root:EP:1 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep1
+INFO:root:test=(HR@10:0.6948,HR@5:0.5833,NDCG@10:0.4867,NDCG@5:0.4505) 
+INFO:root:{'epoch': 2, 'iter': '[0/2324]', 'Avg_Loss': 0.2537342607975006, 'Loss_CAT': 0.2537342607975006}
+INFO:root:{'epoch': 2, 'iter': '[500/2324]', 'Avg_Loss': 0.23810760992134877, 'Loss_CAT': 0.23860377073287964}
+INFO:root:{'epoch': 2, 'iter': '[1000/2324]', 'Avg_Loss': 0.23531751590711134, 'Loss_CAT': 0.24010597169399261}
+INFO:root:{'epoch': 2, 'iter': '[1500/2324]', 'Avg_Loss': 0.23384438111613703, 'Loss_CAT': 0.25823235511779785}
+INFO:root:{'epoch': 2, 'iter': '[2000/2324]', 'Avg_Loss': 0.23234363297174598, 'Loss_CAT': 0.20640163123607635}
+INFO:root:{'epoch': 2, 'iter': '[0/2324]', 'Avg_Loss': 0.2888491153717041, 'Loss_POI1': 0.28306809067726135, 'Loss_POI2': 0.29463011026382446, 'Loss_POI3': 0.2725457549095154, 'Loss_POI4': 0.28131094574928284}
+INFO:root:{'epoch': 2, 'iter': '[500/2324]', 'Avg_Loss': 0.28212361938939123, 'Loss_POI1': 0.286100298166275, 'Loss_POI2': 0.3012504279613495, 'Loss_POI3': 0.28599023818969727, 'Loss_POI4': 0.3010790944099426}
+INFO:root:{'epoch': 2, 'iter': '[1000/2324]', 'Avg_Loss': 0.2774513232987839, 'Loss_POI1': 0.33620697259902954, 'Loss_POI2': 0.3428746461868286, 'Loss_POI3': 0.33605605363845825, 'Loss_POI4': 0.3427553176879883}
+INFO:root:{'epoch': 2, 'iter': '[1500/2324]', 'Avg_Loss': 0.274549422315325, 'Loss_POI1': 0.22378724813461304, 'Loss_POI2': 0.23275862634181976, 'Loss_POI3': 0.2237352728843689, 'Loss_POI4': 0.23269133269786835}
+INFO:root:{'epoch': 2, 'iter': '[2000/2324]', 'Avg_Loss': 0.2707518573956511, 'Loss_POI1': 0.21637240052223206, 'Loss_POI2': 0.22590045630931854, 'Loss_POI3': 0.21630150079727173, 'Loss_POI4': 0.22581854462623596}
+INFO:root:EP2_train, avg_loss=0.268321
+INFO:root:EP:2 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep2
+INFO:root:test=(HR@10:0.7353,HR@5:0.6283,NDCG@10:0.5314,NDCG@5:0.4966) 
+INFO:root:{'epoch': 3, 'iter': '[0/2324]', 'Avg_Loss': 0.27747368812561035, 'Loss_CAT': 0.27747368812561035}
+INFO:root:{'epoch': 3, 'iter': '[500/2324]', 'Avg_Loss': 0.22430621480156562, 'Loss_CAT': 0.17754065990447998}
+INFO:root:{'epoch': 3, 'iter': '[1000/2324]', 'Avg_Loss': 0.22149287935320314, 'Loss_CAT': 0.20842291414737701}
+INFO:root:{'epoch': 3, 'iter': '[1500/2324]', 'Avg_Loss': 0.22018330090050695, 'Loss_CAT': 0.1635437309741974}
+INFO:root:{'epoch': 3, 'iter': '[2000/2324]', 'Avg_Loss': 0.21914255176705758, 'Loss_CAT': 0.2346765100955963}
+INFO:root:{'epoch': 3, 'iter': '[0/2324]', 'Avg_Loss': 0.22569850087165833, 'Loss_POI1': 0.21651911735534668, 'Loss_POI2': 0.23487789928913116, 'Loss_POI3': 0.2104972004890442, 'Loss_POI4': 0.22638371586799622}
+INFO:root:{'epoch': 3, 'iter': '[500/2324]', 'Avg_Loss': 0.2269407448297489, 'Loss_POI1': 0.2729185223579407, 'Loss_POI2': 0.28264474868774414, 'Loss_POI3': 0.27282172441482544, 'Loss_POI4': 0.28253620862960815}
+INFO:root:{'epoch': 3, 'iter': '[1000/2324]', 'Avg_Loss': 0.22241157998929134, 'Loss_POI1': 0.2474309802055359, 'Loss_POI2': 0.25713393092155457, 'Loss_POI3': 0.24732458591461182, 'Loss_POI4': 0.25699737668037415}
+INFO:root:{'epoch': 3, 'iter': '[1500/2324]', 'Avg_Loss': 0.21845673816868022, 'Loss_POI1': 0.1912785768508911, 'Loss_POI2': 0.1984502375125885, 'Loss_POI3': 0.19123214483261108, 'Loss_POI4': 0.19840854406356812}
+INFO:root:{'epoch': 3, 'iter': '[2000/2324]', 'Avg_Loss': 0.21560332440454205, 'Loss_POI1': 0.18810799717903137, 'Loss_POI2': 0.19556045532226562, 'Loss_POI3': 0.1880720853805542, 'Loss_POI4': 0.1955234408378601}
+INFO:root:EP3_train, avg_loss=0.213636
+INFO:root:EP:3 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep3
+INFO:root:test=(HR@10:0.7664,HR@5:0.6659,NDCG@10:0.5681,NDCG@5:0.5355) 
+INFO:root:{'epoch': 4, 'iter': '[0/2324]', 'Avg_Loss': 0.232631117105484, 'Loss_CAT': 0.232631117105484}
+INFO:root:{'epoch': 4, 'iter': '[500/2324]', 'Avg_Loss': 0.21210076313413784, 'Loss_CAT': 0.21973606944084167}
+INFO:root:{'epoch': 4, 'iter': '[1000/2324]', 'Avg_Loss': 0.211443202731969, 'Loss_CAT': 0.19675156474113464}
+INFO:root:{'epoch': 4, 'iter': '[1500/2324]', 'Avg_Loss': 0.2108952493011594, 'Loss_CAT': 0.19104695320129395}
+INFO:root:{'epoch': 4, 'iter': '[2000/2324]', 'Avg_Loss': 0.21065903625179683, 'Loss_CAT': 0.20738248527050018}
+INFO:root:{'epoch': 4, 'iter': '[0/2324]', 'Avg_Loss': 0.21776838600635529, 'Loss_POI1': 0.21024322509765625, 'Loss_POI2': 0.22529354691505432, 'Loss_POI3': 0.20266376435756683, 'Loss_POI4': 0.21608266234397888}
+INFO:root:{'epoch': 4, 'iter': '[500/2324]', 'Avg_Loss': 0.1789382831927783, 'Loss_POI1': 0.20961226522922516, 'Loss_POI2': 0.22041484713554382, 'Loss_POI3': 0.20954927802085876, 'Loss_POI4': 0.22033527493476868}
+INFO:root:{'epoch': 4, 'iter': '[1000/2324]', 'Avg_Loss': 0.17671570594940747, 'Loss_POI1': 0.14591027796268463, 'Loss_POI2': 0.15981483459472656, 'Loss_POI3': 0.1458589881658554, 'Loss_POI4': 0.15976697206497192}
+INFO:root:{'epoch': 4, 'iter': '[1500/2324]', 'Avg_Loss': 0.17391292715096457, 'Loss_POI1': 0.1645916849374771, 'Loss_POI2': 0.18618524074554443, 'Loss_POI3': 0.16454707086086273, 'Loss_POI4': 0.18614323437213898}
+INFO:root:{'epoch': 4, 'iter': '[2000/2324]', 'Avg_Loss': 0.17180969776480512, 'Loss_POI1': 0.15007492899894714, 'Loss_POI2': 0.15648265182971954, 'Loss_POI3': 0.15004870295524597, 'Loss_POI4': 0.1564459204673767}
+INFO:root:EP4_train, avg_loss=0.170416
+INFO:root:EP:4 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep4
+INFO:root:test=(HR@10:0.7836,HR@5:0.6916,NDCG@10:0.5911,NDCG@5:0.5611) 
+INFO:root:{'epoch': 5, 'iter': '[0/2324]', 'Avg_Loss': 0.18620698153972626, 'Loss_CAT': 0.18620698153972626}
+INFO:root:{'epoch': 5, 'iter': '[500/2324]', 'Avg_Loss': 0.20591974350625644, 'Loss_CAT': 0.18285375833511353}
+INFO:root:{'epoch': 5, 'iter': '[1000/2324]', 'Avg_Loss': 0.20622095407603622, 'Loss_CAT': 0.19938704371452332}
+INFO:root:{'epoch': 5, 'iter': '[1500/2324]', 'Avg_Loss': 0.20632788934046867, 'Loss_CAT': 0.23280587792396545}
+INFO:root:{'epoch': 5, 'iter': '[2000/2324]', 'Avg_Loss': 0.20585257503790952, 'Loss_CAT': 0.19825531542301178}
+INFO:root:{'epoch': 5, 'iter': '[0/2324]', 'Avg_Loss': 0.16743162274360657, 'Loss_POI1': 0.15656772255897522, 'Loss_POI2': 0.17829552292823792, 'Loss_POI3': 0.1516045480966568, 'Loss_POI4': 0.17088833451271057}
+INFO:root:{'epoch': 5, 'iter': '[500/2324]', 'Avg_Loss': 0.14428494512261505, 'Loss_POI1': 0.13279956579208374, 'Loss_POI2': 0.14542734622955322, 'Loss_POI3': 0.13275927305221558, 'Loss_POI4': 0.14537915587425232}
+INFO:root:{'epoch': 5, 'iter': '[1000/2324]', 'Avg_Loss': 0.14162102114636224, 'Loss_POI1': 0.12788419425487518, 'Loss_POI2': 0.1485431045293808, 'Loss_POI3': 0.12785950303077698, 'Loss_POI4': 0.14851361513137817}
+INFO:root:{'epoch': 5, 'iter': '[1500/2324]', 'Avg_Loss': 0.139704417767404, 'Loss_POI1': 0.14773526787757874, 'Loss_POI2': 0.15948188304901123, 'Loss_POI3': 0.14771977066993713, 'Loss_POI4': 0.15945112705230713}
+INFO:root:{'epoch': 5, 'iter': '[2000/2324]', 'Avg_Loss': 0.13827943203152568, 'Loss_POI1': 0.10191279649734497, 'Loss_POI2': 0.12635007500648499, 'Loss_POI3': 0.10189549624919891, 'Loss_POI4': 0.12631148099899292}
+INFO:root:EP5_train, avg_loss=0.137144
+INFO:root:EP:5 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep5
+INFO:root:test=(HR@10:0.7984,HR@5:0.7068,NDCG@10:0.6108,NDCG@5:0.5811) 
+INFO:root:{'epoch': 6, 'iter': '[0/2324]', 'Avg_Loss': 0.2344658374786377, 'Loss_CAT': 0.2344658374786377}
+INFO:root:{'epoch': 6, 'iter': '[500/2324]', 'Avg_Loss': 0.2059065060701199, 'Loss_CAT': 0.2019602209329605}
+INFO:root:{'epoch': 6, 'iter': '[1000/2324]', 'Avg_Loss': 0.20445368096574798, 'Loss_CAT': 0.20542968809604645}
+INFO:root:{'epoch': 6, 'iter': '[1500/2324]', 'Avg_Loss': 0.2037448020506747, 'Loss_CAT': 0.17799340188503265}
+INFO:root:{'epoch': 6, 'iter': '[2000/2324]', 'Avg_Loss': 0.2030826518903191, 'Loss_CAT': 0.18085186183452606}
+INFO:root:{'epoch': 6, 'iter': '[0/2324]', 'Avg_Loss': 0.11877430975437164, 'Loss_POI1': 0.11123185604810715, 'Loss_POI2': 0.12631677091121674, 'Loss_POI3': 0.10750535875558853, 'Loss_POI4': 0.1223616749048233}
+INFO:root:{'epoch': 6, 'iter': '[500/2324]', 'Avg_Loss': 0.11747847048346392, 'Loss_POI1': 0.11054009199142456, 'Loss_POI2': 0.12278003245592117, 'Loss_POI3': 0.11048509180545807, 'Loss_POI4': 0.12272457033395767}
+INFO:root:{'epoch': 6, 'iter': '[1000/2324]', 'Avg_Loss': 0.11585950749469447, 'Loss_POI1': 0.13129323720932007, 'Loss_POI2': 0.14939668774604797, 'Loss_POI3': 0.13127276301383972, 'Loss_POI4': 0.14936837553977966}
+INFO:root:{'epoch': 6, 'iter': '[1500/2324]', 'Avg_Loss': 0.11448782457561195, 'Loss_POI1': 0.07782220095396042, 'Loss_POI2': 0.0998394787311554, 'Loss_POI3': 0.07781125605106354, 'Loss_POI4': 0.09982471168041229}
+INFO:root:{'epoch': 6, 'iter': '[2000/2324]', 'Avg_Loss': 0.1133427935420186, 'Loss_POI1': 0.10945311188697815, 'Loss_POI2': 0.12604692578315735, 'Loss_POI3': 0.10942588746547699, 'Loss_POI4': 0.1260058730840683}
+INFO:root:EP6_train, avg_loss=0.113094
+INFO:root:EP:6 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep6
+INFO:root:test=(HR@10:0.8087,HR@5:0.7214,NDCG@10:0.6196,NDCG@5:0.5912) 
+INFO:root:{'epoch': 7, 'iter': '[0/2324]', 'Avg_Loss': 0.23067207634449005, 'Loss_CAT': 0.23067207634449005}
+INFO:root:{'epoch': 7, 'iter': '[500/2324]', 'Avg_Loss': 0.19974071011988226, 'Loss_CAT': 0.16406545042991638}
+INFO:root:{'epoch': 7, 'iter': '[1000/2324]', 'Avg_Loss': 0.1996882233273733, 'Loss_CAT': 0.1844935417175293}
+INFO:root:{'epoch': 7, 'iter': '[1500/2324]', 'Avg_Loss': 0.19985771525172216, 'Loss_CAT': 0.1987699270248413}
+INFO:root:{'epoch': 7, 'iter': '[2000/2324]', 'Avg_Loss': 0.19985216478819492, 'Loss_CAT': 0.21563977003097534}
+INFO:root:{'epoch': 7, 'iter': '[0/2324]', 'Avg_Loss': 0.14203622937202454, 'Loss_POI1': 0.1277681589126587, 'Loss_POI2': 0.15630429983139038, 'Loss_POI3': 0.12258324772119522, 'Loss_POI4': 0.15059104561805725}
+INFO:root:{'epoch': 7, 'iter': '[500/2324]', 'Avg_Loss': 0.09846455342844575, 'Loss_POI1': 0.09233817458152771, 'Loss_POI2': 0.10542524605989456, 'Loss_POI3': 0.09230096638202667, 'Loss_POI4': 0.10536646842956543}
+INFO:root:{'epoch': 7, 'iter': '[1000/2324]', 'Avg_Loss': 0.09691804709968034, 'Loss_POI1': 0.09748849272727966, 'Loss_POI2': 0.11273165047168732, 'Loss_POI3': 0.09746260941028595, 'Loss_POI4': 0.11269637942314148}
+INFO:root:{'epoch': 7, 'iter': '[1500/2324]', 'Avg_Loss': 0.0959443111496318, 'Loss_POI1': 0.10132992267608643, 'Loss_POI2': 0.10952918976545334, 'Loss_POI3': 0.10128582268953323, 'Loss_POI4': 0.10946861654520035}
+INFO:root:{'epoch': 7, 'iter': '[2000/2324]', 'Avg_Loss': 0.09489725521583667, 'Loss_POI1': 0.07007744908332825, 'Loss_POI2': 0.08407752960920334, 'Loss_POI3': 0.07005976885557175, 'Loss_POI4': 0.08404359221458435}
+INFO:root:EP7_train, avg_loss=0.094622
+INFO:root:EP:7 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep7
+INFO:root:test=(HR@10:0.8184,HR@5:0.7310,NDCG@10:0.6296,NDCG@5:0.6013) 
+INFO:root:{'epoch': 8, 'iter': '[0/2324]', 'Avg_Loss': 0.20576544106006622, 'Loss_CAT': 0.20576544106006622}
+INFO:root:{'epoch': 8, 'iter': '[500/2324]', 'Avg_Loss': 0.19684967017935184, 'Loss_CAT': 0.16220352053642273}
+INFO:root:{'epoch': 8, 'iter': '[1000/2324]', 'Avg_Loss': 0.19733076934869234, 'Loss_CAT': 0.16361793875694275}
+INFO:root:{'epoch': 8, 'iter': '[1500/2324]', 'Avg_Loss': 0.19730649279464013, 'Loss_CAT': 0.15839432179927826}
+INFO:root:{'epoch': 8, 'iter': '[2000/2324]', 'Avg_Loss': 0.1972388596288387, 'Loss_CAT': 0.2194073349237442}
+INFO:root:{'epoch': 8, 'iter': '[0/2324]', 'Avg_Loss': 0.10510750114917755, 'Loss_POI1': 0.09255917370319366, 'Loss_POI2': 0.11765582859516144, 'Loss_POI3': 0.08828555047512054, 'Loss_POI4': 0.11037348210811615}
+INFO:root:{'epoch': 8, 'iter': '[500/2324]', 'Avg_Loss': 0.08283029721971757, 'Loss_POI1': 0.06914958357810974, 'Loss_POI2': 0.07764236629009247, 'Loss_POI3': 0.0691298246383667, 'Loss_POI4': 0.0776066705584526}
+INFO:root:{'epoch': 8, 'iter': '[1000/2324]', 'Avg_Loss': 0.08187005842303659, 'Loss_POI1': 0.09250136464834213, 'Loss_POI2': 0.11124023050069809, 'Loss_POI3': 0.09248177707195282, 'Loss_POI4': 0.11119545996189117}
+INFO:root:{'epoch': 8, 'iter': '[1500/2324]', 'Avg_Loss': 0.08111200927645663, 'Loss_POI1': 0.060684215277433395, 'Loss_POI2': 0.07087245583534241, 'Loss_POI3': 0.06065865606069565, 'Loss_POI4': 0.07084381580352783}
+INFO:root:{'epoch': 8, 'iter': '[2000/2324]', 'Avg_Loss': 0.08066571667522326, 'Loss_POI1': 0.060756295919418335, 'Loss_POI2': 0.08718042820692062, 'Loss_POI3': 0.0607462152838707, 'Loss_POI4': 0.08716045320034027}
+INFO:root:EP8_train, avg_loss=0.080331
+INFO:root:EP:8 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep8
+INFO:root:test=(HR@10:0.8208,HR@5:0.7335,NDCG@10:0.6360,NDCG@5:0.6076) 
+INFO:root:{'epoch': 9, 'iter': '[0/2324]', 'Avg_Loss': 0.17379266023635864, 'Loss_CAT': 0.17379266023635864}
+INFO:root:{'epoch': 9, 'iter': '[500/2324]', 'Avg_Loss': 0.1943983163186414, 'Loss_CAT': 0.16467779874801636}
+INFO:root:{'epoch': 9, 'iter': '[1000/2324]', 'Avg_Loss': 0.19506876087272085, 'Loss_CAT': 0.2748023271560669}
+INFO:root:{'epoch': 9, 'iter': '[1500/2324]', 'Avg_Loss': 0.19527301674759603, 'Loss_CAT': 0.16447144746780396}
+INFO:root:{'epoch': 9, 'iter': '[2000/2324]', 'Avg_Loss': 0.19536838813804497, 'Loss_CAT': 0.17242535948753357}
+INFO:root:{'epoch': 9, 'iter': '[0/2324]', 'Avg_Loss': 0.06513003259897232, 'Loss_POI1': 0.05822315812110901, 'Loss_POI2': 0.07203690707683563, 'Loss_POI3': 0.05400337278842926, 'Loss_POI4': 0.06463726609945297}
+INFO:root:{'epoch': 9, 'iter': '[500/2324]', 'Avg_Loss': 0.0727308086917072, 'Loss_POI1': 0.04649443179368973, 'Loss_POI2': 0.06037384271621704, 'Loss_POI3': 0.04646041989326477, 'Loss_POI4': 0.06031879037618637}
+INFO:root:{'epoch': 9, 'iter': '[1000/2324]', 'Avg_Loss': 0.07112514085092625, 'Loss_POI1': 0.05352429300546646, 'Loss_POI2': 0.06865395605564117, 'Loss_POI3': 0.05350998044013977, 'Loss_POI4': 0.06861318647861481}
+INFO:root:{'epoch': 9, 'iter': '[1500/2324]', 'Avg_Loss': 0.0704868008655004, 'Loss_POI1': 0.03662247583270073, 'Loss_POI2': 0.04867388308048248, 'Loss_POI3': 0.03661444038152695, 'Loss_POI4': 0.04864674434065819}
+INFO:root:{'epoch': 9, 'iter': '[2000/2324]', 'Avg_Loss': 0.07031324061973282, 'Loss_POI1': 0.042102232575416565, 'Loss_POI2': 0.06312784552574158, 'Loss_POI3': 0.04208805784583092, 'Loss_POI4': 0.06309174746274948}
+INFO:root:EP9_train, avg_loss=0.070271
+INFO:root:EP:9 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep9
+INFO:root:test=(HR@10:0.8226,HR@5:0.7360,NDCG@10:0.6421,NDCG@5:0.6139) 
+INFO:root:{'epoch': 10, 'iter': '[0/2324]', 'Avg_Loss': 0.19803772866725922, 'Loss_CAT': 0.19803772866725922}
+INFO:root:{'epoch': 10, 'iter': '[500/2324]', 'Avg_Loss': 0.19459132511101798, 'Loss_CAT': 0.20905008912086487}
+INFO:root:{'epoch': 10, 'iter': '[1000/2324]', 'Avg_Loss': 0.19464240768751304, 'Loss_CAT': 0.18939805030822754}
+INFO:root:{'epoch': 10, 'iter': '[1500/2324]', 'Avg_Loss': 0.19466434284141268, 'Loss_CAT': 0.20120543241500854}
+INFO:root:{'epoch': 10, 'iter': '[2000/2324]', 'Avg_Loss': 0.19497845645087294, 'Loss_CAT': 0.1820066273212433}
+INFO:root:{'epoch': 10, 'iter': '[0/2324]', 'Avg_Loss': 0.07514704763889313, 'Loss_POI1': 0.06699452549219131, 'Loss_POI2': 0.08329957723617554, 'Loss_POI3': 0.06492649018764496, 'Loss_POI4': 0.07843675464391708}
+INFO:root:{'epoch': 10, 'iter': '[500/2324]', 'Avg_Loss': 0.06226590986618263, 'Loss_POI1': 0.04291054606437683, 'Loss_POI2': 0.05378688499331474, 'Loss_POI3': 0.04287951439619064, 'Loss_POI4': 0.05374698340892792}
+INFO:root:{'epoch': 10, 'iter': '[1000/2324]', 'Avg_Loss': 0.06179947257190794, 'Loss_POI1': 0.04847719147801399, 'Loss_POI2': 0.06300614774227142, 'Loss_POI3': 0.04846513271331787, 'Loss_POI4': 0.06296406686306}
+INFO:root:{'epoch': 10, 'iter': '[1500/2324]', 'Avg_Loss': 0.06154488564669332, 'Loss_POI1': 0.048438660800457, 'Loss_POI2': 0.06283451616764069, 'Loss_POI3': 0.048423171043395996, 'Loss_POI4': 0.06280796229839325}
+INFO:root:{'epoch': 10, 'iter': '[2000/2324]', 'Avg_Loss': 0.06158756099265257, 'Loss_POI1': 0.06927080452442169, 'Loss_POI2': 0.08918649703264236, 'Loss_POI3': 0.06923559308052063, 'Loss_POI4': 0.08912356197834015}
+INFO:root:EP10_train, avg_loss=0.061528
+INFO:root:EP:10 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep10
+INFO:root:test=(HR@10:0.8271,HR@5:0.7414,NDCG@10:0.6465,NDCG@5:0.6188) 
+INFO:root:{'epoch': 11, 'iter': '[0/2324]', 'Avg_Loss': 0.1441037952899933, 'Loss_CAT': 0.1441037952899933}
+INFO:root:{'epoch': 11, 'iter': '[500/2324]', 'Avg_Loss': 0.19351857924413776, 'Loss_CAT': 0.18214666843414307}
+INFO:root:{'epoch': 11, 'iter': '[1000/2324]', 'Avg_Loss': 0.1939347497560642, 'Loss_CAT': 0.21750149130821228}
+INFO:root:{'epoch': 11, 'iter': '[1500/2324]', 'Avg_Loss': 0.19392335842761257, 'Loss_CAT': 0.20651957392692566}
+INFO:root:{'epoch': 11, 'iter': '[2000/2324]', 'Avg_Loss': 0.19387043610043908, 'Loss_CAT': 0.20796985924243927}
+INFO:root:{'epoch': 11, 'iter': '[0/2324]', 'Avg_Loss': 0.05742209777235985, 'Loss_POI1': 0.045085713267326355, 'Loss_POI2': 0.06975848227739334, 'Loss_POI3': 0.04254545643925667, 'Loss_POI4': 0.06284331530332565}
+INFO:root:{'epoch': 11, 'iter': '[500/2324]', 'Avg_Loss': 0.055916614692933304, 'Loss_POI1': 0.04240507632493973, 'Loss_POI2': 0.058447543531656265, 'Loss_POI3': 0.04238501191139221, 'Loss_POI4': 0.05842140316963196}
+INFO:root:{'epoch': 11, 'iter': '[1000/2324]', 'Avg_Loss': 0.05515437075062529, 'Loss_POI1': 0.055524758994579315, 'Loss_POI2': 0.07630395889282227, 'Loss_POI3': 0.055510178208351135, 'Loss_POI4': 0.0762852355837822}
+INFO:root:{'epoch': 11, 'iter': '[1500/2324]', 'Avg_Loss': 0.05490727442813706, 'Loss_POI1': 0.05862003564834595, 'Loss_POI2': 0.0685378834605217, 'Loss_POI3': 0.05860172212123871, 'Loss_POI4': 0.06849600374698639}
+INFO:root:{'epoch': 11, 'iter': '[2000/2324]', 'Avg_Loss': 0.05466025229962333, 'Loss_POI1': 0.04133560508489609, 'Loss_POI2': 0.05431775003671646, 'Loss_POI3': 0.04132765531539917, 'Loss_POI4': 0.05429583787918091}
+INFO:root:EP11_train, avg_loss=0.054547
+INFO:root:EP:11 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep11
+INFO:root:test=(HR@10:0.8289,HR@5:0.7417,NDCG@10:0.6469,NDCG@5:0.6186) 
+INFO:root:{'epoch': 12, 'iter': '[0/2324]', 'Avg_Loss': 0.21805110573768616, 'Loss_CAT': 0.21805110573768616}
+INFO:root:{'epoch': 12, 'iter': '[500/2324]', 'Avg_Loss': 0.19205769621386024, 'Loss_CAT': 0.228751540184021}
+INFO:root:{'epoch': 12, 'iter': '[1000/2324]', 'Avg_Loss': 0.19347018081616688, 'Loss_CAT': 0.17538675665855408}
+INFO:root:{'epoch': 12, 'iter': '[1500/2324]', 'Avg_Loss': 0.19261948858635336, 'Loss_CAT': 0.1896817684173584}
+INFO:root:{'epoch': 12, 'iter': '[2000/2324]', 'Avg_Loss': 0.19201289353773987, 'Loss_CAT': 0.20025420188903809}
+INFO:root:{'epoch': 12, 'iter': '[0/2324]', 'Avg_Loss': 0.06446805596351624, 'Loss_POI1': 0.054612066596746445, 'Loss_POI2': 0.07432404160499573, 'Loss_POI3': 0.053312160074710846, 'Loss_POI4': 0.07070519030094147}
+INFO:root:{'epoch': 12, 'iter': '[500/2324]', 'Avg_Loss': 0.05040777702174501, 'Loss_POI1': 0.027797937393188477, 'Loss_POI2': 0.03464309871196747, 'Loss_POI3': 0.0277870986610651, 'Loss_POI4': 0.03462006896734238}
+INFO:root:{'epoch': 12, 'iter': '[1000/2324]', 'Avg_Loss': 0.04973712441819412, 'Loss_POI1': 0.024996552616357803, 'Loss_POI2': 0.04585561901330948, 'Loss_POI3': 0.02498443052172661, 'Loss_POI4': 0.04583583027124405}
+INFO:root:{'epoch': 12, 'iter': '[1500/2324]', 'Avg_Loss': 0.04947794834865402, 'Loss_POI1': 0.03769805654883385, 'Loss_POI2': 0.042107343673706055, 'Loss_POI3': 0.03767675161361694, 'Loss_POI4': 0.04206695407629013}
+INFO:root:{'epoch': 12, 'iter': '[2000/2324]', 'Avg_Loss': 0.04938177913166713, 'Loss_POI1': 0.04677799344062805, 'Loss_POI2': 0.07113590091466904, 'Loss_POI3': 0.04676622152328491, 'Loss_POI4': 0.0711079090833664}
+INFO:root:EP12_train, avg_loss=0.049462
+INFO:root:EP:12 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep12
+INFO:root:test=(HR@10:0.8295,HR@5:0.7495,NDCG@10:0.6504,NDCG@5:0.6244) 
+INFO:root:{'epoch': 13, 'iter': '[0/2324]', 'Avg_Loss': 0.1969432383775711, 'Loss_CAT': 0.1969432383775711}
+INFO:root:{'epoch': 13, 'iter': '[500/2324]', 'Avg_Loss': 0.19283197753265233, 'Loss_CAT': 0.2420920431613922}
+INFO:root:{'epoch': 13, 'iter': '[1000/2324]', 'Avg_Loss': 0.19259206012084887, 'Loss_CAT': 0.18056464195251465}
+INFO:root:{'epoch': 13, 'iter': '[1500/2324]', 'Avg_Loss': 0.1916156357761068, 'Loss_CAT': 0.14881527423858643}
+INFO:root:{'epoch': 13, 'iter': '[2000/2324]', 'Avg_Loss': 0.19123620923416784, 'Loss_CAT': 0.22728583216667175}
+INFO:root:{'epoch': 13, 'iter': '[0/2324]', 'Avg_Loss': 0.044652193784713745, 'Loss_POI1': 0.03797440230846405, 'Loss_POI2': 0.05132998526096344, 'Loss_POI3': 0.03580634668469429, 'Loss_POI4': 0.048885077238082886}
+INFO:root:{'epoch': 13, 'iter': '[500/2324]', 'Avg_Loss': 0.046079624295532105, 'Loss_POI1': 0.050573769956827164, 'Loss_POI2': 0.056968025863170624, 'Loss_POI3': 0.05055467039346695, 'Loss_POI4': 0.05693945661187172}
+INFO:root:{'epoch': 13, 'iter': '[1000/2324]', 'Avg_Loss': 0.04506317614303245, 'Loss_POI1': 0.0632881298661232, 'Loss_POI2': 0.09320232272148132, 'Loss_POI3': 0.06325697898864746, 'Loss_POI4': 0.09310305118560791}
+INFO:root:{'epoch': 13, 'iter': '[1500/2324]', 'Avg_Loss': 0.044937647137043873, 'Loss_POI1': 0.03244068846106529, 'Loss_POI2': 0.036379121243953705, 'Loss_POI3': 0.032431699335575104, 'Loss_POI4': 0.0363653264939785}
+INFO:root:{'epoch': 13, 'iter': '[2000/2324]', 'Avg_Loss': 0.045200192755360954, 'Loss_POI1': 0.04613775759935379, 'Loss_POI2': 0.05989930406212807, 'Loss_POI3': 0.046116530895233154, 'Loss_POI4': 0.05987963825464249}
+INFO:root:EP13_train, avg_loss=0.045015
+INFO:root:EP:13 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep13
+INFO:root:test=(HR@10:0.8326,HR@5:0.7494,NDCG@10:0.6532,NDCG@5:0.6260) 
+INFO:root:{'epoch': 14, 'iter': '[0/2324]', 'Avg_Loss': 0.2243545651435852, 'Loss_CAT': 0.2243545651435852}
+INFO:root:{'epoch': 14, 'iter': '[500/2324]', 'Avg_Loss': 0.1897533658646538, 'Loss_CAT': 0.12879601120948792}
+INFO:root:{'epoch': 14, 'iter': '[1000/2324]', 'Avg_Loss': 0.18954544716870989, 'Loss_CAT': 0.21587911248207092}
+INFO:root:{'epoch': 14, 'iter': '[1500/2324]', 'Avg_Loss': 0.1897545012780065, 'Loss_CAT': 0.14254361391067505}
+INFO:root:{'epoch': 14, 'iter': '[2000/2324]', 'Avg_Loss': 0.18980655428589968, 'Loss_CAT': 0.17725643515586853}
+INFO:root:{'epoch': 14, 'iter': '[0/2324]', 'Avg_Loss': 0.04833683371543884, 'Loss_POI1': 0.044968314468860626, 'Loss_POI2': 0.05170534923672676, 'Loss_POI3': 0.043195318430662155, 'Loss_POI4': 0.04709576442837715}
+INFO:root:{'epoch': 14, 'iter': '[500/2324]', 'Avg_Loss': 0.0426828324750155, 'Loss_POI1': 0.030827242881059647, 'Loss_POI2': 0.03794385492801666, 'Loss_POI3': 0.030803833156824112, 'Loss_POI4': 0.037903450429439545}
+INFO:root:{'epoch': 14, 'iter': '[1000/2324]', 'Avg_Loss': 0.0421007860277023, 'Loss_POI1': 0.0207461379468441, 'Loss_POI2': 0.025986384600400925, 'Loss_POI3': 0.020729489624500275, 'Loss_POI4': 0.025972945615649223}
+INFO:root:{'epoch': 14, 'iter': '[1500/2324]', 'Avg_Loss': 0.0420978864162247, 'Loss_POI1': 0.021529532968997955, 'Loss_POI2': 0.03981413319706917, 'Loss_POI3': 0.02151939645409584, 'Loss_POI4': 0.039799343794584274}
+INFO:root:{'epoch': 14, 'iter': '[2000/2324]', 'Avg_Loss': 0.04191808786796129, 'Loss_POI1': 0.05403255298733711, 'Loss_POI2': 0.05840279161930084, 'Loss_POI3': 0.05402379855513573, 'Loss_POI4': 0.05838145315647125}
+INFO:root:EP14_train, avg_loss=0.041754
+INFO:root:EP:14 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep14
+INFO:root:test=(HR@10:0.8304,HR@5:0.7471,NDCG@10:0.6490,NDCG@5:0.6219) 
+INFO:root:{'epoch': 15, 'iter': '[0/2324]', 'Avg_Loss': 0.20727267861366272, 'Loss_CAT': 0.20727267861366272}
+INFO:root:{'epoch': 15, 'iter': '[500/2324]', 'Avg_Loss': 0.18980573260498618, 'Loss_CAT': 0.18143749237060547}
+INFO:root:{'epoch': 15, 'iter': '[1000/2324]', 'Avg_Loss': 0.19032714273278173, 'Loss_CAT': 0.21722018718719482}
+INFO:root:{'epoch': 15, 'iter': '[1500/2324]', 'Avg_Loss': 0.19088112025817658, 'Loss_CAT': 0.18679429590702057}
+INFO:root:{'epoch': 15, 'iter': '[2000/2324]', 'Avg_Loss': 0.19048629486668056, 'Loss_CAT': 0.1477232277393341}
+INFO:root:{'epoch': 15, 'iter': '[0/2324]', 'Avg_Loss': 0.04526103287935257, 'Loss_POI1': 0.037895988672971725, 'Loss_POI2': 0.05262608081102371, 'Loss_POI3': 0.034802623093128204, 'Loss_POI4': 0.045443445444107056}
+INFO:root:{'epoch': 15, 'iter': '[500/2324]', 'Avg_Loss': 0.0388963572353779, 'Loss_POI1': 0.034842777997255325, 'Loss_POI2': 0.04685920849442482, 'Loss_POI3': 0.03481116518378258, 'Loss_POI4': 0.04680892080068588}
+INFO:root:{'epoch': 15, 'iter': '[1000/2324]', 'Avg_Loss': 0.03831542642986203, 'Loss_POI1': 0.04825109243392944, 'Loss_POI2': 0.06932416558265686, 'Loss_POI3': 0.048231348395347595, 'Loss_POI4': 0.06928075850009918}
+INFO:root:{'epoch': 15, 'iter': '[1500/2324]', 'Avg_Loss': 0.03813016979950794, 'Loss_POI1': 0.03916223719716072, 'Loss_POI2': 0.04402736574411392, 'Loss_POI3': 0.039148807525634766, 'Loss_POI4': 0.04399615153670311}
+INFO:root:{'epoch': 15, 'iter': '[2000/2324]', 'Avg_Loss': 0.03830073596206845, 'Loss_POI1': 0.03920318931341171, 'Loss_POI2': 0.061096444725990295, 'Loss_POI3': 0.039181217551231384, 'Loss_POI4': 0.061045706272125244}
+INFO:root:EP15_train, avg_loss=0.038298
+INFO:root:EP:15 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep15
+INFO:root:test=(HR@10:0.8321,HR@5:0.7495,NDCG@10:0.6519,NDCG@5:0.6250) 
+INFO:root:{'epoch': 16, 'iter': '[0/2324]', 'Avg_Loss': 0.17323026061058044, 'Loss_CAT': 0.17323026061058044}
+INFO:root:{'epoch': 16, 'iter': '[500/2324]', 'Avg_Loss': 0.19000012162857188, 'Loss_CAT': 0.2261337786912918}
+INFO:root:{'epoch': 16, 'iter': '[1000/2324]', 'Avg_Loss': 0.19034541020175436, 'Loss_CAT': 0.17048776149749756}
+INFO:root:{'epoch': 16, 'iter': '[1500/2324]', 'Avg_Loss': 0.1901144491065589, 'Loss_CAT': 0.19228394329547882}
+INFO:root:{'epoch': 16, 'iter': '[2000/2324]', 'Avg_Loss': 0.189906545582859, 'Loss_CAT': 0.2713296413421631}
+INFO:root:{'epoch': 16, 'iter': '[0/2324]', 'Avg_Loss': 0.054265402257442474, 'Loss_POI1': 0.046308401972055435, 'Loss_POI2': 0.06222240626811981, 'Loss_POI3': 0.04257456213235855, 'Loss_POI4': 0.05585470795631409}
+INFO:root:{'epoch': 16, 'iter': '[500/2324]', 'Avg_Loss': 0.03636247826044907, 'Loss_POI1': 0.0426483191549778, 'Loss_POI2': 0.052511461079120636, 'Loss_POI3': 0.04262760281562805, 'Loss_POI4': 0.052476055920124054}
+INFO:root:{'epoch': 16, 'iter': '[1000/2324]', 'Avg_Loss': 0.035957252039210304, 'Loss_POI1': 0.026703879237174988, 'Loss_POI2': 0.03866024315357208, 'Loss_POI3': 0.026687143370509148, 'Loss_POI4': 0.0386376678943634}
+INFO:root:{'epoch': 16, 'iter': '[1500/2324]', 'Avg_Loss': 0.03591539101460471, 'Loss_POI1': 0.035500168800354004, 'Loss_POI2': 0.048076145350933075, 'Loss_POI3': 0.03546586260199547, 'Loss_POI4': 0.04801385477185249}
+INFO:root:{'epoch': 16, 'iter': '[2000/2324]', 'Avg_Loss': 0.0358416000916355, 'Loss_POI1': 0.025240125134587288, 'Loss_POI2': 0.03364232927560806, 'Loss_POI3': 0.025225631892681122, 'Loss_POI4': 0.03362484276294708}
+INFO:root:EP16_train, avg_loss=0.035865
+INFO:root:EP:16 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep16
+INFO:root:test=(HR@10:0.8335,HR@5:0.7468,NDCG@10:0.6540,NDCG@5:0.6257) 
+INFO:root:{'epoch': 17, 'iter': '[0/2324]', 'Avg_Loss': 0.24409718811511993, 'Loss_CAT': 0.24409718811511993}
+INFO:root:{'epoch': 17, 'iter': '[500/2324]', 'Avg_Loss': 0.1902349317472376, 'Loss_CAT': 0.23136544227600098}
+INFO:root:{'epoch': 17, 'iter': '[1000/2324]', 'Avg_Loss': 0.18851423618587462, 'Loss_CAT': 0.18668164312839508}
+INFO:root:{'epoch': 17, 'iter': '[1500/2324]', 'Avg_Loss': 0.1887143195112255, 'Loss_CAT': 0.19631427526474}
+INFO:root:{'epoch': 17, 'iter': '[2000/2324]', 'Avg_Loss': 0.1884385382813373, 'Loss_CAT': 0.23077625036239624}
+INFO:root:{'epoch': 17, 'iter': '[0/2324]', 'Avg_Loss': 0.037877097725868225, 'Loss_POI1': 0.026605386286973953, 'Loss_POI2': 0.0491488054394722, 'Loss_POI3': 0.025143444538116455, 'Loss_POI4': 0.04679962247610092}
+INFO:root:{'epoch': 17, 'iter': '[500/2324]', 'Avg_Loss': 0.03482775175999738, 'Loss_POI1': 0.0311308354139328, 'Loss_POI2': 0.051581017673015594, 'Loss_POI3': 0.031104907393455505, 'Loss_POI4': 0.05154844745993614}
+INFO:root:{'epoch': 17, 'iter': '[1000/2324]', 'Avg_Loss': 0.0341869188848507, 'Loss_POI1': 0.012186773121356964, 'Loss_POI2': 0.024585185572504997, 'Loss_POI3': 0.01217963732779026, 'Loss_POI4': 0.02456764504313469}
+INFO:root:{'epoch': 17, 'iter': '[1500/2324]', 'Avg_Loss': 0.03359393371228156, 'Loss_POI1': 0.03766127675771713, 'Loss_POI2': 0.05375393107533455, 'Loss_POI3': 0.03763308376073837, 'Loss_POI4': 0.05370740592479706}
+INFO:root:{'epoch': 17, 'iter': '[2000/2324]', 'Avg_Loss': 0.03348368958526778, 'Loss_POI1': 0.03065437823534012, 'Loss_POI2': 0.03773174434900284, 'Loss_POI3': 0.030647192150354385, 'Loss_POI4': 0.0377190075814724}
+INFO:root:EP17_train, avg_loss=0.033451
+INFO:root:EP:17 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep17
+INFO:root:test=(HR@10:0.8331,HR@5:0.7508,NDCG@10:0.6526,NDCG@5:0.6258) 
+INFO:root:{'epoch': 18, 'iter': '[0/2324]', 'Avg_Loss': 0.2650117576122284, 'Loss_CAT': 0.2650117576122284}
+INFO:root:{'epoch': 18, 'iter': '[500/2324]', 'Avg_Loss': 0.18946107655406713, 'Loss_CAT': 0.16837209463119507}
+INFO:root:{'epoch': 18, 'iter': '[1000/2324]', 'Avg_Loss': 0.19044616071137038, 'Loss_CAT': 0.1507406383752823}
+INFO:root:{'epoch': 18, 'iter': '[1500/2324]', 'Avg_Loss': 0.19012062144847333, 'Loss_CAT': 0.18024735152721405}
+INFO:root:{'epoch': 18, 'iter': '[2000/2324]', 'Avg_Loss': 0.19005323027161466, 'Loss_CAT': 0.20378613471984863}
+INFO:root:{'epoch': 18, 'iter': '[0/2324]', 'Avg_Loss': 0.05693340301513672, 'Loss_POI1': 0.0432443805038929, 'Loss_POI2': 0.07062242180109024, 'Loss_POI3': 0.04169145226478577, 'Loss_POI4': 0.06018419563770294}
+INFO:root:{'epoch': 18, 'iter': '[500/2324]', 'Avg_Loss': 0.03210835517226103, 'Loss_POI1': 0.033032987266778946, 'Loss_POI2': 0.05000848323106766, 'Loss_POI3': 0.033020853996276855, 'Loss_POI4': 0.049982212483882904}
+INFO:root:{'epoch': 18, 'iter': '[1000/2324]', 'Avg_Loss': 0.03227290964883554, 'Loss_POI1': 0.04711642861366272, 'Loss_POI2': 0.04720655828714371, 'Loss_POI3': 0.04709666222333908, 'Loss_POI4': 0.047178175300359726}
+INFO:root:{'epoch': 18, 'iter': '[1500/2324]', 'Avg_Loss': 0.03203158089574638, 'Loss_POI1': 0.038052141666412354, 'Loss_POI2': 0.06306996941566467, 'Loss_POI3': 0.03803780674934387, 'Loss_POI4': 0.06301378458738327}
+INFO:root:{'epoch': 18, 'iter': '[2000/2324]', 'Avg_Loss': 0.03194756757352559, 'Loss_POI1': 0.014760853722691536, 'Loss_POI2': 0.023213209584355354, 'Loss_POI3': 0.01474915724247694, 'Loss_POI4': 0.02315196394920349}
+INFO:root:EP18_train, avg_loss=0.031997
+INFO:root:EP:18 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep18
+INFO:root:test=(HR@10:0.8320,HR@5:0.7457,NDCG@10:0.6539,NDCG@5:0.6256) 
+INFO:root:{'epoch': 19, 'iter': '[0/2324]', 'Avg_Loss': 0.1704069823026657, 'Loss_CAT': 0.1704069823026657}
+INFO:root:{'epoch': 19, 'iter': '[500/2324]', 'Avg_Loss': 0.18694291356021533, 'Loss_CAT': 0.14992758631706238}
+INFO:root:{'epoch': 19, 'iter': '[1000/2324]', 'Avg_Loss': 0.18979111432910084, 'Loss_CAT': 0.19299352169036865}
+INFO:root:{'epoch': 19, 'iter': '[1500/2324]', 'Avg_Loss': 0.1894977358253617, 'Loss_CAT': 0.22021633386611938}
+INFO:root:{'epoch': 19, 'iter': '[2000/2324]', 'Avg_Loss': 0.18956129606263986, 'Loss_CAT': 0.173152893781662}
+INFO:root:{'epoch': 19, 'iter': '[0/2324]', 'Avg_Loss': 0.04668319225311279, 'Loss_POI1': 0.03887195140123367, 'Loss_POI2': 0.05449443310499191, 'Loss_POI3': 0.036984190344810486, 'Loss_POI4': 0.051424428820610046}
+INFO:root:{'epoch': 19, 'iter': '[500/2324]', 'Avg_Loss': 0.030592921059838907, 'Loss_POI1': 0.02328428626060486, 'Loss_POI2': 0.0316200889647007, 'Loss_POI3': 0.023270873352885246, 'Loss_POI4': 0.031600598245859146}
+INFO:root:{'epoch': 19, 'iter': '[1000/2324]', 'Avg_Loss': 0.03029823061878924, 'Loss_POI1': 0.035879895091056824, 'Loss_POI2': 0.04791919142007828, 'Loss_POI3': 0.035861145704984665, 'Loss_POI4': 0.04789620637893677}
+INFO:root:{'epoch': 19, 'iter': '[1500/2324]', 'Avg_Loss': 0.030332739205582986, 'Loss_POI1': 0.017688248306512833, 'Loss_POI2': 0.022398285567760468, 'Loss_POI3': 0.017644362524151802, 'Loss_POI4': 0.022385209798812866}
+INFO:root:{'epoch': 19, 'iter': '[2000/2324]', 'Avg_Loss': 0.030262629156173587, 'Loss_POI1': 0.02357516810297966, 'Loss_POI2': 0.027627546340227127, 'Loss_POI3': 0.023547854274511337, 'Loss_POI4': 0.02757136896252632}
+INFO:root:EP19_train, avg_loss=0.030125
+INFO:root:EP:19 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep19
+INFO:root:test=(HR@10:0.8332,HR@5:0.7518,NDCG@10:0.6555,NDCG@5:0.6289) 
+INFO:root:{'epoch': 20, 'iter': '[0/2324]', 'Avg_Loss': 0.14582303166389465, 'Loss_CAT': 0.14582303166389465}
+INFO:root:{'epoch': 20, 'iter': '[500/2324]', 'Avg_Loss': 0.18721670575603516, 'Loss_CAT': 0.18538028001785278}
+INFO:root:{'epoch': 20, 'iter': '[1000/2324]', 'Avg_Loss': 0.18813507826059134, 'Loss_CAT': 0.1608697921037674}
+INFO:root:{'epoch': 20, 'iter': '[1500/2324]', 'Avg_Loss': 0.18789622236755513, 'Loss_CAT': 0.20603007078170776}
+INFO:root:{'epoch': 20, 'iter': '[2000/2324]', 'Avg_Loss': 0.18781048448189444, 'Loss_CAT': 0.14247116446495056}
+INFO:root:{'epoch': 20, 'iter': '[0/2324]', 'Avg_Loss': 0.03047589585185051, 'Loss_POI1': 0.023474883288145065, 'Loss_POI2': 0.037476908415555954, 'Loss_POI3': 0.020659809932112694, 'Loss_POI4': 0.03341907262802124}
+INFO:root:{'epoch': 20, 'iter': '[500/2324]', 'Avg_Loss': 0.029483933537127728, 'Loss_POI1': 0.035722337663173676, 'Loss_POI2': 0.05278358981013298, 'Loss_POI3': 0.03569311276078224, 'Loss_POI4': 0.052756693214178085}
+INFO:root:{'epoch': 20, 'iter': '[1000/2324]', 'Avg_Loss': 0.029141689032933987, 'Loss_POI1': 0.024267813190817833, 'Loss_POI2': 0.03946077078580856, 'Loss_POI3': 0.02420986071228981, 'Loss_POI4': 0.03943760693073273}
+INFO:root:{'epoch': 20, 'iter': '[1500/2324]', 'Avg_Loss': 0.02906756513726604, 'Loss_POI1': 0.0125301918014884, 'Loss_POI2': 0.01932390034198761, 'Loss_POI3': 0.012521067634224892, 'Loss_POI4': 0.019306793808937073}
+INFO:root:{'epoch': 20, 'iter': '[2000/2324]', 'Avg_Loss': 0.028908826758910988, 'Loss_POI1': 0.01905643939971924, 'Loss_POI2': 0.027672354131937027, 'Loss_POI3': 0.01904314197599888, 'Loss_POI4': 0.027643496170639992}
+INFO:root:EP20_train, avg_loss=0.028901
+INFO:root:EP:20 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep20
+INFO:root:test=(HR@10:0.8346,HR@5:0.7531,NDCG@10:0.6561,NDCG@5:0.6295) 
+INFO:root:{'epoch': 21, 'iter': '[0/2324]', 'Avg_Loss': 0.23836050927639008, 'Loss_CAT': 0.23836050927639008}
+INFO:root:{'epoch': 21, 'iter': '[500/2324]', 'Avg_Loss': 0.1890815024872026, 'Loss_CAT': 0.22399234771728516}
+INFO:root:{'epoch': 21, 'iter': '[1000/2324]', 'Avg_Loss': 0.1882595270648822, 'Loss_CAT': 0.1395508497953415}
+INFO:root:{'epoch': 21, 'iter': '[1500/2324]', 'Avg_Loss': 0.1874920748903861, 'Loss_CAT': 0.19566719233989716}
+INFO:root:{'epoch': 21, 'iter': '[2000/2324]', 'Avg_Loss': 0.1879040160472842, 'Loss_CAT': 0.17225313186645508}
+INFO:root:{'epoch': 21, 'iter': '[0/2324]', 'Avg_Loss': 0.040023576468229294, 'Loss_POI1': 0.03610534593462944, 'Loss_POI2': 0.04394180700182915, 'Loss_POI3': 0.03479005768895149, 'Loss_POI4': 0.04221256822347641}
+INFO:root:{'epoch': 21, 'iter': '[500/2324]', 'Avg_Loss': 0.027913005604313874, 'Loss_POI1': 0.017331300303339958, 'Loss_POI2': 0.02296927385032177, 'Loss_POI3': 0.01730160415172577, 'Loss_POI4': 0.022883780300617218}
+INFO:root:{'epoch': 21, 'iter': '[1000/2324]', 'Avg_Loss': 0.02743495022831531, 'Loss_POI1': 0.02548958919942379, 'Loss_POI2': 0.029991108924150467, 'Loss_POI3': 0.025485746562480927, 'Loss_POI4': 0.029960157349705696}
+INFO:root:{'epoch': 21, 'iter': '[1500/2324]', 'Avg_Loss': 0.027494996740202917, 'Loss_POI1': 0.018752209842205048, 'Loss_POI2': 0.034087058156728745, 'Loss_POI3': 0.018742574378848076, 'Loss_POI4': 0.03406941890716553}
+INFO:root:{'epoch': 21, 'iter': '[2000/2324]', 'Avg_Loss': 0.02744577209679768, 'Loss_POI1': 0.01489223726093769, 'Loss_POI2': 0.01889253780245781, 'Loss_POI3': 0.014873209409415722, 'Loss_POI4': 0.018846942111849785}
+INFO:root:EP21_train, avg_loss=0.027481
+INFO:root:EP:21 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep21
+INFO:root:test=(HR@10:0.8321,HR@5:0.7494,NDCG@10:0.6582,NDCG@5:0.6312) 
+INFO:root:{'epoch': 22, 'iter': '[0/2324]', 'Avg_Loss': 0.18301057815551758, 'Loss_CAT': 0.18301057815551758}
+INFO:root:{'epoch': 22, 'iter': '[500/2324]', 'Avg_Loss': 0.18519383722436641, 'Loss_CAT': 0.1860574185848236}
+INFO:root:{'epoch': 22, 'iter': '[1000/2324]', 'Avg_Loss': 0.18630370247614134, 'Loss_CAT': 0.16123536229133606}
+INFO:root:{'epoch': 22, 'iter': '[1500/2324]', 'Avg_Loss': 0.1863452836444265, 'Loss_CAT': 0.21103471517562866}
+INFO:root:{'epoch': 22, 'iter': '[2000/2324]', 'Avg_Loss': 0.1865975682375611, 'Loss_CAT': 0.1978471577167511}
+INFO:root:{'epoch': 22, 'iter': '[0/2324]', 'Avg_Loss': 0.027791844680905342, 'Loss_POI1': 0.023155543953180313, 'Loss_POI2': 0.03242814540863037, 'Loss_POI3': 0.021973419934511185, 'Loss_POI4': 0.028123674914240837}
+INFO:root:{'epoch': 22, 'iter': '[500/2324]', 'Avg_Loss': 0.027577803079819607, 'Loss_POI1': 0.023144081234931946, 'Loss_POI2': 0.0367637537419796, 'Loss_POI3': 0.023126741871237755, 'Loss_POI4': 0.03672179952263832}
+INFO:root:{'epoch': 22, 'iter': '[1000/2324]', 'Avg_Loss': 0.02701002750061936, 'Loss_POI1': 0.014325379393994808, 'Loss_POI2': 0.014403547160327435, 'Loss_POI3': 0.014314999803900719, 'Loss_POI4': 0.014380693435668945}
+INFO:root:{'epoch': 22, 'iter': '[1500/2324]', 'Avg_Loss': 0.026791404081455156, 'Loss_POI1': 0.01620865799486637, 'Loss_POI2': 0.0176884513348341, 'Loss_POI3': 0.016197936609387398, 'Loss_POI4': 0.017673853784799576}
+INFO:root:{'epoch': 22, 'iter': '[2000/2324]', 'Avg_Loss': 0.026764771107049928, 'Loss_POI1': 0.02879316732287407, 'Loss_POI2': 0.0350700281560421, 'Loss_POI3': 0.028780335560441017, 'Loss_POI4': 0.03503299504518509}
+INFO:root:EP22_train, avg_loss=0.026798
+INFO:root:EP:22 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep22
+INFO:root:test=(HR@10:0.8365,HR@5:0.7562,NDCG@10:0.6626,NDCG@5:0.6364) 
+INFO:root:{'epoch': 23, 'iter': '[0/2324]', 'Avg_Loss': 0.1944720447063446, 'Loss_CAT': 0.1944720447063446}
+INFO:root:{'epoch': 23, 'iter': '[500/2324]', 'Avg_Loss': 0.1843095711188878, 'Loss_CAT': 0.167909175157547}
+INFO:root:{'epoch': 23, 'iter': '[1000/2324]', 'Avg_Loss': 0.1857235930510215, 'Loss_CAT': 0.21837665140628815}
+INFO:root:{'epoch': 23, 'iter': '[1500/2324]', 'Avg_Loss': 0.18570167458629228, 'Loss_CAT': 0.22594350576400757}
+INFO:root:{'epoch': 23, 'iter': '[2000/2324]', 'Avg_Loss': 0.1867149613540748, 'Loss_CAT': 0.2389795333147049}
+INFO:root:{'epoch': 23, 'iter': '[0/2324]', 'Avg_Loss': 0.027466703206300735, 'Loss_POI1': 0.01909259334206581, 'Loss_POI2': 0.03584081307053566, 'Loss_POI3': 0.016837280243635178, 'Loss_POI4': 0.03201993182301521}
+INFO:root:{'epoch': 23, 'iter': '[500/2324]', 'Avg_Loss': 0.026194812293106804, 'Loss_POI1': 0.02834142930805683, 'Loss_POI2': 0.051550667732954025, 'Loss_POI3': 0.02831476368010044, 'Loss_POI4': 0.05150775983929634}
+INFO:root:{'epoch': 23, 'iter': '[1000/2324]', 'Avg_Loss': 0.02584088446812464, 'Loss_POI1': 0.03215842694044113, 'Loss_POI2': 0.042445726692676544, 'Loss_POI3': 0.032105669379234314, 'Loss_POI4': 0.04240090399980545}
+INFO:root:{'epoch': 23, 'iter': '[1500/2324]', 'Avg_Loss': 0.02577068278135398, 'Loss_POI1': 0.0529634989798069, 'Loss_POI2': 0.05787736177444458, 'Loss_POI3': 0.05293741822242737, 'Loss_POI4': 0.05784843862056732}
+INFO:root:{'epoch': 23, 'iter': '[2000/2324]', 'Avg_Loss': 0.025790978742038263, 'Loss_POI1': 0.02883998304605484, 'Loss_POI2': 0.03126932680606842, 'Loss_POI3': 0.028806939721107483, 'Loss_POI4': 0.031232796609401703}
+INFO:root:EP23_train, avg_loss=0.025647
+INFO:root:EP:23 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep23
+INFO:root:test=(HR@10:0.8332,HR@5:0.7516,NDCG@10:0.6567,NDCG@5:0.6300) 
+INFO:root:{'epoch': 24, 'iter': '[0/2324]', 'Avg_Loss': 0.2413109391927719, 'Loss_CAT': 0.2413109391927719}
+INFO:root:{'epoch': 24, 'iter': '[500/2324]', 'Avg_Loss': 0.18506153278840992, 'Loss_CAT': 0.1745595484972}
+INFO:root:{'epoch': 24, 'iter': '[1000/2324]', 'Avg_Loss': 0.18479809356289548, 'Loss_CAT': 0.17000502347946167}
+INFO:root:{'epoch': 24, 'iter': '[1500/2324]', 'Avg_Loss': 0.18568346358036533, 'Loss_CAT': 0.21532480418682098}
+INFO:root:{'epoch': 24, 'iter': '[2000/2324]', 'Avg_Loss': 0.18617091458970342, 'Loss_CAT': 0.12479642033576965}
+INFO:root:{'epoch': 24, 'iter': '[0/2324]', 'Avg_Loss': 0.04152088612318039, 'Loss_POI1': 0.02822064980864525, 'Loss_POI2': 0.05482112243771553, 'Loss_POI3': 0.026512350887060165, 'Loss_POI4': 0.04536695405840874}
+INFO:root:{'epoch': 24, 'iter': '[500/2324]', 'Avg_Loss': 0.0254289452172444, 'Loss_POI1': 0.028338046744465828, 'Loss_POI2': 0.03302232176065445, 'Loss_POI3': 0.028307950124144554, 'Loss_POI4': 0.0329708456993103}
+INFO:root:{'epoch': 24, 'iter': '[1000/2324]', 'Avg_Loss': 0.024816439658232204, 'Loss_POI1': 0.028187673538923264, 'Loss_POI2': 0.03245560824871063, 'Loss_POI3': 0.028174882754683495, 'Loss_POI4': 0.03243818134069443}
+INFO:root:{'epoch': 24, 'iter': '[1500/2324]', 'Avg_Loss': 0.024966320752611088, 'Loss_POI1': 0.027740593999624252, 'Loss_POI2': 0.03595558926463127, 'Loss_POI3': 0.027729926630854607, 'Loss_POI4': 0.0359424389898777}
+INFO:root:{'epoch': 24, 'iter': '[2000/2324]', 'Avg_Loss': 0.025043120499521582, 'Loss_POI1': 0.016993703320622444, 'Loss_POI2': 0.029314355924725533, 'Loss_POI3': 0.01696041226387024, 'Loss_POI4': 0.029280418530106544}
+INFO:root:EP24_train, avg_loss=0.025143
+INFO:root:EP:24 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep24
+INFO:root:test=(HR@10:0.8343,HR@5:0.7539,NDCG@10:0.6574,NDCG@5:0.6311) 
+INFO:root:{'epoch': 25, 'iter': '[0/2324]', 'Avg_Loss': 0.2002735435962677, 'Loss_CAT': 0.2002735435962677}
+INFO:root:{'epoch': 25, 'iter': '[500/2324]', 'Avg_Loss': 0.1859455564600265, 'Loss_CAT': 0.1501193344593048}
+INFO:root:{'epoch': 25, 'iter': '[1000/2324]', 'Avg_Loss': 0.1860997350765513, 'Loss_CAT': 0.19032874703407288}
+INFO:root:{'epoch': 25, 'iter': '[1500/2324]', 'Avg_Loss': 0.18631604419578163, 'Loss_CAT': 0.17025363445281982}
+INFO:root:{'epoch': 25, 'iter': '[2000/2324]', 'Avg_Loss': 0.18597275885878534, 'Loss_CAT': 0.23109179735183716}
+INFO:root:{'epoch': 25, 'iter': '[0/2324]', 'Avg_Loss': 0.029879514127969742, 'Loss_POI1': 0.021332889795303345, 'Loss_POI2': 0.03842613846063614, 'Loss_POI3': 0.01929798722267151, 'Loss_POI4': 0.03333614766597748}
+INFO:root:{'epoch': 25, 'iter': '[500/2324]', 'Avg_Loss': 0.02421757958442746, 'Loss_POI1': 0.022473398596048355, 'Loss_POI2': 0.03900637477636337, 'Loss_POI3': 0.022449307143688202, 'Loss_POI4': 0.038973063230514526}
+INFO:root:{'epoch': 25, 'iter': '[1000/2324]', 'Avg_Loss': 0.024102762236830208, 'Loss_POI1': 0.019355997443199158, 'Loss_POI2': 0.029588373377919197, 'Loss_POI3': 0.019324831664562225, 'Loss_POI4': 0.02955523692071438}
+INFO:root:{'epoch': 25, 'iter': '[1500/2324]', 'Avg_Loss': 0.024016715496217585, 'Loss_POI1': 0.012820451520383358, 'Loss_POI2': 0.017406878992915154, 'Loss_POI3': 0.012809615582227707, 'Loss_POI4': 0.01739400252699852}
+INFO:root:{'epoch': 25, 'iter': '[2000/2324]', 'Avg_Loss': 0.02395226039329375, 'Loss_POI1': 0.02535327523946762, 'Loss_POI2': 0.026116227731108665, 'Loss_POI3': 0.02534674108028412, 'Loss_POI4': 0.026093555614352226}
+INFO:root:EP25_train, avg_loss=0.023959
+INFO:root:EP:25 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep25
+INFO:root:test=(HR@10:0.8342,HR@5:0.7554,NDCG@10:0.6582,NDCG@5:0.6324) 
+INFO:root:{'epoch': 26, 'iter': '[0/2324]', 'Avg_Loss': 0.25515037775039673, 'Loss_CAT': 0.25515037775039673}
+INFO:root:{'epoch': 26, 'iter': '[500/2324]', 'Avg_Loss': 0.18539552383139699, 'Loss_CAT': 0.1748102307319641}
+INFO:root:{'epoch': 26, 'iter': '[1000/2324]', 'Avg_Loss': 0.18558315440759315, 'Loss_CAT': 0.15699513256549835}
+INFO:root:{'epoch': 26, 'iter': '[1500/2324]', 'Avg_Loss': 0.18589717161647484, 'Loss_CAT': 0.1593005657196045}
+INFO:root:{'epoch': 26, 'iter': '[2000/2324]', 'Avg_Loss': 0.18625047585849222, 'Loss_CAT': 0.18603159487247467}
+INFO:root:{'epoch': 26, 'iter': '[0/2324]', 'Avg_Loss': 0.023375051096081734, 'Loss_POI1': 0.016668561846017838, 'Loss_POI2': 0.03008154034614563, 'Loss_POI3': 0.015765445306897163, 'Loss_POI4': 0.027705933898687363}
+INFO:root:{'epoch': 26, 'iter': '[500/2324]', 'Avg_Loss': 0.02396894158133698, 'Loss_POI1': 0.008975408039987087, 'Loss_POI2': 0.016174428164958954, 'Loss_POI3': 0.008963514119386673, 'Loss_POI4': 0.01612984389066696}
+INFO:root:{'epoch': 26, 'iter': '[1000/2324]', 'Avg_Loss': 0.02356229659233179, 'Loss_POI1': 0.010550674982368946, 'Loss_POI2': 0.034529898315668106, 'Loss_POI3': 0.0105317123234272, 'Loss_POI4': 0.03447777032852173}
+INFO:root:{'epoch': 26, 'iter': '[1500/2324]', 'Avg_Loss': 0.023536517134347037, 'Loss_POI1': 0.013227807357907295, 'Loss_POI2': 0.01749672368168831, 'Loss_POI3': 0.013200262561440468, 'Loss_POI4': 0.017446134239435196}
+INFO:root:{'epoch': 26, 'iter': '[2000/2324]', 'Avg_Loss': 0.0234717037116849, 'Loss_POI1': 0.008866831660270691, 'Loss_POI2': 0.012523317709565163, 'Loss_POI3': 0.008848789148032665, 'Loss_POI4': 0.012513287365436554}
+INFO:root:EP26_train, avg_loss=0.023468
+INFO:root:EP:26 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep26
+INFO:root:test=(HR@10:0.8352,HR@5:0.7561,NDCG@10:0.6570,NDCG@5:0.6313) 
+INFO:root:{'epoch': 27, 'iter': '[0/2324]', 'Avg_Loss': 0.20317763090133667, 'Loss_CAT': 0.20317763090133667}
+INFO:root:{'epoch': 27, 'iter': '[500/2324]', 'Avg_Loss': 0.18362147209351648, 'Loss_CAT': 0.1680067479610443}
+INFO:root:{'epoch': 27, 'iter': '[1000/2324]', 'Avg_Loss': 0.18522838733115277, 'Loss_CAT': 0.21910153329372406}
+INFO:root:{'epoch': 27, 'iter': '[1500/2324]', 'Avg_Loss': 0.18496122103008247, 'Loss_CAT': 0.18124932050704956}
+INFO:root:{'epoch': 27, 'iter': '[2000/2324]', 'Avg_Loss': 0.18507237514962202, 'Loss_CAT': 0.1752137988805771}
+INFO:root:{'epoch': 27, 'iter': '[0/2324]', 'Avg_Loss': 0.0313868410885334, 'Loss_POI1': 0.014468628913164139, 'Loss_POI2': 0.048305053263902664, 'Loss_POI3': 0.012700891122221947, 'Loss_POI4': 0.04445049166679382}
+INFO:root:{'epoch': 27, 'iter': '[500/2324]', 'Avg_Loss': 0.023008327682998903, 'Loss_POI1': 0.007014941424131393, 'Loss_POI2': 0.011127443052828312, 'Loss_POI3': 0.0070030298084020615, 'Loss_POI4': 0.011108428239822388}
+INFO:root:{'epoch': 27, 'iter': '[1000/2324]', 'Avg_Loss': 0.02282057307915507, 'Loss_POI1': 0.03531353175640106, 'Loss_POI2': 0.031978167593479156, 'Loss_POI3': 0.035284075886011124, 'Loss_POI4': 0.031937845051288605}
+INFO:root:{'epoch': 27, 'iter': '[1500/2324]', 'Avg_Loss': 0.022512860983972507, 'Loss_POI1': 0.02591465227305889, 'Loss_POI2': 0.0419057235121727, 'Loss_POI3': 0.02590751275420189, 'Loss_POI4': 0.04180839657783508}
+INFO:root:{'epoch': 27, 'iter': '[2000/2324]', 'Avg_Loss': 0.022488621199668303, 'Loss_POI1': 0.007361158728599548, 'Loss_POI2': 0.017689594998955727, 'Loss_POI3': 0.0073523372411727905, 'Loss_POI4': 0.017672549933195114}
+INFO:root:EP27_train, avg_loss=0.022539
+INFO:root:EP:27 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep27
+INFO:root:test=(HR@10:0.8331,HR@5:0.7527,NDCG@10:0.6569,NDCG@5:0.6305) 
+INFO:root:{'epoch': 28, 'iter': '[0/2324]', 'Avg_Loss': 0.21188679337501526, 'Loss_CAT': 0.21188679337501526}
+INFO:root:{'epoch': 28, 'iter': '[500/2324]', 'Avg_Loss': 0.18746284313663514, 'Loss_CAT': 0.18606889247894287}
+INFO:root:{'epoch': 28, 'iter': '[1000/2324]', 'Avg_Loss': 0.18617585183797658, 'Loss_CAT': 0.1629212200641632}
+INFO:root:{'epoch': 28, 'iter': '[1500/2324]', 'Avg_Loss': 0.185794388141972, 'Loss_CAT': 0.24579131603240967}
+INFO:root:{'epoch': 28, 'iter': '[2000/2324]', 'Avg_Loss': 0.1854516257983872, 'Loss_CAT': 0.23959504067897797}
+INFO:root:{'epoch': 28, 'iter': '[0/2324]', 'Avg_Loss': 0.026560429483652115, 'Loss_POI1': 0.022445332258939743, 'Loss_POI2': 0.030675524845719337, 'Loss_POI3': 0.019201697781682014, 'Loss_POI4': 0.027455676347017288}
+INFO:root:{'epoch': 28, 'iter': '[500/2324]', 'Avg_Loss': 0.022790656616528352, 'Loss_POI1': 0.021890973672270775, 'Loss_POI2': 0.02513408474624157, 'Loss_POI3': 0.02185566909611225, 'Loss_POI4': 0.025055058300495148}
+INFO:root:{'epoch': 28, 'iter': '[1000/2324]', 'Avg_Loss': 0.02193108985766203, 'Loss_POI1': 0.009906845167279243, 'Loss_POI2': 0.014841386117041111, 'Loss_POI3': 0.009898120537400246, 'Loss_POI4': 0.014781514182686806}
+INFO:root:{'epoch': 28, 'iter': '[1500/2324]', 'Avg_Loss': 0.021770028110784663, 'Loss_POI1': 0.0303664430975914, 'Loss_POI2': 0.05491261184215546, 'Loss_POI3': 0.030339457094669342, 'Loss_POI4': 0.0547918826341629}
+INFO:root:{'epoch': 28, 'iter': '[2000/2324]', 'Avg_Loss': 0.021798347283307387, 'Loss_POI1': 0.013181550428271294, 'Loss_POI2': 0.01881297118961811, 'Loss_POI3': 0.013169345445930958, 'Loss_POI4': 0.018794745206832886}
+INFO:root:EP28_train, avg_loss=0.021889
+INFO:root:EP:28 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep28
+INFO:root:test=(HR@10:0.8343,HR@5:0.7542,NDCG@10:0.6601,NDCG@5:0.6339) 
+INFO:root:{'epoch': 29, 'iter': '[0/2324]', 'Avg_Loss': 0.2088492512702942, 'Loss_CAT': 0.2088492512702942}
+INFO:root:{'epoch': 29, 'iter': '[500/2324]', 'Avg_Loss': 0.1876621360847812, 'Loss_CAT': 0.2061440795660019}
+INFO:root:{'epoch': 29, 'iter': '[1000/2324]', 'Avg_Loss': 0.18542981944926135, 'Loss_CAT': 0.178208127617836}
+INFO:root:{'epoch': 29, 'iter': '[1500/2324]', 'Avg_Loss': 0.1850497240894322, 'Loss_CAT': 0.1657998263835907}
+INFO:root:{'epoch': 29, 'iter': '[2000/2324]', 'Avg_Loss': 0.1853671173664226, 'Loss_CAT': 0.18087291717529297}
+INFO:root:{'epoch': 29, 'iter': '[0/2324]', 'Avg_Loss': 0.017700109630823135, 'Loss_POI1': 0.016100695356726646, 'Loss_POI2': 0.019299523904919624, 'Loss_POI3': 0.0136531051248312, 'Loss_POI4': 0.016083823516964912}
+INFO:root:{'epoch': 29, 'iter': '[500/2324]', 'Avg_Loss': 0.021513896565809994, 'Loss_POI1': 0.009759047999978065, 'Loss_POI2': 0.01538761891424656, 'Loss_POI3': 0.009735233150422573, 'Loss_POI4': 0.015377822332084179}
+INFO:root:{'epoch': 29, 'iter': '[1000/2324]', 'Avg_Loss': 0.02142149243423795, 'Loss_POI1': 0.017755817621946335, 'Loss_POI2': 0.030892325565218925, 'Loss_POI3': 0.017723076045513153, 'Loss_POI4': 0.03082888014614582}
+INFO:root:{'epoch': 29, 'iter': '[1500/2324]', 'Avg_Loss': 0.021502961601620213, 'Loss_POI1': 0.009215167723596096, 'Loss_POI2': 0.01708180457353592, 'Loss_POI3': 0.009205548092722893, 'Loss_POI4': 0.01705741137266159}
+INFO:root:{'epoch': 29, 'iter': '[2000/2324]', 'Avg_Loss': 0.021362779937314055, 'Loss_POI1': 0.030796455219388008, 'Loss_POI2': 0.02707032859325409, 'Loss_POI3': 0.030753206461668015, 'Loss_POI4': 0.027047455310821533}
+INFO:root:EP29_train, avg_loss=0.021369
+INFO:root:EP:29 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep29
+INFO:root:test=(HR@10:0.8358,HR@5:0.7542,NDCG@10:0.6607,NDCG@5:0.6341) 
+INFO:root:{'epoch': 30, 'iter': '[0/2324]', 'Avg_Loss': 0.22134840488433838, 'Loss_CAT': 0.22134840488433838}
+INFO:root:{'epoch': 30, 'iter': '[500/2324]', 'Avg_Loss': 0.1850453478520264, 'Loss_CAT': 0.20636214315891266}
+INFO:root:{'epoch': 30, 'iter': '[1000/2324]', 'Avg_Loss': 0.18548051663837234, 'Loss_CAT': 0.14983518421649933}
+INFO:root:{'epoch': 30, 'iter': '[1500/2324]', 'Avg_Loss': 0.18473889636524832, 'Loss_CAT': 0.2494119107723236}
+INFO:root:{'epoch': 30, 'iter': '[2000/2324]', 'Avg_Loss': 0.18462524208231368, 'Loss_CAT': 0.1338748335838318}
+INFO:root:{'epoch': 30, 'iter': '[0/2324]', 'Avg_Loss': 0.020137092098593712, 'Loss_POI1': 0.013600586913526058, 'Loss_POI2': 0.02667359635233879, 'Loss_POI3': 0.011720525100827217, 'Loss_POI4': 0.021244574338197708}
+INFO:root:{'epoch': 30, 'iter': '[500/2324]', 'Avg_Loss': 0.021901789669713335, 'Loss_POI1': 0.021854910999536514, 'Loss_POI2': 0.024989988654851913, 'Loss_POI3': 0.02184481918811798, 'Loss_POI4': 0.024952903389930725}
+INFO:root:{'epoch': 30, 'iter': '[1000/2324]', 'Avg_Loss': 0.021243450713328102, 'Loss_POI1': 0.025949429720640182, 'Loss_POI2': 0.019340867176651955, 'Loss_POI3': 0.025929877534508705, 'Loss_POI4': 0.019315719604492188}
+INFO:root:{'epoch': 30, 'iter': '[1500/2324]', 'Avg_Loss': 0.021131865943296205, 'Loss_POI1': 0.04938999190926552, 'Loss_POI2': 0.06675999611616135, 'Loss_POI3': 0.0493742935359478, 'Loss_POI4': 0.06671664118766785}
+INFO:root:{'epoch': 30, 'iter': '[2000/2324]', 'Avg_Loss': 0.021091622651379177, 'Loss_POI1': 0.01335657574236393, 'Loss_POI2': 0.019086230546236038, 'Loss_POI3': 0.013349886983633041, 'Loss_POI4': 0.019060157239437103}
+INFO:root:EP30_train, avg_loss=0.021090
+INFO:root:EP:30 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep30
+INFO:root:test=(HR@10:0.8354,HR@5:0.7555,NDCG@10:0.6601,NDCG@5:0.6339) 
+INFO:root:{'epoch': 31, 'iter': '[0/2324]', 'Avg_Loss': 0.1875852644443512, 'Loss_CAT': 0.1875852644443512}
+INFO:root:{'epoch': 31, 'iter': '[500/2324]', 'Avg_Loss': 0.18531698977459451, 'Loss_CAT': 0.1727307140827179}
+INFO:root:{'epoch': 31, 'iter': '[1000/2324]', 'Avg_Loss': 0.18447080312611222, 'Loss_CAT': 0.17869609594345093}
+INFO:root:{'epoch': 31, 'iter': '[1500/2324]', 'Avg_Loss': 0.18487727897692172, 'Loss_CAT': 0.1732354313135147}
+INFO:root:{'epoch': 31, 'iter': '[2000/2324]', 'Avg_Loss': 0.1843377776268957, 'Loss_CAT': 0.15303845703601837}
+INFO:root:{'epoch': 31, 'iter': '[0/2324]', 'Avg_Loss': 0.010384304448962212, 'Loss_POI1': 0.006506928242743015, 'Loss_POI2': 0.014261679723858833, 'Loss_POI3': 0.006247350946068764, 'Loss_POI4': 0.012358774431049824}
+INFO:root:{'epoch': 31, 'iter': '[500/2324]', 'Avg_Loss': 0.02131906296674928, 'Loss_POI1': 0.019283335655927658, 'Loss_POI2': 0.03412431851029396, 'Loss_POI3': 0.01926996000111103, 'Loss_POI4': 0.03409786894917488}
+INFO:root:{'epoch': 31, 'iter': '[1000/2324]', 'Avg_Loss': 0.02060148792879118, 'Loss_POI1': 0.024584783241152763, 'Loss_POI2': 0.04158032685518265, 'Loss_POI3': 0.024554530158638954, 'Loss_POI4': 0.041525859385728836}
+INFO:root:{'epoch': 31, 'iter': '[1500/2324]', 'Avg_Loss': 0.020281971410242003, 'Loss_POI1': 0.017192203551530838, 'Loss_POI2': 0.028149794787168503, 'Loss_POI3': 0.01715167984366417, 'Loss_POI4': 0.028089486062526703}
+INFO:root:{'epoch': 31, 'iter': '[2000/2324]', 'Avg_Loss': 0.020192100895919662, 'Loss_POI1': 0.01823420450091362, 'Loss_POI2': 0.025831682607531548, 'Loss_POI3': 0.018209155648946762, 'Loss_POI4': 0.02581397257745266}
+INFO:root:EP31_train, avg_loss=0.020111
+INFO:root:EP:31 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep31
+INFO:root:test=(HR@10:0.8335,HR@5:0.7521,NDCG@10:0.6579,NDCG@5:0.6314) 
+INFO:root:{'epoch': 32, 'iter': '[0/2324]', 'Avg_Loss': 0.2378169596195221, 'Loss_CAT': 0.2378169596195221}
+INFO:root:{'epoch': 32, 'iter': '[500/2324]', 'Avg_Loss': 0.18136124747123072, 'Loss_CAT': 0.18044322729110718}
+INFO:root:{'epoch': 32, 'iter': '[1000/2324]', 'Avg_Loss': 0.18160425033513364, 'Loss_CAT': 0.18585583567619324}
+INFO:root:{'epoch': 32, 'iter': '[1500/2324]', 'Avg_Loss': 0.18297236706617273, 'Loss_CAT': 0.21697086095809937}
+INFO:root:{'epoch': 32, 'iter': '[2000/2324]', 'Avg_Loss': 0.18290416271179571, 'Loss_CAT': 0.1259189397096634}
+INFO:root:{'epoch': 32, 'iter': '[0/2324]', 'Avg_Loss': 0.01215191651135683, 'Loss_POI1': 0.009847039356827736, 'Loss_POI2': 0.014456793665885925, 'Loss_POI3': 0.00922938622534275, 'Loss_POI4': 0.013173533603549004}
+INFO:root:{'epoch': 32, 'iter': '[500/2324]', 'Avg_Loss': 0.020633981498088427, 'Loss_POI1': 0.010150376707315445, 'Loss_POI2': 0.03840472176671028, 'Loss_POI3': 0.010132203809916973, 'Loss_POI4': 0.03834579512476921}
+INFO:root:{'epoch': 32, 'iter': '[1000/2324]', 'Avg_Loss': 0.020388776378298584, 'Loss_POI1': 0.00841705221682787, 'Loss_POI2': 0.008651011623442173, 'Loss_POI3': 0.008409509435296059, 'Loss_POI4': 0.008600316941738129}
+INFO:root:{'epoch': 32, 'iter': '[1500/2324]', 'Avg_Loss': 0.020148683688215548, 'Loss_POI1': 0.02087700366973877, 'Loss_POI2': 0.028775062412023544, 'Loss_POI3': 0.02084902673959732, 'Loss_POI4': 0.028752446174621582}
+INFO:root:{'epoch': 32, 'iter': '[2000/2324]', 'Avg_Loss': 0.019879935937735817, 'Loss_POI1': 0.00712414737790823, 'Loss_POI2': 0.010973695665597916, 'Loss_POI3': 0.0071213627234101295, 'Loss_POI4': 0.01094888523221016}
+INFO:root:EP32_train, avg_loss=0.019869
+INFO:root:EP:32 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep32
+INFO:root:test=(HR@10:0.8361,HR@5:0.7518,NDCG@10:0.6591,NDCG@5:0.6317) 
+INFO:root:{'epoch': 33, 'iter': '[0/2324]', 'Avg_Loss': 0.17567259073257446, 'Loss_CAT': 0.17567259073257446}
+INFO:root:{'epoch': 33, 'iter': '[500/2324]', 'Avg_Loss': 0.1819984899636752, 'Loss_CAT': 0.18348145484924316}
+INFO:root:{'epoch': 33, 'iter': '[1000/2324]', 'Avg_Loss': 0.18299071690985017, 'Loss_CAT': 0.17306146025657654}
+INFO:root:{'epoch': 33, 'iter': '[1500/2324]', 'Avg_Loss': 0.1827451083697453, 'Loss_CAT': 0.20262229442596436}
+INFO:root:{'epoch': 33, 'iter': '[2000/2324]', 'Avg_Loss': 0.18287421856028982, 'Loss_CAT': 0.14563363790512085}
+INFO:root:{'epoch': 33, 'iter': '[0/2324]', 'Avg_Loss': 0.03191808983683586, 'Loss_POI1': 0.029958510771393776, 'Loss_POI2': 0.0338776670396328, 'Loss_POI3': 0.029104910790920258, 'Loss_POI4': 0.03016260825097561}
+INFO:root:{'epoch': 33, 'iter': '[500/2324]', 'Avg_Loss': 0.020711127059355735, 'Loss_POI1': 0.009612482972443104, 'Loss_POI2': 0.016203628852963448, 'Loss_POI3': 0.00958937592804432, 'Loss_POI4': 0.016155321151018143}
+INFO:root:{'epoch': 33, 'iter': '[1000/2324]', 'Avg_Loss': 0.019544489417489354, 'Loss_POI1': 0.026015572249889374, 'Loss_POI2': 0.028171319514513016, 'Loss_POI3': 0.025978513062000275, 'Loss_POI4': 0.028115201741456985}
+INFO:root:{'epoch': 33, 'iter': '[1500/2324]', 'Avg_Loss': 0.01968189028137023, 'Loss_POI1': 0.01763147860765457, 'Loss_POI2': 0.033910226076841354, 'Loss_POI3': 0.01760759763419628, 'Loss_POI4': 0.033884696662425995}
+INFO:root:{'epoch': 33, 'iter': '[2000/2324]', 'Avg_Loss': 0.019515585437740967, 'Loss_POI1': 0.011382381431758404, 'Loss_POI2': 0.01711995340883732, 'Loss_POI3': 0.011350572109222412, 'Loss_POI4': 0.01710374653339386}
+INFO:root:EP33_train, avg_loss=0.019539
+INFO:root:EP:33 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep33
+INFO:root:test=(HR@10:0.8352,HR@5:0.7514,NDCG@10:0.6609,NDCG@5:0.6337) 
+INFO:root:{'epoch': 34, 'iter': '[0/2324]', 'Avg_Loss': 0.19593040645122528, 'Loss_CAT': 0.19593040645122528}
+INFO:root:{'epoch': 34, 'iter': '[500/2324]', 'Avg_Loss': 0.18241647882256917, 'Loss_CAT': 0.18222054839134216}
+INFO:root:{'epoch': 34, 'iter': '[1000/2324]', 'Avg_Loss': 0.18380540514087582, 'Loss_CAT': 0.20430588722229004}
+INFO:root:{'epoch': 34, 'iter': '[1500/2324]', 'Avg_Loss': 0.18414226751638046, 'Loss_CAT': 0.20888307690620422}
+INFO:root:{'epoch': 34, 'iter': '[2000/2324]', 'Avg_Loss': 0.1841160254566923, 'Loss_CAT': 0.1653791218996048}
+INFO:root:{'epoch': 34, 'iter': '[0/2324]', 'Avg_Loss': 0.01465563103556633, 'Loss_POI1': 0.010888410732150078, 'Loss_POI2': 0.018422851338982582, 'Loss_POI3': 0.009636633098125458, 'Loss_POI4': 0.01660887524485588}
+INFO:root:{'epoch': 34, 'iter': '[500/2324]', 'Avg_Loss': 0.019774056807487547, 'Loss_POI1': 0.03182373195886612, 'Loss_POI2': 0.04318580776453018, 'Loss_POI3': 0.031806621700525284, 'Loss_POI4': 0.043158456683158875}
+INFO:root:{'epoch': 34, 'iter': '[1000/2324]', 'Avg_Loss': 0.019633014358442415, 'Loss_POI1': 0.0026817687321454287, 'Loss_POI2': 0.007066875696182251, 'Loss_POI3': 0.0026717970613390207, 'Loss_POI4': 0.007045390084385872}
+INFO:root:{'epoch': 34, 'iter': '[1500/2324]', 'Avg_Loss': 0.01926579963611929, 'Loss_POI1': 0.013875870034098625, 'Loss_POI2': 0.017233073711395264, 'Loss_POI3': 0.013870380818843842, 'Loss_POI4': 0.017217883840203285}
+INFO:root:{'epoch': 34, 'iter': '[2000/2324]', 'Avg_Loss': 0.01920243614420261, 'Loss_POI1': 0.01264343410730362, 'Loss_POI2': 0.021847078576683998, 'Loss_POI3': 0.0126087237149477, 'Loss_POI4': 0.021801002323627472}
+INFO:root:EP34_train, avg_loss=0.019166
+INFO:root:EP:34 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep34
+INFO:root:test=(HR@10:0.8363,HR@5:0.7508,NDCG@10:0.6609,NDCG@5:0.6330) 
+INFO:root:{'epoch': 35, 'iter': '[0/2324]', 'Avg_Loss': 0.15182095766067505, 'Loss_CAT': 0.15182095766067505}
+INFO:root:{'epoch': 35, 'iter': '[500/2324]', 'Avg_Loss': 0.1834818008774055, 'Loss_CAT': 0.20483967661857605}
+INFO:root:{'epoch': 35, 'iter': '[1000/2324]', 'Avg_Loss': 0.1832083343164428, 'Loss_CAT': 0.22438597679138184}
+INFO:root:{'epoch': 35, 'iter': '[1500/2324]', 'Avg_Loss': 0.18326771621661214, 'Loss_CAT': 0.1620664745569229}
+INFO:root:{'epoch': 35, 'iter': '[2000/2324]', 'Avg_Loss': 0.18269689755327162, 'Loss_CAT': 0.21225419640541077}
+INFO:root:{'epoch': 35, 'iter': '[0/2324]', 'Avg_Loss': 0.012281164526939392, 'Loss_POI1': 0.010431379079818726, 'Loss_POI2': 0.014130950905382633, 'Loss_POI3': 0.00989978201687336, 'Loss_POI4': 0.013182311318814754}
+INFO:root:{'epoch': 35, 'iter': '[500/2324]', 'Avg_Loss': 0.019707153464375647, 'Loss_POI1': 0.008737311698496342, 'Loss_POI2': 0.011034146882593632, 'Loss_POI3': 0.008730036206543446, 'Loss_POI4': 0.010986669920384884}
+INFO:root:{'epoch': 35, 'iter': '[1000/2324]', 'Avg_Loss': 0.01925783378205129, 'Loss_POI1': 0.014211487025022507, 'Loss_POI2': 0.024949032813310623, 'Loss_POI3': 0.014197327196598053, 'Loss_POI4': 0.024913636967539787}
+INFO:root:{'epoch': 35, 'iter': '[1500/2324]', 'Avg_Loss': 0.019047088927585012, 'Loss_POI1': 0.013661263510584831, 'Loss_POI2': 0.014307761564850807, 'Loss_POI3': 0.01364930160343647, 'Loss_POI4': 0.014277872629463673}
+INFO:root:{'epoch': 35, 'iter': '[2000/2324]', 'Avg_Loss': 0.018835230034425565, 'Loss_POI1': 0.012734925374388695, 'Loss_POI2': 0.013457903638482094, 'Loss_POI3': 0.012713605538010597, 'Loss_POI4': 0.013443822041153908}
+INFO:root:EP35_train, avg_loss=0.018812
+INFO:root:EP:35 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep35
+INFO:root:test=(HR@10:0.8354,HR@5:0.7542,NDCG@10:0.6613,NDCG@5:0.6348) 
+INFO:root:{'epoch': 36, 'iter': '[0/2324]', 'Avg_Loss': 0.18901386857032776, 'Loss_CAT': 0.18901386857032776}
+INFO:root:{'epoch': 36, 'iter': '[500/2324]', 'Avg_Loss': 0.18358862530923414, 'Loss_CAT': 0.1960126757621765}
+INFO:root:{'epoch': 36, 'iter': '[1000/2324]', 'Avg_Loss': 0.18334703315626252, 'Loss_CAT': 0.2475271373987198}
+INFO:root:{'epoch': 36, 'iter': '[1500/2324]', 'Avg_Loss': 0.18373559293232308, 'Loss_CAT': 0.18428364396095276}
+INFO:root:{'epoch': 36, 'iter': '[2000/2324]', 'Avg_Loss': 0.1833031676795291, 'Loss_CAT': 0.19850873947143555}
+INFO:root:{'epoch': 36, 'iter': '[0/2324]', 'Avg_Loss': 0.022203078493475914, 'Loss_POI1': 0.012372184544801712, 'Loss_POI2': 0.032033972442150116, 'Loss_POI3': 0.0117600467056036, 'Loss_POI4': 0.028872862458229065}
+INFO:root:{'epoch': 36, 'iter': '[500/2324]', 'Avg_Loss': 0.01871017880641117, 'Loss_POI1': 0.005569564178586006, 'Loss_POI2': 0.007654525339603424, 'Loss_POI3': 0.0055476906709373, 'Loss_POI4': 0.007606770843267441}
+INFO:root:{'epoch': 36, 'iter': '[1000/2324]', 'Avg_Loss': 0.01838838539042554, 'Loss_POI1': 0.026640670374035835, 'Loss_POI2': 0.04279705509543419, 'Loss_POI3': 0.026591239497065544, 'Loss_POI4': 0.042701974511146545}
+INFO:root:{'epoch': 36, 'iter': '[1500/2324]', 'Avg_Loss': 0.018283130517595513, 'Loss_POI1': 0.007074685301631689, 'Loss_POI2': 0.02329706773161888, 'Loss_POI3': 0.007066357880830765, 'Loss_POI4': 0.023263761773705482}
+INFO:root:{'epoch': 36, 'iter': '[2000/2324]', 'Avg_Loss': 0.018299005804760293, 'Loss_POI1': 0.023740451782941818, 'Loss_POI2': 0.03184507414698601, 'Loss_POI3': 0.023718060925602913, 'Loss_POI4': 0.03176835551857948}
+INFO:root:EP36_train, avg_loss=0.018289
+INFO:root:EP:36 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep36
+INFO:root:test=(HR@10:0.8352,HR@5:0.7495,NDCG@10:0.6587,NDCG@5:0.6308) 
+INFO:root:{'epoch': 37, 'iter': '[0/2324]', 'Avg_Loss': 0.16806602478027344, 'Loss_CAT': 0.16806602478027344}
+INFO:root:{'epoch': 37, 'iter': '[500/2324]', 'Avg_Loss': 0.1833864627870733, 'Loss_CAT': 0.20918750762939453}
+INFO:root:{'epoch': 37, 'iter': '[1000/2324]', 'Avg_Loss': 0.1818248660533459, 'Loss_CAT': 0.1706782728433609}
+INFO:root:{'epoch': 37, 'iter': '[1500/2324]', 'Avg_Loss': 0.18122183077836498, 'Loss_CAT': 0.19086861610412598}
+INFO:root:{'epoch': 37, 'iter': '[2000/2324]', 'Avg_Loss': 0.18156887043913503, 'Loss_CAT': 0.19230252504348755}
+INFO:root:{'epoch': 37, 'iter': '[0/2324]', 'Avg_Loss': 0.01843280717730522, 'Loss_POI1': 0.01054114568978548, 'Loss_POI2': 0.026324469596147537, 'Loss_POI3': 0.010029487311840057, 'Loss_POI4': 0.025101076811552048}
+INFO:root:{'epoch': 37, 'iter': '[500/2324]', 'Avg_Loss': 0.01915674733217367, 'Loss_POI1': 0.011093365028500557, 'Loss_POI2': 0.03011568821966648, 'Loss_POI3': 0.011075874790549278, 'Loss_POI4': 0.03005434386432171}
+INFO:root:{'epoch': 37, 'iter': '[1000/2324]', 'Avg_Loss': 0.018623533631934523, 'Loss_POI1': 0.025941908359527588, 'Loss_POI2': 0.0362129807472229, 'Loss_POI3': 0.025881126523017883, 'Loss_POI4': 0.036139026284217834}
+INFO:root:{'epoch': 37, 'iter': '[1500/2324]', 'Avg_Loss': 0.018535100766981914, 'Loss_POI1': 0.02282233163714409, 'Loss_POI2': 0.020222891122102737, 'Loss_POI3': 0.02279617078602314, 'Loss_POI4': 0.020162954926490784}
+INFO:root:{'epoch': 37, 'iter': '[2000/2324]', 'Avg_Loss': 0.018455100661866935, 'Loss_POI1': 0.008105635643005371, 'Loss_POI2': 0.014140121638774872, 'Loss_POI3': 0.008096568286418915, 'Loss_POI4': 0.014079629443585873}
+INFO:root:EP37_train, avg_loss=0.018493
+INFO:root:EP:37 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep37
+INFO:root:test=(HR@10:0.8310,HR@5:0.7523,NDCG@10:0.6559,NDCG@5:0.6302) 
+INFO:root:{'epoch': 38, 'iter': '[0/2324]', 'Avg_Loss': 0.13243038952350616, 'Loss_CAT': 0.13243038952350616}
+INFO:root:{'epoch': 38, 'iter': '[500/2324]', 'Avg_Loss': 0.18202376709191384, 'Loss_CAT': 0.2337266504764557}
+INFO:root:{'epoch': 38, 'iter': '[1000/2324]', 'Avg_Loss': 0.18332513291519004, 'Loss_CAT': 0.16596150398254395}
+INFO:root:{'epoch': 38, 'iter': '[1500/2324]', 'Avg_Loss': 0.18270355518621892, 'Loss_CAT': 0.20447269082069397}
+INFO:root:{'epoch': 38, 'iter': '[2000/2324]', 'Avg_Loss': 0.1830278712211699, 'Loss_CAT': 0.17339172959327698}
+INFO:root:{'epoch': 38, 'iter': '[0/2324]', 'Avg_Loss': 0.01119267288595438, 'Loss_POI1': 0.01069607213139534, 'Loss_POI2': 0.01168927364051342, 'Loss_POI3': 0.008654379285871983, 'Loss_POI4': 0.010033681057393551}
+INFO:root:{'epoch': 38, 'iter': '[500/2324]', 'Avg_Loss': 0.018832810922059233, 'Loss_POI1': 0.007941477000713348, 'Loss_POI2': 0.011739036068320274, 'Loss_POI3': 0.00789644941687584, 'Loss_POI4': 0.011665184050798416}
+INFO:root:{'epoch': 38, 'iter': '[1000/2324]', 'Avg_Loss': 0.01836217207495462, 'Loss_POI1': 0.01927921362221241, 'Loss_POI2': 0.04580584168434143, 'Loss_POI3': 0.019261393696069717, 'Loss_POI4': 0.045739948749542236}
+INFO:root:{'epoch': 38, 'iter': '[1500/2324]', 'Avg_Loss': 0.0181245535078814, 'Loss_POI1': 0.011567715555429459, 'Loss_POI2': 0.02505618892610073, 'Loss_POI3': 0.011550264433026314, 'Loss_POI4': 0.02498420514166355}
+INFO:root:{'epoch': 38, 'iter': '[2000/2324]', 'Avg_Loss': 0.018100622413295513, 'Loss_POI1': 0.020048579201102257, 'Loss_POI2': 0.027646508067846298, 'Loss_POI3': 0.019984161481261253, 'Loss_POI4': 0.027615386992692947}
+INFO:root:EP38_train, avg_loss=0.018135
+INFO:root:EP:38 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep38
+INFO:root:test=(HR@10:0.8353,HR@5:0.7555,NDCG@10:0.6614,NDCG@5:0.6353) 
+INFO:root:{'epoch': 39, 'iter': '[0/2324]', 'Avg_Loss': 0.20230868458747864, 'Loss_CAT': 0.20230868458747864}
+INFO:root:{'epoch': 39, 'iter': '[500/2324]', 'Avg_Loss': 0.17974539471422127, 'Loss_CAT': 0.18439438939094543}
+INFO:root:{'epoch': 39, 'iter': '[1000/2324]', 'Avg_Loss': 0.1820850465502534, 'Loss_CAT': 0.15936186909675598}
+INFO:root:{'epoch': 39, 'iter': '[1500/2324]', 'Avg_Loss': 0.18205355699958997, 'Loss_CAT': 0.21964165568351746}
+INFO:root:{'epoch': 39, 'iter': '[2000/2324]', 'Avg_Loss': 0.18203916770779807, 'Loss_CAT': 0.2383238673210144}
+INFO:root:{'epoch': 39, 'iter': '[0/2324]', 'Avg_Loss': 0.04029418155550957, 'Loss_POI1': 0.030665505677461624, 'Loss_POI2': 0.04992285743355751, 'Loss_POI3': 0.02880016714334488, 'Loss_POI4': 0.04434847831726074}
+INFO:root:{'epoch': 39, 'iter': '[500/2324]', 'Avg_Loss': 0.018105181583301898, 'Loss_POI1': 0.013609429821372032, 'Loss_POI2': 0.015079286880791187, 'Loss_POI3': 0.01359538920223713, 'Loss_POI4': 0.015037942677736282}
+INFO:root:{'epoch': 39, 'iter': '[1000/2324]', 'Avg_Loss': 0.017759113101759455, 'Loss_POI1': 0.012648681178689003, 'Loss_POI2': 0.01712731458246708, 'Loss_POI3': 0.012629926204681396, 'Loss_POI4': 0.01710290089249611}
+INFO:root:{'epoch': 39, 'iter': '[1500/2324]', 'Avg_Loss': 0.01762486240118593, 'Loss_POI1': 0.008791197091341019, 'Loss_POI2': 0.025504477322101593, 'Loss_POI3': 0.008742976933717728, 'Loss_POI4': 0.025430820882320404}
+INFO:root:{'epoch': 39, 'iter': '[2000/2324]', 'Avg_Loss': 0.017567571514038958, 'Loss_POI1': 0.018320275470614433, 'Loss_POI2': 0.017033090814948082, 'Loss_POI3': 0.01830456219613552, 'Loss_POI4': 0.016996126621961594}
+INFO:root:EP39_train, avg_loss=0.017588
+INFO:root:EP:39 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep39
+INFO:root:test=(HR@10:0.8357,HR@5:0.7540,NDCG@10:0.6600,NDCG@5:0.6332) 
+INFO:root:{'epoch': 40, 'iter': '[0/2324]', 'Avg_Loss': 0.19122663140296936, 'Loss_CAT': 0.19122663140296936}
+INFO:root:{'epoch': 40, 'iter': '[500/2324]', 'Avg_Loss': 0.18264640665458823, 'Loss_CAT': 0.19080384075641632}
+INFO:root:{'epoch': 40, 'iter': '[1000/2324]', 'Avg_Loss': 0.18192748758164082, 'Loss_CAT': 0.16960249841213226}
+INFO:root:{'epoch': 40, 'iter': '[1500/2324]', 'Avg_Loss': 0.18241323191153852, 'Loss_CAT': 0.19102075695991516}
+INFO:root:{'epoch': 40, 'iter': '[2000/2324]', 'Avg_Loss': 0.1826590824795925, 'Loss_CAT': 0.16366246342658997}
+INFO:root:{'epoch': 40, 'iter': '[0/2324]', 'Avg_Loss': 0.03288562595844269, 'Loss_POI1': 0.025266027078032494, 'Loss_POI2': 0.04050522670149803, 'Loss_POI3': 0.02466898038983345, 'Loss_POI4': 0.036910418421030045}
+INFO:root:{'epoch': 40, 'iter': '[500/2324]', 'Avg_Loss': 0.017806700826761966, 'Loss_POI1': 0.013468855991959572, 'Loss_POI2': 0.01799762062728405, 'Loss_POI3': 0.01345503143966198, 'Loss_POI4': 0.017961667850613594}
+INFO:root:{'epoch': 40, 'iter': '[1000/2324]', 'Avg_Loss': 0.017233452303558366, 'Loss_POI1': 0.00974197406321764, 'Loss_POI2': 0.02086084894835949, 'Loss_POI3': 0.009718683548271656, 'Loss_POI4': 0.020795222371816635}
+INFO:root:{'epoch': 40, 'iter': '[1500/2324]', 'Avg_Loss': 0.01739595842570672, 'Loss_POI1': 0.013201514258980751, 'Loss_POI2': 0.022781260311603546, 'Loss_POI3': 0.013180715963244438, 'Loss_POI4': 0.022749556228518486}
+INFO:root:{'epoch': 40, 'iter': '[2000/2324]', 'Avg_Loss': 0.017353270627345995, 'Loss_POI1': 0.006955278106033802, 'Loss_POI2': 0.011637100018560886, 'Loss_POI3': 0.006930178962647915, 'Loss_POI4': 0.011603305116295815}
+INFO:root:EP40_train, avg_loss=0.017359
+INFO:root:EP:40 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep40
+INFO:root:test=(HR@10:0.8313,HR@5:0.7509,NDCG@10:0.6559,NDCG@5:0.6296) 
+INFO:root:{'epoch': 41, 'iter': '[0/2324]', 'Avg_Loss': 0.17351983487606049, 'Loss_CAT': 0.17351983487606049}
+INFO:root:{'epoch': 41, 'iter': '[500/2324]', 'Avg_Loss': 0.1845405468654014, 'Loss_CAT': 0.2041245549917221}
+INFO:root:{'epoch': 41, 'iter': '[1000/2324]', 'Avg_Loss': 0.1834179264503521, 'Loss_CAT': 0.2004638910293579}
+INFO:root:{'epoch': 41, 'iter': '[1500/2324]', 'Avg_Loss': 0.18314680190065716, 'Loss_CAT': 0.18057498335838318}
+INFO:root:{'epoch': 41, 'iter': '[2000/2324]', 'Avg_Loss': 0.1823277160830643, 'Loss_CAT': 0.17959590256214142}
+INFO:root:{'epoch': 41, 'iter': '[0/2324]', 'Avg_Loss': 0.02664368785917759, 'Loss_POI1': 0.0199509859085083, 'Loss_POI2': 0.03333638980984688, 'Loss_POI3': 0.017577551305294037, 'Loss_POI4': 0.02579588070511818}
+INFO:root:{'epoch': 41, 'iter': '[500/2324]', 'Avg_Loss': 0.018159310483539148, 'Loss_POI1': 0.007892731577157974, 'Loss_POI2': 0.02842479944229126, 'Loss_POI3': 0.007884493097662926, 'Loss_POI4': 0.028279811143875122}
+INFO:root:{'epoch': 41, 'iter': '[1000/2324]', 'Avg_Loss': 0.01724480442771619, 'Loss_POI1': 0.01719290390610695, 'Loss_POI2': 0.03345867618918419, 'Loss_POI3': 0.017159512266516685, 'Loss_POI4': 0.03339604288339615}
+INFO:root:{'epoch': 41, 'iter': '[1500/2324]', 'Avg_Loss': 0.016942912768225106, 'Loss_POI1': 0.010326383635401726, 'Loss_POI2': 0.03200672194361687, 'Loss_POI3': 0.010300219058990479, 'Loss_POI4': 0.031755752861499786}
+INFO:root:{'epoch': 41, 'iter': '[2000/2324]', 'Avg_Loss': 0.016929277607045698, 'Loss_POI1': 0.011289436370134354, 'Loss_POI2': 0.023839987814426422, 'Loss_POI3': 0.01125492062419653, 'Loss_POI4': 0.023729121312499046}
+INFO:root:EP41_train, avg_loss=0.016913
+INFO:root:EP:41 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep41
+INFO:root:test=(HR@10:0.8304,HR@5:0.7462,NDCG@10:0.6528,NDCG@5:0.6254) 
+INFO:root:{'epoch': 42, 'iter': '[0/2324]', 'Avg_Loss': 0.23990461230278015, 'Loss_CAT': 0.23990461230278015}
+INFO:root:{'epoch': 42, 'iter': '[500/2324]', 'Avg_Loss': 0.17999431476026714, 'Loss_CAT': 0.1531679332256317}
+INFO:root:{'epoch': 42, 'iter': '[1000/2324]', 'Avg_Loss': 0.18037861685355108, 'Loss_CAT': 0.16268841922283173}
+INFO:root:{'epoch': 42, 'iter': '[1500/2324]', 'Avg_Loss': 0.1810505350506917, 'Loss_CAT': 0.2047685980796814}
+INFO:root:{'epoch': 42, 'iter': '[2000/2324]', 'Avg_Loss': 0.18143977648180643, 'Loss_CAT': 0.23115204274654388}
+INFO:root:{'epoch': 42, 'iter': '[0/2324]', 'Avg_Loss': 0.02999638393521309, 'Loss_POI1': 0.021195748820900917, 'Loss_POI2': 0.03879702091217041, 'Loss_POI3': 0.020096689462661743, 'Loss_POI4': 0.03604334592819214}
+INFO:root:{'epoch': 42, 'iter': '[500/2324]', 'Avg_Loss': 0.017204329150704717, 'Loss_POI1': 0.00563005032017827, 'Loss_POI2': 0.005496740806847811, 'Loss_POI3': 0.005607679486274719, 'Loss_POI4': 0.0054522412829101086}
+INFO:root:{'epoch': 42, 'iter': '[1000/2324]', 'Avg_Loss': 0.01683882334454266, 'Loss_POI1': 0.010878217406570911, 'Loss_POI2': 0.009647470898926258, 'Loss_POI3': 0.010853404179215431, 'Loss_POI4': 0.009580397047102451}
+INFO:root:{'epoch': 42, 'iter': '[1500/2324]', 'Avg_Loss': 0.016904832359150843, 'Loss_POI1': 0.013228332623839378, 'Loss_POI2': 0.025144919753074646, 'Loss_POI3': 0.013186436146497726, 'Loss_POI4': 0.025030650198459625}
+INFO:root:{'epoch': 42, 'iter': '[2000/2324]', 'Avg_Loss': 0.016849509656146774, 'Loss_POI1': 0.00804294552654028, 'Loss_POI2': 0.03014945797622204, 'Loss_POI3': 0.008018066175282001, 'Loss_POI4': 0.030058450996875763}
+INFO:root:EP42_train, avg_loss=0.016797
+INFO:root:EP:42 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep42
+INFO:root:test=(HR@10:0.8345,HR@5:0.7527,NDCG@10:0.6592,NDCG@5:0.6326) 
+INFO:root:{'epoch': 43, 'iter': '[0/2324]', 'Avg_Loss': 0.19271589815616608, 'Loss_CAT': 0.19271589815616608}
+INFO:root:{'epoch': 43, 'iter': '[500/2324]', 'Avg_Loss': 0.17940531732020026, 'Loss_CAT': 0.15864098072052002}
+INFO:root:{'epoch': 43, 'iter': '[1000/2324]', 'Avg_Loss': 0.18097352094345398, 'Loss_CAT': 0.19998930394649506}
+INFO:root:{'epoch': 43, 'iter': '[1500/2324]', 'Avg_Loss': 0.18108416645031306, 'Loss_CAT': 0.17756527662277222}
+INFO:root:{'epoch': 43, 'iter': '[2000/2324]', 'Avg_Loss': 0.18137349522319332, 'Loss_CAT': 0.16669103503227234}
+INFO:root:{'epoch': 43, 'iter': '[0/2324]', 'Avg_Loss': 0.018173566088080406, 'Loss_POI1': 0.013261467218399048, 'Loss_POI2': 0.023085664957761765, 'Loss_POI3': 0.011355526745319366, 'Loss_POI4': 0.01877005398273468}
+INFO:root:{'epoch': 43, 'iter': '[500/2324]', 'Avg_Loss': 0.01760744987085402, 'Loss_POI1': 0.012708947993814945, 'Loss_POI2': 0.01756485365331173, 'Loss_POI3': 0.012630727142095566, 'Loss_POI4': 0.017508666962385178}
+INFO:root:{'epoch': 43, 'iter': '[1000/2324]', 'Avg_Loss': 0.017231274014255116, 'Loss_POI1': 0.0022145791444927454, 'Loss_POI2': 0.005815399810671806, 'Loss_POI3': 0.002206062898039818, 'Loss_POI4': 0.00578839099034667}
+INFO:root:{'epoch': 43, 'iter': '[1500/2324]', 'Avg_Loss': 0.017162265321196395, 'Loss_POI1': 0.014301746152341366, 'Loss_POI2': 0.015739478170871735, 'Loss_POI3': 0.014286687597632408, 'Loss_POI4': 0.015718059614300728}
+INFO:root:{'epoch': 43, 'iter': '[2000/2324]', 'Avg_Loss': 0.016956953519628545, 'Loss_POI1': 0.022051110863685608, 'Loss_POI2': 0.02686319872736931, 'Loss_POI3': 0.022028973326086998, 'Loss_POI4': 0.026787761598825455}
+INFO:root:EP43_train, avg_loss=0.016905
+INFO:root:EP:43 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep43
+INFO:root:test=(HR@10:0.8328,HR@5:0.7486,NDCG@10:0.6582,NDCG@5:0.6307) 
+INFO:root:{'epoch': 44, 'iter': '[0/2324]', 'Avg_Loss': 0.15691810846328735, 'Loss_CAT': 0.15691810846328735}
+INFO:root:{'epoch': 44, 'iter': '[500/2324]', 'Avg_Loss': 0.17954665929554942, 'Loss_CAT': 0.1758415699005127}
+INFO:root:{'epoch': 44, 'iter': '[1000/2324]', 'Avg_Loss': 0.18025889789516275, 'Loss_CAT': 0.1575501561164856}
+INFO:root:{'epoch': 44, 'iter': '[1500/2324]', 'Avg_Loss': 0.18093699560333776, 'Loss_CAT': 0.18624623119831085}
+INFO:root:{'epoch': 44, 'iter': '[2000/2324]', 'Avg_Loss': 0.18138976102096327, 'Loss_CAT': 0.1916927993297577}
+INFO:root:{'epoch': 44, 'iter': '[0/2324]', 'Avg_Loss': 0.011742024682462215, 'Loss_POI1': 0.0032141446135938168, 'Loss_POI2': 0.020269904285669327, 'Loss_POI3': 0.0027880831621587276, 'Loss_POI4': 0.014548848383128643}
+INFO:root:{'epoch': 44, 'iter': '[500/2324]', 'Avg_Loss': 0.016937386891442145, 'Loss_POI1': 0.01147173810750246, 'Loss_POI2': 0.021445084363222122, 'Loss_POI3': 0.011395901441574097, 'Loss_POI4': 0.021320834755897522}
+INFO:root:{'epoch': 44, 'iter': '[1000/2324]', 'Avg_Loss': 0.016675121704029006, 'Loss_POI1': 0.009300246834754944, 'Loss_POI2': 0.02098531275987625, 'Loss_POI3': 0.009292558766901493, 'Loss_POI4': 0.02088026888668537}
+INFO:root:{'epoch': 44, 'iter': '[1500/2324]', 'Avg_Loss': 0.01654292089069792, 'Loss_POI1': 0.01854424737393856, 'Loss_POI2': 0.03362063318490982, 'Loss_POI3': 0.018537484109401703, 'Loss_POI4': 0.03354949504137039}
+INFO:root:{'epoch': 44, 'iter': '[2000/2324]', 'Avg_Loss': 0.016455511703783798, 'Loss_POI1': 0.03342447429895401, 'Loss_POI2': 0.04550567641854286, 'Loss_POI3': 0.033404767513275146, 'Loss_POI4': 0.04543209448456764}
+INFO:root:EP44_train, avg_loss=0.016488
+INFO:root:EP:44 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep44
+INFO:root:test=(HR@10:0.8309,HR@5:0.7535,NDCG@10:0.6554,NDCG@5:0.6302) 
+INFO:root:{'epoch': 45, 'iter': '[0/2324]', 'Avg_Loss': 0.16363583505153656, 'Loss_CAT': 0.16363583505153656}
+INFO:root:{'epoch': 45, 'iter': '[500/2324]', 'Avg_Loss': 0.17853485969845168, 'Loss_CAT': 0.1617981195449829}
+INFO:root:{'epoch': 45, 'iter': '[1000/2324]', 'Avg_Loss': 0.1783274056001024, 'Loss_CAT': 0.20579566061496735}
+INFO:root:{'epoch': 45, 'iter': '[1500/2324]', 'Avg_Loss': 0.1792274233472498, 'Loss_CAT': 0.2347189038991928}
+INFO:root:{'epoch': 45, 'iter': '[2000/2324]', 'Avg_Loss': 0.180097796648428, 'Loss_CAT': 0.19624048471450806}
+INFO:root:{'epoch': 45, 'iter': '[0/2324]', 'Avg_Loss': 0.009304223582148552, 'Loss_POI1': 0.004543255548924208, 'Loss_POI2': 0.014065192081034184, 'Loss_POI3': 0.0034423128236085176, 'Loss_POI4': 0.01304786466062069}
+INFO:root:{'epoch': 45, 'iter': '[500/2324]', 'Avg_Loss': 0.01689181378912441, 'Loss_POI1': 0.00576145900413394, 'Loss_POI2': 0.01682252436876297, 'Loss_POI3': 0.00573816429823637, 'Loss_POI4': 0.0167657732963562}
+INFO:root:{'epoch': 45, 'iter': '[1000/2324]', 'Avg_Loss': 0.016561247466772153, 'Loss_POI1': 0.012024406343698502, 'Loss_POI2': 0.026595229282975197, 'Loss_POI3': 0.011991681531071663, 'Loss_POI4': 0.026502612978219986}
+INFO:root:{'epoch': 45, 'iter': '[1500/2324]', 'Avg_Loss': 0.016542263650741778, 'Loss_POI1': 0.030235808342695236, 'Loss_POI2': 0.03532245755195618, 'Loss_POI3': 0.030180921778082848, 'Loss_POI4': 0.03521902859210968}
+INFO:root:{'epoch': 45, 'iter': '[2000/2324]', 'Avg_Loss': 0.016378257540694583, 'Loss_POI1': 0.013812968507409096, 'Loss_POI2': 0.01949780061841011, 'Loss_POI3': 0.013779458589851856, 'Loss_POI4': 0.019452914595603943}
+INFO:root:EP45_train, avg_loss=0.016331
+INFO:root:EP:45 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep45
+INFO:root:test=(HR@10:0.8343,HR@5:0.7553,NDCG@10:0.6589,NDCG@5:0.6330) 
+INFO:root:{'epoch': 46, 'iter': '[0/2324]', 'Avg_Loss': 0.159772589802742, 'Loss_CAT': 0.159772589802742}
+INFO:root:{'epoch': 46, 'iter': '[500/2324]', 'Avg_Loss': 0.18026457436962756, 'Loss_CAT': 0.15868058800697327}
+INFO:root:{'epoch': 46, 'iter': '[1000/2324]', 'Avg_Loss': 0.17970045310604227, 'Loss_CAT': 0.17505669593811035}
+INFO:root:{'epoch': 46, 'iter': '[1500/2324]', 'Avg_Loss': 0.1794797107378774, 'Loss_CAT': 0.1485086977481842}
+INFO:root:{'epoch': 46, 'iter': '[2000/2324]', 'Avg_Loss': 0.1798658749569898, 'Loss_CAT': 0.2523922622203827}
+INFO:root:{'epoch': 46, 'iter': '[0/2324]', 'Avg_Loss': 0.019154001027345657, 'Loss_POI1': 0.01688595861196518, 'Loss_POI2': 0.021422043442726135, 'Loss_POI3': 0.01427963376045227, 'Loss_POI4': 0.016743365675210953}
+INFO:root:{'epoch': 46, 'iter': '[500/2324]', 'Avg_Loss': 0.016978194651764606, 'Loss_POI1': 0.012717675417661667, 'Loss_POI2': 0.012797974981367588, 'Loss_POI3': 0.012640777043998241, 'Loss_POI4': 0.012722060084342957}
+INFO:root:{'epoch': 46, 'iter': '[1000/2324]', 'Avg_Loss': 0.016191576188848866, 'Loss_POI1': 0.01607288047671318, 'Loss_POI2': 0.019299719482660294, 'Loss_POI3': 0.016024330630898476, 'Loss_POI4': 0.019159328192472458}
+INFO:root:{'epoch': 46, 'iter': '[1500/2324]', 'Avg_Loss': 0.016251554304385168, 'Loss_POI1': 0.010126742534339428, 'Loss_POI2': 0.015493901446461678, 'Loss_POI3': 0.010111529380083084, 'Loss_POI4': 0.015461903065443039}
+INFO:root:{'epoch': 46, 'iter': '[2000/2324]', 'Avg_Loss': 0.016318684757879374, 'Loss_POI1': 0.014622330665588379, 'Loss_POI2': 0.018676798790693283, 'Loss_POI3': 0.014608385041356087, 'Loss_POI4': 0.018665865063667297}
+INFO:root:EP46_train, avg_loss=0.016193
+INFO:root:EP:46 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep46
+INFO:root:test=(HR@10:0.8342,HR@5:0.7549,NDCG@10:0.6586,NDCG@5:0.6326) 
+INFO:root:{'epoch': 47, 'iter': '[0/2324]', 'Avg_Loss': 0.21403348445892334, 'Loss_CAT': 0.21403348445892334}
+INFO:root:{'epoch': 47, 'iter': '[500/2324]', 'Avg_Loss': 0.1806508761471855, 'Loss_CAT': 0.21917220950126648}
+INFO:root:{'epoch': 47, 'iter': '[1000/2324]', 'Avg_Loss': 0.17984685123145402, 'Loss_CAT': 0.18446573615074158}
+INFO:root:{'epoch': 47, 'iter': '[1500/2324]', 'Avg_Loss': 0.18035300282995992, 'Loss_CAT': 0.16044244170188904}
+INFO:root:{'epoch': 47, 'iter': '[2000/2324]', 'Avg_Loss': 0.18045483384354002, 'Loss_CAT': 0.1568717658519745}
+INFO:root:{'epoch': 47, 'iter': '[0/2324]', 'Avg_Loss': 0.018094221130013466, 'Loss_POI1': 0.016615722328424454, 'Loss_POI2': 0.019572719931602478, 'Loss_POI3': 0.01646380126476288, 'Loss_POI4': 0.017735879868268967}
+INFO:root:{'epoch': 47, 'iter': '[500/2324]', 'Avg_Loss': 0.016748556819374483, 'Loss_POI1': 0.006695725955069065, 'Loss_POI2': 0.013090265914797783, 'Loss_POI3': 0.006684144958853722, 'Loss_POI4': 0.012950817123055458}
+INFO:root:{'epoch': 47, 'iter': '[1000/2324]', 'Avg_Loss': 0.016315151741690972, 'Loss_POI1': 0.010141490958631039, 'Loss_POI2': 0.018783222883939743, 'Loss_POI3': 0.010134589858353138, 'Loss_POI4': 0.018727242946624756}
+INFO:root:{'epoch': 47, 'iter': '[1500/2324]', 'Avg_Loss': 0.016275266494240853, 'Loss_POI1': 0.01562841609120369, 'Loss_POI2': 0.020594261586666107, 'Loss_POI3': 0.015609889291226864, 'Loss_POI4': 0.0204525887966156}
+INFO:root:{'epoch': 47, 'iter': '[2000/2324]', 'Avg_Loss': 0.0163900519423103, 'Loss_POI1': 0.021180860698223114, 'Loss_POI2': 0.023689039051532745, 'Loss_POI3': 0.021173715591430664, 'Loss_POI4': 0.023681409657001495}
+INFO:root:EP47_train, avg_loss=0.016377
+INFO:root:EP:47 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep47
+INFO:root:test=(HR@10:0.8335,HR@5:0.7534,NDCG@10:0.6606,NDCG@5:0.6344) 
+INFO:root:{'epoch': 48, 'iter': '[0/2324]', 'Avg_Loss': 0.20360201597213745, 'Loss_CAT': 0.20360201597213745}
+INFO:root:{'epoch': 48, 'iter': '[500/2324]', 'Avg_Loss': 0.18001331020139172, 'Loss_CAT': 0.17985275387763977}
+INFO:root:{'epoch': 48, 'iter': '[1000/2324]', 'Avg_Loss': 0.1807392276190854, 'Loss_CAT': 0.15679243206977844}
+INFO:root:{'epoch': 48, 'iter': '[1500/2324]', 'Avg_Loss': 0.1809848867788623, 'Loss_CAT': 0.24898487329483032}
+INFO:root:{'epoch': 48, 'iter': '[2000/2324]', 'Avg_Loss': 0.18118872113715762, 'Loss_CAT': 0.20394665002822876}
+INFO:root:{'epoch': 48, 'iter': '[0/2324]', 'Avg_Loss': 0.008000037632882595, 'Loss_POI1': 0.0059608411975204945, 'Loss_POI2': 0.010039234533905983, 'Loss_POI3': 0.005313592031598091, 'Loss_POI4': 0.008733261376619339}
+INFO:root:{'epoch': 48, 'iter': '[500/2324]', 'Avg_Loss': 0.01657133856941639, 'Loss_POI1': 0.007584326900541782, 'Loss_POI2': 0.008622938767075539, 'Loss_POI3': 0.0075519210658967495, 'Loss_POI4': 0.008600100874900818}
+INFO:root:{'epoch': 48, 'iter': '[1000/2324]', 'Avg_Loss': 0.015689309429517805, 'Loss_POI1': 0.008018184453248978, 'Loss_POI2': 0.008891003206372261, 'Loss_POI3': 0.00800652801990509, 'Loss_POI4': 0.00885696243494749}
+INFO:root:{'epoch': 48, 'iter': '[1500/2324]', 'Avg_Loss': 0.015678912924021248, 'Loss_POI1': 0.0033516730181872845, 'Loss_POI2': 0.0036461353302001953, 'Loss_POI3': 0.0033389637246727943, 'Loss_POI4': 0.0036282124929130077}
+INFO:root:{'epoch': 48, 'iter': '[2000/2324]', 'Avg_Loss': 0.015572179460431218, 'Loss_POI1': 0.014120341278612614, 'Loss_POI2': 0.031247269362211227, 'Loss_POI3': 0.014096730388700962, 'Loss_POI4': 0.031181715428829193}
+INFO:root:EP48_train, avg_loss=0.015557
+INFO:root:EP:48 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep48
+INFO:root:test=(HR@10:0.8331,HR@5:0.7543,NDCG@10:0.6585,NDCG@5:0.6328) 
+INFO:root:{'epoch': 49, 'iter': '[0/2324]', 'Avg_Loss': 0.19774562120437622, 'Loss_CAT': 0.19774562120437622}
+INFO:root:{'epoch': 49, 'iter': '[500/2324]', 'Avg_Loss': 0.1799352453080956, 'Loss_CAT': 0.15401425957679749}
+INFO:root:{'epoch': 49, 'iter': '[1000/2324]', 'Avg_Loss': 0.18043939359151162, 'Loss_CAT': 0.1285598874092102}
+INFO:root:{'epoch': 49, 'iter': '[1500/2324]', 'Avg_Loss': 0.18024153669900214, 'Loss_CAT': 0.11636221408843994}
+INFO:root:{'epoch': 49, 'iter': '[2000/2324]', 'Avg_Loss': 0.18058370923188732, 'Loss_CAT': 0.18613626062870026}
+INFO:root:{'epoch': 49, 'iter': '[0/2324]', 'Avg_Loss': 0.024486549198627472, 'Loss_POI1': 0.023555750027298927, 'Loss_POI2': 0.025417346507310867, 'Loss_POI3': 0.02233703061938286, 'Loss_POI4': 0.02295767515897751}
+INFO:root:{'epoch': 49, 'iter': '[500/2324]', 'Avg_Loss': 0.01655341239698127, 'Loss_POI1': 0.0104396166279912, 'Loss_POI2': 0.018141834065318108, 'Loss_POI3': 0.010430064052343369, 'Loss_POI4': 0.018129535019397736}
+INFO:root:{'epoch': 49, 'iter': '[1000/2324]', 'Avg_Loss': 0.016063306762554963, 'Loss_POI1': 0.002024278976023197, 'Loss_POI2': 0.005140842869877815, 'Loss_POI3': 0.002019974635913968, 'Loss_POI4': 0.005085636395961046}
+INFO:root:{'epoch': 49, 'iter': '[1500/2324]', 'Avg_Loss': 0.015808558114401024, 'Loss_POI1': 0.019305163994431496, 'Loss_POI2': 0.03467096388339996, 'Loss_POI3': 0.019256025552749634, 'Loss_POI4': 0.03454592823982239}
+INFO:root:{'epoch': 49, 'iter': '[2000/2324]', 'Avg_Loss': 0.015622954417393822, 'Loss_POI1': 0.007450977806001902, 'Loss_POI2': 0.012759455479681492, 'Loss_POI3': 0.007365433964878321, 'Loss_POI4': 0.012661445885896683}
+INFO:root:EP49_train, avg_loss=0.015677
+INFO:root:EP:49 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep49
+INFO:root:test=(HR@10:0.8297,HR@5:0.7517,NDCG@10:0.6568,NDCG@5:0.6314) 
+INFO:root:Namespace(Drop=0, adam_beta1=0.9, adam_beta2=0.999, adam_weight_decay=0.0, batch_size=256, corpus_lines=None, cuda_devices='1', datasets='GowallaLoc1_GowallaLoc2', dropout=0.1, epochs=50, hidden=64, lambda1=0.5, log_freq=500, loss_type='Pairwise', lr=0.0001, model_name='PretrainModel_r2021_cateattentionPOIv2.pkl', num_workers=0, on_memory=False, output_path='output/COM_GowallaLoc1_GowallaLoc2/', seed=2021, seq_len=20, test_dataset='data/COM_GowallaLoc1_GowallaLoc2/test_corpus.COM_GowallaLoc1_GowallaLoc2', train_dataset='data/COM_GowallaLoc1_GowallaLoc2/corpus.COM_GowallaLoc1_GowallaLoc2', vocab_path='data/COM_GowallaLoc1_GowallaLoc2/vocab.COM_GowallaLoc1_GowallaLoc2', with_cuda=True)
+INFO:root:Vocab Size: 56360
+INFO:root:Total Parameters:3870208
+INFO:root:test=(HR@10:0.1822,HR@5:0.1243,NDCG@10:0.1113,NDCG@5:0.0927) 
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.677245020866394, 'Loss_CAT': 0.677245020866394}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.45918017221306134, 'Loss_CAT': 0.3381249010562897}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.39137831248424865, 'Loss_CAT': 0.3029446005821228}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.3613922925173323, 'Loss_CAT': 0.2754207253456116}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.34440848733233786, 'Loss_CAT': 0.24724261462688446}
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.6966738700866699, 'Sum_cate_replace': 1.0, 'Loss_POI1': 0.696132242679596, 'Loss_POI2': 0.6972154378890991, 'Loss_POI3': 0.696132242679596, 'Loss_POI4': 0.6972154378890991}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.601430993832038, 'Sum_cate_replace': 262.0, 'Loss_POI1': 0.5048433542251587, 'Loss_POI2': 0.505386471748352, 'Loss_POI3': 0.5048433542251587, 'Loss_POI4': 0.505386471748352}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.5374434838047275, 'Sum_cate_replace': 625.0, 'Loss_POI1': 0.45533487200737, 'Loss_POI2': 0.4556252658367157, 'Loss_POI3': 0.45533487200737, 'Loss_POI4': 0.4556252658367157}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.49626375185815913, 'Sum_cate_replace': 1011.0, 'Loss_POI1': 0.45451468229293823, 'Loss_POI2': 0.4553765058517456, 'Loss_POI3': 0.45451468229293823, 'Loss_POI4': 0.4553765058517456}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.4694540857792139, 'Sum_cate_replace': 1363.0, 'Loss_POI1': 0.32353562116622925, 'Loss_POI2': 0.3247976005077362, 'Loss_POI3': 0.32353562116622925, 'Loss_POI4': 0.3247976005077362}
+INFO:root:EP0_train, avg_loss=0.455433
+INFO:root:EP:0 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep0
+INFO:root:test=(HR@10:0.6722,HR@5:0.5600,NDCG@10:0.4699,NDCG@5:0.4334) 
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.2401396930217743, 'Loss_CAT': 0.2401396930217743}
+INFO:root:{'epoch': 1, 'iter': '[500/2324]', 'Avg_Loss': 0.26798445831039946, 'Loss_CAT': 0.2936426103115082}
+INFO:root:{'epoch': 1, 'iter': '[1000/2324]', 'Avg_Loss': 0.26287015830422494, 'Loss_CAT': 0.2211173176765442}
+INFO:root:{'epoch': 1, 'iter': '[1500/2324]', 'Avg_Loss': 0.2592761000738709, 'Loss_CAT': 0.23899081349372864}
+INFO:root:{'epoch': 1, 'iter': '[2000/2324]', 'Avg_Loss': 0.2557327914303508, 'Loss_CAT': 0.25249236822128296}
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.35281071066856384, 'Sum_cate_replace': 0.0, 'Loss_POI1': 0.34985941648483276, 'Loss_POI2': 0.3557620048522949, 'Loss_POI3': 0.3383137285709381, 'Loss_POI4': 0.34159815311431885}
+INFO:root:{'epoch': 1, 'iter': '[500/2324]', 'Avg_Loss': 0.33448424679552485, 'Sum_cate_replace': 345.0, 'Loss_POI1': 0.30947983264923096, 'Loss_POI2': 0.31233349442481995, 'Loss_POI3': 0.3094547986984253, 'Loss_POI4': 0.3117389678955078}
+INFO:root:{'epoch': 1, 'iter': '[1000/2324]', 'Avg_Loss': 0.33221835948966005, 'Sum_cate_replace': 693.0, 'Loss_POI1': 0.3373926281929016, 'Loss_POI2': 0.34391772747039795, 'Loss_POI3': 0.33735597133636475, 'Loss_POI4': 0.34351539611816406}
+INFO:root:{'epoch': 1, 'iter': '[1500/2324]', 'Avg_Loss': 0.32840010319289803, 'Sum_cate_replace': 1010.0, 'Loss_POI1': 0.326724112033844, 'Loss_POI2': 0.3281606435775757, 'Loss_POI3': 0.326724112033844, 'Loss_POI4': 0.3281606435775757}
+INFO:root:{'epoch': 1, 'iter': '[2000/2324]', 'Avg_Loss': 0.32604176233495136, 'Sum_cate_replace': 1334.0, 'Loss_POI1': 0.30221468210220337, 'Loss_POI2': 0.30080386996269226, 'Loss_POI3': 0.30221468210220337, 'Loss_POI4': 0.30080386996269226}
+INFO:root:EP1_train, avg_loss=0.324052
+INFO:root:EP:1 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep1
+INFO:root:test=(HR@10:0.6979,HR@5:0.5839,NDCG@10:0.4894,NDCG@5:0.4524) 
+INFO:root:{'epoch': 2, 'iter': '[0/2324]', 'Avg_Loss': 0.2549903392791748, 'Loss_CAT': 0.2549903392791748}
+INFO:root:{'epoch': 2, 'iter': '[500/2324]', 'Avg_Loss': 0.23791215912310662, 'Loss_CAT': 0.23911187052726746}
+INFO:root:{'epoch': 2, 'iter': '[1000/2324]', 'Avg_Loss': 0.23526935539879165, 'Loss_CAT': 0.24043351411819458}
+INFO:root:Namespace(Drop=0, adam_beta1=0.9, adam_beta2=0.999, adam_weight_decay=0.0, batch_size=256, corpus_lines=None, cuda_devices='1', datasets='GowallaLoc1_GowallaLoc2', dropout=0.1, epochs=50, hidden=64, lambda1=0.5, log_freq=500, loss_type='Pairwise', lr=0.0001, model_name='PretrainModel_r2021_cateattentionPOIv2.pkl', num_workers=0, on_memory=False, output_path='output/COM_GowallaLoc1_GowallaLoc2/', seed=2021, seq_len=20, test_dataset='data/COM_GowallaLoc1_GowallaLoc2/test_corpus.COM_GowallaLoc1_GowallaLoc2', train_dataset='data/COM_GowallaLoc1_GowallaLoc2/corpus.COM_GowallaLoc1_GowallaLoc2', vocab_path='data/COM_GowallaLoc1_GowallaLoc2/vocab.COM_GowallaLoc1_GowallaLoc2', with_cuda=True)
+INFO:root:Vocab Size: 56360
+INFO:root:Total Parameters:3870208
+INFO:root:test=(HR@10:0.1822,HR@5:0.1243,NDCG@10:0.1113,NDCG@5:0.0927) 
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.677245020866394, 'Loss_CAT': 0.677245020866394}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.45918017221306134, 'Loss_CAT': 0.3381249010562897}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.39137831248424865, 'Loss_CAT': 0.3029446005821228}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.3613922925173323, 'Loss_CAT': 0.2754207253456116}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.34440848733233786, 'Loss_CAT': 0.24724261462688446}
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.7273738980293274, 'Sum_cate_replace': 132.0, 'Loss_POI1': 0.7264145612716675, 'Loss_POI2': 0.7283332347869873, 'Loss_POI3': 0.696132242679596, 'Loss_POI4': 0.6984448432922363}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.6663143374248893, 'Sum_cate_replace': 63351.0, 'Loss_POI1': 0.6119178533554077, 'Loss_POI2': 0.6129501461982727, 'Loss_POI3': 0.5444627404212952, 'Loss_POI4': 0.5457399487495422}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.6325061052114694, 'Sum_cate_replace': 129207.0, 'Loss_POI1': 0.5878078937530518, 'Loss_POI2': 0.5884948968887329, 'Loss_POI3': 0.48992305994033813, 'Loss_POI4': 0.49056458473205566}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.6080845570977254, 'Sum_cate_replace': 197169.0, 'Loss_POI1': 0.5913457870483398, 'Loss_POI2': 0.5948373079299927, 'Loss_POI3': 0.47132110595703125, 'Loss_POI4': 0.4738863706588745}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.5903986494937937, 'Sum_cate_replace': 266482.0, 'Loss_POI1': 0.47733938694000244, 'Loss_POI2': 0.47799813747406006, 'Loss_POI3': 0.35886168479919434, 'Loss_POI4': 0.3591712415218353}
+INFO:root:EP0_train, avg_loss=0.580504
+INFO:root:EP:0 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep0
+INFO:root:test=(HR@10:0.6855,HR@5:0.5710,NDCG@10:0.4796,NDCG@5:0.4425) 
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.24602138996124268, 'Loss_CAT': 0.24602138996124268}
+INFO:root:Namespace(Drop=0, adam_beta1=0.9, adam_beta2=0.999, adam_weight_decay=0.0, batch_size=256, corpus_lines=None, cuda_devices='1', datasets='GowallaLoc1_GowallaLoc2', dropout=0.1, epochs=50, hidden=64, lambda1=0.5, log_freq=500, loss_type='Pairwise', lr=0.0001, model_name='PretrainModel_r2021_cateattentionPOIv2.pkl', num_workers=0, on_memory=False, output_path='output/COM_GowallaLoc1_GowallaLoc2/', seed=2021, seq_len=20, test_dataset='data/COM_GowallaLoc1_GowallaLoc2/test_corpus.COM_GowallaLoc1_GowallaLoc2', train_dataset='data/COM_GowallaLoc1_GowallaLoc2/corpus.COM_GowallaLoc1_GowallaLoc2', vocab_path='data/COM_GowallaLoc1_GowallaLoc2/vocab.COM_GowallaLoc1_GowallaLoc2', with_cuda=True)
+INFO:root:Vocab Size: 56360
+INFO:root:Total Parameters:3870208
+INFO:root:test=(HR@10:0.1822,HR@5:0.1243,NDCG@10:0.1113,NDCG@5:0.0927) 
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.677245020866394, 'Loss_CAT': 0.677245020866394}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.45918017221306134, 'Loss_CAT': 0.3381249010562897}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.39137831248424865, 'Loss_CAT': 0.3029446005821228}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.3613922925173323, 'Loss_CAT': 0.2754207253456116}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.34440848733233786, 'Loss_CAT': 0.24724261462688446}
+INFO:root:Namespace(Drop=0, adam_beta1=0.9, adam_beta2=0.999, adam_weight_decay=0.0, batch_size=256, corpus_lines=None, cuda_devices='1', datasets='GowallaLoc1_GowallaLoc2', dropout=0.1, epochs=50, hidden=64, lambda1=0.5, log_freq=500, loss_type='Pairwise', lr=0.0001, model_name='PretrainModel_r2021_cateattentionPOIv2.pkl', num_workers=0, on_memory=False, output_path='output/COM_GowallaLoc1_GowallaLoc2/', seed=2021, seq_len=20, test_dataset='data/COM_GowallaLoc1_GowallaLoc2/test_corpus.COM_GowallaLoc1_GowallaLoc2', train_dataset='data/COM_GowallaLoc1_GowallaLoc2/corpus.COM_GowallaLoc1_GowallaLoc2', vocab_path='data/COM_GowallaLoc1_GowallaLoc2/vocab.COM_GowallaLoc1_GowallaLoc2', with_cuda=True)
+INFO:root:Vocab Size: 56360
+INFO:root:Total Parameters:3870208
+INFO:root:test=(HR@10:0.1822,HR@5:0.1243,NDCG@10:0.1113,NDCG@5:0.0927) 
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.677245020866394, 'Loss_CAT': 0.677245020866394}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.45918017221306134, 'Loss_CAT': 0.3381249010562897}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.39137831248424865, 'Loss_CAT': 0.3029446005821228}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.3613922925173323, 'Loss_CAT': 0.2754207253456116}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.34440848733233786, 'Loss_CAT': 0.24724261462688446}
+INFO:root:{'epoch': 0, 'iter': '[0/2324]', 'Avg_Loss': 0.6977875232696533, 'Sum_cate_replace': 132.0, 'Loss_POI1': 0.6953093409538269, 'Loss_POI2': 0.6996137499809265, 'Loss_POI3': 0.696132242679596, 'Loss_POI4': 0.7000946998596191}
+INFO:root:{'epoch': 0, 'iter': '[500/2324]', 'Avg_Loss': 0.6013844464115516, 'Sum_cate_replace': 62809.0, 'Loss_POI1': 0.5044916868209839, 'Loss_POI2': 0.5051054358482361, 'Loss_POI3': 0.50462806224823, 'Loss_POI4': 0.505150318145752}
+INFO:root:{'epoch': 0, 'iter': '[1000/2324]', 'Avg_Loss': 0.5374082074417815, 'Sum_cate_replace': 131855.0, 'Loss_POI1': 0.45475316047668457, 'Loss_POI2': 0.4547334909439087, 'Loss_POI3': 0.4548596143722534, 'Loss_POI4': 0.4548957347869873}
+INFO:root:{'epoch': 0, 'iter': '[1500/2324]', 'Avg_Loss': 0.4962067015166286, 'Sum_cate_replace': 207798.0, 'Loss_POI1': 0.45377758145332336, 'Loss_POI2': 0.45553985238075256, 'Loss_POI3': 0.4542027711868286, 'Loss_POI4': 0.455659419298172}
+INFO:root:{'epoch': 0, 'iter': '[2000/2324]', 'Avg_Loss': 0.4691494639547749, 'Sum_cate_replace': 287060.0, 'Loss_POI1': 0.3219566345214844, 'Loss_POI2': 0.3227732181549072, 'Loss_POI3': 0.3221890330314636, 'Loss_POI4': 0.32289016246795654}
+INFO:root:EP0_train, avg_loss=0.455069
+INFO:root:EP:0 Model Saved on:output/COM_GowallaLoc1_GowallaLoc2/PretrainModel_r2021_cateattentionPOIv2.pkl.ep0
+INFO:root:test=(HR@10:0.6746,HR@5:0.5615,NDCG@10:0.4709,NDCG@5:0.4343) 
+INFO:root:{'epoch': 1, 'iter': '[0/2324]', 'Avg_Loss': 0.23655502498149872, 'Loss_CAT': 0.23655502498149872}

@@ -1,0 +1,1 @@
+python finetune.py --gpu 1 -s 20 -e 40 --dataset GowallaLoc2 --lambda2 0.5 --use_pretrain 1 --ndataset GowallaLoc1 GowallaLoc2 -r 2020 -b 256 -mft SASRec -dtt Common -mpp PretrainModel_r2021_cateattentionPOIv2.pkl.ep39_best -mpt OurMethod -lst Pairwise
