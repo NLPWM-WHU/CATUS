@@ -10,7 +10,7 @@ with open('data/Gowalla/poi_feature.csv', 'r') as f:
     for line in lines:
         inf = line.strip().split(',')
         POI_id = int(inf[0])
-        Coor_Cat = [int(float(inf[1])), int(float(inf[2])), int(inf[3])]
+        Coor_Cat = [float(inf[1]), float(inf[2]), int(inf[3])]
         if POI_id not in POI_dict:
             POI_dict[POI_id] = Coor_Cat
 
